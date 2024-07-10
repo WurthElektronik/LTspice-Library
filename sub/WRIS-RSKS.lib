@@ -1,0 +1,110 @@
+**************************************************
+* Manufacturer:          Würth Elektronik
+* Kinds:                 Thick Film Resistors
+* Matchcode:             WRIS-RSKS
+* Library Type:          LTspice
+* Version:               rev23a
+* Created/modified by:   Ella
+* Date and Time:         10/10/2023
+* Team:                  eiSos EDA Service  
+* Contact:               libraries@we-online.com
+**************************************************
+* Copyright(C) 2023 Würth Elektronik eiSos GmbH & Co. KG	
+* All Rights Reserved.	
+**************************************************	
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+**************************************************	
+.subckt 0402_560112110034_10ohm 1 2
+R 1 3 10
+Lser 3 2 0.05n
+Cpar 1 2 0.13p
+.ends 0402_560112110034_10ohm
+*******
+.subckt 0402_560112110022_100ohm 1 2
+R 1 3 100
+Lser 3 2 0.05n
+Cpar 1 2 0.18p
+.ends 0402_560112110022_100ohm
+*******
+.subckt 0402_560112110012_1000ohm 1 2
+R 1 3 1000
+Lser 3 2 0.05n
+Cpar 1 2 0.18p
+.ends 0402_560112110012_1000ohm
+*******
+.subckt 0402_560112110020_10000ohm 1 2
+R 1 3 10000
+Lser 3 2 0.05n
+Cpar 1 2 0.211p
+.ends 0402_560112110020_10000ohm
+*******
+.subckt 0603_560112116013_10ohm 1 2
+R 1 3 10
+Lser 3 2 0.53n
+Cpar 1 2 0.13p
+.ends 0603_560112116013_10ohm
+*******
+.subckt 0603_560112116009_100ohm 1 2
+R 1 3 100
+Lser 3 2 0.53n
+Cpar 1 2 0.25p
+.ends 0603_560112116009_100ohm
+*******
+.subckt 0603_560112116014_1000ohm 1 2
+R 1 3 1000
+Lser 3 2 0.53n
+Cpar 1 2 0.26p
+.ends 0603_560112116014_1000ohm
+*******
+.subckt 0603_560112116005_10000ohm 1 2
+R 1 3 10000
+Lser 3 2 0.53n
+Cpar 1 2 0.26p
+.ends 0603_560112116005_10000ohm
+*******
+.subckt 0805_560112120008_10ohm 1 2
+R 1 3 10
+Lser 3 2 0.33n
+Cpar 1 2 0.211p
+.ends 0805_560112120008_10ohm
+*******
+.subckt 0805_560112120020_100ohm 1 2
+R 1 3 100
+Lser 3 2 0.33n
+Cpar 1 2 0.241p
+.ends 0805_560112120020_100ohm
+*******
+.subckt 0805_560112120004_10000ohm 1 2
+R 1 3 10000
+Lser 3 2 0.33n
+Cpar 1 2 0.32p
+.ends 0805_560112120004_10000ohm
+*******
+.subckt 1206_560112132039_10ohm 1 2
+R 1 3 10
+Lser 3 2 0.41n
+Cpar 1 2 0.3p
+.ends 1206_560112132039_10ohm
+*******
+.subckt 1206_560112132023_100ohm 1 2
+R 1 3 100
+Lser 3 2 0.41n
+Cpar 1 2 0.3p
+.ends 1206_560112132023_100ohm
+*******
+.subckt 1206_560112132038_1000ohm 1 2
+R 1 3 1000
+Lser 3 2 0.41n
+Cpar 1 2 0.3p
+.ends 1206_560112132038_1000ohm
+*******
+.subckt 1206_560112132018_10000ohm 1 2
+R 1 3 10000
+Lser 3 2 0.41n
+Cpar 1 2 0.44p
+.ends 1206_560112132018_10000ohm
+*******

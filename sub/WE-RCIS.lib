@@ -1,0 +1,46 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  Rod Core Inductor SMT
+* Matchcode:              WE-RCIS
+* Library Type:           spice
+* Version:                rev
+* Created/modified by:    Ella
+* Date and Time:          7/12/2024
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+.subckt 7847227010_1u 1 2
+Rp 1 2 4761
+Cp 1 2 0.96078p
+Rs 1 N3 0.002
+L1 N3 2 0.615082u
+.ends 7847227010_1u
+*******
+.subckt 7847229020_1.96u 1 2
+Rp 1 2 10064
+Cp 1 2 1.214p
+Rs 1 N3 0.0024
+L1 N3 2 1.147u
+.ends 7847229020_1.96u
+*******
+.subckt 7847227027_2.72u 1 2
+Rp 1 2 11385
+Cp 1 2 1.139p
+Rs 1 N3 0.0064
+L1 N3 2 1.547u
+.ends 7847227027_2.72u
+*******
+.subckt 7847232045_4.45u 1 2
+Rp 1 2 3427
+Cp 1 2 4.56p
+Rs 1 N3 0.0038
+L1 N3 2 3.237u
+.ends 7847232045_4.45u
+*******
+.subckt 7847225100_10.4u 1 2
+Rp 1 2 22318
+Cp 1 2 0.535317p
+Rs 1 N3 0.033
+L1 N3 2 7.293u
+.ends 7847225100_10.4u
+*******

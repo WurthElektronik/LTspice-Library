@@ -1,0 +1,163 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter
+* Matchcode:              WE-CNSW HF 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  CNSWHF  1  2  3  4  PARAMS:
+R_R47  N21893  N21911  {Rs3}
+R_R43  N21425  N21441  {Rs2}
+R_R4  N22217  N21871  {dR3}
+L_L3  N21425  N21441  {L2}
+L_L8  N21871  N21893  {L4}
+Kn_K1  L_L1  L_L2  1
+R_R37  N21241  3  {R2}
+R_R48  N21911  N21925  {Rs2}
+R_R44  N21441  3  {Rs1}
+C_C4  N21871  N22231  {C1}
+L_L1  N21441  3  {L1}
+C_C1  N21207  N21217  {dC3}
+L_L6  N21893  N21911  {L3}
+R_R1  1  N21207  {Rdc}
+L_L17  N21207  N21585  {dL3}
+R_R49  N21925  4  {Rs1}
+Kn_K5  L_L17  L_L18  
++  L_L19  L_L20  0.9999
+R_R3  N21217  N21223  {dR3}
+R_R55  N22231  4  {R2}
+L_L4  N21911  N21925  {L2}
+R_R2  N21207  N21223  {dR4}
+L_L19  N21585  N21223  {dL3}
+R_R6  2  N21857  {Rdc}
+C_C2  N21731  N21585  {ck}
+Kn_K4  L_L7  L_L8  1
+L_L2  N21925  4  {L1}
+R_R41  N21223  N21413  {Rs4}
+L_L7  N21223  N21413  {L4}
+R_R5  N21857  N21871  {dR4}
+L_L18  N21731  N21857  {dL3}
+Kn_K3  L_L5  L_L6  1
+R_R46  N21871  N21893  {Rs4}
+R_R42  N21413  N21425  {Rs3}
+L_L5  N21413  N21425  {L3}
+C_C9  N21857  N22217  {dC3}
+L_L20  N21871  N21731  {dL3}
+Kn_K2  L_L3  L_L4  1
+C_C3  N21223  N21241  {C1}  
+.ends  CNSWHF
+  *******
+.SUBCKT  0805_744233121_120ohm  1  2  3  4
+X1  1  2  3  4  CNSWHF  PARAMS:
++  L1=8.00000000000001e-009
++  L2=1.79925339212877e-007
++  L3=6.63649322239021e-008
++  L4=5.83450032811588e-009
++  C1=5.51684894769137e-014
++  Rs1=1741.05155918371
++  Rs2=212.549482460289
++  Rs3=488.688963633822
++  Rs4=317.330962811994
++  R2=3.13238113177141
++  dL3=4.98917896272065e-010
++  dC3=4.96686318546251e-012
++  dR3=484.521469508698
++  dR4=997.199948678582
++  Rdc=0.31
++  ck=7.70527948525304e-013
+.ends  0805_744233121_120ohm
+ *******
+.SUBCKT  0504_7442335600_60ohm  1  2  3  4
+X1  1  2  3  4  CNSWHF  PARAMS:
++  L1=8.20080273786633e-009
++  L2=1.34584427660833e-007
++  L3=1.48025426584176e-008
++  L4=3e-9
++  C1=9.07227616542299e-015
++  Rs1=140.47411946825
++  Rs2=67.1126466735985
++  Rs3=352.002895573163
++  Rs4=143.399231133472
++  R2=1.63228304262423
++  dL3=2.70000000000084e-010
++  dC3=1.05490512357034e-012
++  dR3=141.912693330686
++  dR4=18.5692729246812
++  Rdc=0.171903611525802
++  ck=9.6298290910808e-012
+.ends  0504_7442335600_60ohm
+*******  
+.SUBCKT  0504_7442335900_90ohm  1  2  3  4
+X1  1  2  3  4  CNSWHF  PARAMS:
++  L1=1.74287180653563e-008
++  L2=1.90945624886655e-007
++  L3=1.48e-8
++  L4=3e-009
++  C1=9.10936547148042e-015
++  Rs1=143.861231643254
++  Rs2=179.249147258704
++  Rs3=411.115533962585
++  Rs4=612.101638621577
++  R2=12.7671309676373
++  dL3=472.39p
++  dC3=0.769p
++  dR3=41.43
++  dR4=40
++  Rdc=0.31
++  ck=1.48p
+.ends  0504_7442335900_90ohm
+ *****
+.SUBCKT  0805_744233670_67ohm  1  2  3  4
+X1  1  2  3  4  CNSWHF  PARAMS:
++  L1=8e-9
++  L2=1.03965078520108e-007
++  L3=5.15314863498072e-008
++  L4=5.01970036415237e-009
++  C1=1.45809726575575e-014
++  Rs1=1974.62758526815
++  Rs2=61.0008722307059
++  Rs3=352
++  Rs4=129.000000000009
++  R2=1.06969192478433
++  dL3=4.18668923581979e-010
++  dC3=2.86773504891341e-012
++  dR3=500.929543289747
++  dR4=130.15628545093
++  Rdc=0.25
++  ck=7.49201368989462e-013
+.ends  0805_744233670_67ohm
+ *****
+.SUBCKT  0805_744233900_90ohm  1  2  3  4
+X1  1  2  3  4  CNSWHF  PARAMS:
++  L1=1.01386268060263e-008
++  L2=1.24219683189412e-007
++  L3=5.54736496935708e-008
++  L4=4.71686177909884e-009
++  C1=3.38968008807148e-014
++  Rs1=1425.83638350492
++  Rs2=152.864244869111
++  Rs3=523.822968137063
++  Rs4=242.557110773796
++  R2=0.777808206219933
++  dL3=4.82291048560715e-010
++  dC3=7.54540952966445e-012
++  dR3=501
++  dR4=1100
++  Rdc=0.31
++  ck=8.10041154972036e-013
+.ends  0805_744233900_90ohm
+  
+  

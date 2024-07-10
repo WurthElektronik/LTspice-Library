@@ -1,0 +1,249 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter
+* Matchcode:              WE-SLM 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  6033_744242101_100u  1  2  3  4  PARAMS:
++  L1=59.81u
++  L2=26.14u
++  L3=14.50u
++  L4=9.20u
++  C1=2.24p
++  Rs1=2289.57
++  Rs2=2513.24
++  Rs3=2225.23
++  Rs4=3549.67
++  R2=92.30
++  L5=50n
++  R5=1100
++  C5=0.2p
++  Rdc=0.416
++  dL3=2.5n
++  dC3=2.6pF
++  dR3=250
+R_R7  N27348  3  {R2}
+C_C10  N26704  N26214  {dC3}
+L_L12  N26238  N26246  {dL3}
+Kn_K5  L_L5  L_L6  1
+R_R2  N25820  N26286  {Rs4}
+L_L11  N26246  N25848  {dL3}
+L_L32  N26804  N26720  {dL3}
+R_R1  N25828  4  {R2}
+L_L1  N25820  N26286  {L4}
+L_L17  N25840  N26214  {dL3}
+R_R12  N26852  3  {Rs1}
+C_C14  N26720  N26246  {dC3}
+L_L31  N26720  N26716  {dL3}
+L_L9  N26840  N26852  {L2}
+R_R13  N25840  N25848  {dR3}
+C_C1  N25820  N25828  {C1}
+Kn_K3  L_L3  L_L9  1
+L_L13  N26222  N26230  {dL3}
+C_C4  N26804  N26812  {C5}
+R_R11  N26840  N26852  {Rs2}
+C_C2  N25848  N25820  {C5}
+L_L14  N26230  N26238  {dL3}
+Kn_K1  L_L1  L_L7  1
+L_L8  N26828  N26840  {L3}
+C_C13  N26716  N26238  {dC3}
+L_L29  N26712  N26708  {dL3}
+R_R3  N26286  N26298  {Rs3}
+L_L5  N25848  N25820  {L5}
+Kn_K10  L_L17  L_L27  1
+L_L18  N26214  N26222  {dL3}
+C_C3  N26812  N27348  {C1}
+Kn_K11  L_L18  L_L28  1
+Kn_K15  L_L11  L_L32  1
+R_R16  2  N26898  {Rdc}
+R_R9  N26812  N26828  {Rs4}
+L_L30  N26716  N26712  {dL3}
+Kn_K4  L_L4  L_L10  1
+Kn_K13  L_L14  L_L30  1
+Kn_K12  L_L13  L_L29  1
+L_L4  N26310  4  {L1}
+Kn_K2  L_L2  L_L8  1
+R_R15  N26898  N26804  {dR3}
+C_C12  N26712  N26230  {dC3}
+R_R5  N26310  4  {Rs1}
+L_L3  N26298  N26310  {L2}
+Kn_K14  L_L12  L_L31  1
+R_R8  N26804  N26812  {R5}
+L_L2  N26286  N26298  {L3}
+L_L7  N26812  N26828  {L4}
+L_L28  N26708  N26704  {dL3}
+R_R14  1  N25840  {Rdc}
+L_L10  N26852  3  {L1}
+R_R6  N25848  N25820  {R5}
+L_L27  N26704  N26898  {dL3}
+C_C11  N26708  N26222  {dC3}
+R_R4  N26298  N26310  {Rs2}
+R_R10  N26828  N26840  {Rs3}
+L_L6  N26804  N26812  {L5}
+R_R17  N26704  N26214  1000g
+.ends  6033_744242101_100u
+********
+.SUBCKT  WE-SLM  1  2  3  4  PARAMS:
++  L1=15.25u
++  L2=7.6u
++  L3=1.97u
++  L4=1.83u
++  C1=0.252p
++  Rs1=565.11
++  Rs2=845.82
++  Rs3=966.67
++  Rs4=603.91
++  R2=11.49
++  Rdc=0.149
++  dL3=1.7n
++  dC3=2.7pF
++  dR3=260
+R_R7  N27348  3  {R2}
+C_C10  N26704  N26214  {dC3}
+R_R2  N25820  N26286  {Rs4}
+R_R1  N25828  4  {R2}
+L_L1  N25820  N26286  {L4}
+L_L17  N25840  N26214  {dL3}
+R_R12  N26852  3  {Rs1}
+L_L9  N26840  N26852  {L2}
+R_R13  N25840  N25820  {dR3}
+C_C1  N25820  N25828  {C1}
+Kn_K3  L_L3  L_L9  1
+L_L13  N26222  N26230  {dL3}
+R_R11  N26840  N26852  {Rs2}
+L_L14  N26230  N25820  {dL3}
+Kn_K1  L_L1  L_L7  1
+L_L8  N26828  N26840  {L3}
+L_L29  N26712  N26708  {dL3}
+R_R3  N26286  N26298  {Rs3}
+Kn_K10  L_L17  L_L27  1
+L_L18  N26214  N26222  {dL3}
+C_C3  N26820  N27348  {C1}
+Kn_K11  L_L18  L_L28  1
+R_R16  2  N26898  {Rdc}
+R_R9  N26820  N26828  {Rs4}
+L_L30  N26820  N26712  {dL3}
+Kn_K4  L_L4  L_L10  1
+Kn_K13  L_L14  L_L30  1
+Kn_K12  L_L13  L_L29  1
+L_L4  N26310  4  {L1}
+Kn_K2  L_L2  L_L8  1
+R_R15  N26898  N26820  {dR3}
+C_C12  N26712  N26230  {dC3}
+R_R5  N26310  4  {Rs1}
+L_L3  N26298  N26310  {L2}
+L_L2  N26286  N26298  {L3}
+L_L7  N26820  N26828  {L4}
+L_L28  N26708  N26704  {dL3}
+R_R14  1  N25840  {Rdc}
+L_L10  N26852  3  {L1}
+L_L27  N26704  N26898  {dL3}
+C_C11  N26708  N26222  {dC3}
+R_R4  N26298  N26310  {Rs2}
+R_R10  N26828  N26840  {Rs3}
+R_R17  N26704  N26214  1000g
+.ends  WE-SLM
+********
+.SUBCKT  6033_744242110_11u  1  2  3  4
+X1  1  2  3  4  WE-SLM  PARAMS:
++  L1=7.45u
++  L2=1.95u
++  L3=1.8u
++  L4=0.85u
++  C1=0.267p
++  Rs1=348
++  Rs2=209.46
++  Rs3=364.54
++  Rs4=512.61
++  R2=9.64
++  Rdc=0.108
++  dL3=2.1n
++  dC3=1.4pF
++  dR3=550
+.ends  6033_744242110_11u
+********
+.SUBCKT  6033_744242220_22u  1  2  3  4
+X1  1  2  3  4  WE-SLM  PARAMS:
++  L1=15.25u
++  L2=7.6u
++  L3=1.97u
++  L4=1.83u
++  C1=0.252p
++  Rs1=565.11
++  Rs2=845.82
++  Rs3=966.67
++  Rs4=603.91
++  R2=11.49
++  Rdc=0.149
++  dL3=1.7n
++  dC3=2.7pF
++  dR3=260
+.ends  6033_744242220_22u
+********
+.SUBCKT  6033_744242330_33u  1  2  3  4
+X1  1  2  3  4  WE-SLM  PARAMS:
++  L1=22.39u
++  L2=4.32u
++  L3=6.94u
++  L4=1.94u
++  C1=0.194p
++  Rs1=887
++  Rs2=1323.9
++  Rs3=804.8
++  Rs4=834.89
++  R2=7.96
++  Rdc=0.169
++  dL3=1.9n
++  dC3=3.2pF
++  dR3=230
+.ends  6033_744242330_33u
+********
+.SUBCKT  6033_744242471_470u  1  2  3  4
+X1  1  2  3  4  WE-SLM  PARAMS:
++  L1=50.33u
++  L2=20.09u
++  L3=110.09u
++  L4=0.26u
++  C1=0.5p
++  Rs1=1620.93
++  Rs2=329.7
++  Rs3=2543.93
++  Rs4=1673.06
++  R2=30.84
++  Rdc=0.383
++  dL3=2.4n
++  dC3=2.83pF
++  dR3=260
+.ends  6033_744242471_470u
+********
+.SUBCKT  6033_744242510_51u  1  2  3  4
+X1  1  2  3  4  WE-SLM  PARAMS:
++  L1=40.33u
++  L2=1.09u
++  L3=9.09u
++  L4=0.96u
++  C1=0.331p
++  Rs1=2220.93
++  Rs2=329.7
++  Rs3=2543.93
++  Rs4=1673.06
++  R2=158.84
++  Rdc=0.223
++  dL3=2.2n
++  dC3=4.1pF
++  dR3=200
+.ends  6033_744242510_51u

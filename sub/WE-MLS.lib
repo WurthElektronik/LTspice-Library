@@ -1,0 +1,90 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  Multiline EMI Suppression Ferrite 
+* Matchcode:              WE-MLS 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-30
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 1111_74273012_249ohm 1 2
+Rp 1 2 300
+Cp 1 2 0.43p
+Rs 1 N3 0.002
+L1 N3 2 4u
+.ends 1111_74273012_249ohm
+*******
+.subckt 1111_742730123_334ohm 1 2
+Rp 1 2 365
+Cp 1 2 0.33p
+Rs 1 N3 0.002
+L1 N3 2 3.4u
+.ends 1111_742730123_334ohm
+*******
+.subckt 1111_742730223_334ohm 1 2
+Rp 1 2 365
+Cp 1 2 0.33p
+Rs 1 N3 0.002
+L1 N3 2 3.4u
+.ends 1111_742730223_334ohm
+*******
+.subckt 1111_74273002_249ohm 1 2
+Rp 1 2 300
+Cp 1 2 0.43p
+Rs 1 N3 0.002
+L1 N3 2 4u
+.ends 1111_74273002_249ohm
+*******
+.subckt 1111_742730021_170ohm 1 2
+Rp 1 2 150
+Cp 1 2 0.001p
+Rs 1 N3 0.002
+L1 N3 2 2u
+.ends 1111_742730021_170ohm
+*******
+.subckt 1111_742730022_248ohm 1 2
+Rp 1 2 290
+Cp 1 2 0.31p
+Rs 1 N3 0.002
+L1 N3 2 3.7u
+.ends 1111_742730022_248ohm
+*******
+.subckt 1111_742730023_334ohm 1 2
+Rp 1 2 365
+Cp 1 2 0.33p
+Rs 1 N3 0.002
+L1 N3 2 3.4u
+.ends 1111_742730023_334ohm
+*******
+.subckt 1111_742730321_150ohm 1 2
+Rp 1 2 162
+Cp 1 2 0.01p
+Rs 1 N3 0.002
+L1 N3 2 0.835u
+.ends 1111_742730321_150ohm
+*******
+.subckt 7650_74273001_264ohm 1 2
+Rp 1 2 290
+Cp 1 2 0.385p
+Rs 1 N3 0.002
+L1 N3 2 3u
+.ends 7650_74273001_264ohm
+*******
+.subckt 7650_74273031_264ohm 1 2
+Rp 1 2 260
+Cp 1 2 0.12p
+Rs 1 N3 0.002
+L1 N3 2 1.8u
+.ends 7650_74273031_264ohm
+*******

@@ -1,0 +1,48 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Push-Pull Transformers 
+* Matchcode:              WE-PPTI
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Ella      
+* Date and Time:          2024-01-17
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************	
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* All Rights Reserved.	
+**************************************************	
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+**************************************************
+
+.subckt	750031160		3  2  1  4  5  6		
+.param RxLkg=63.05ohm					
+.param Leakage=0.28uh					
+Rlkg	3	3a	{RxLkg/2}		
+L_Lkg	3	3a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	2	2a	{RxLkg/2}		
+L_Lkg2	2	2a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	3a	2	249.86uH	Rser=460mohm	
+Lpri2	2a	1	249.86uH	Rser=460mohm	
+Lsec1	4	5	1812.13uH	Rser=1200mohm	
+Lsec2	5	6	1812.13uH	Rser=1200mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=98.6pf					
+.param Cprm2=98.6pf					
+.param Rdmp1=56297.34ohm					
+.param Rdmp2=56297.34ohm					
+Cpri1	3	2	{Cprm1}	Rser=10mohm	
+Cpri2	2	1	{Cprm2}	Rser=10mohm	
+Rdmp1	3	2	{Rdmp1}		
+Rdmp2	2	1	{Rdmp2}		
+Rg3	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	4	0	20meg		
+Rg19	5	0	20meg		
+Rg20	6	0	20meg		
+.ends					

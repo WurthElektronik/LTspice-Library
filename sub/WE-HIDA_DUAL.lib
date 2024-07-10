@@ -1,0 +1,156 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  THT High Current Inductor
+* Matchcode:              WE-HIDA
+* Library Type:           LTspice
+* Version:                rev22b
+* Created/modified by:    Ella
+* Date and Time:          07/15/2022
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 1415_7444211415082_8.2u 1 2 3 4
+Rdc1 1 N1 0.0092
+Rp1 1 4 2000
+Cp1 1 4 7.8p
+L1 N1 4 6.8u
+
+Rdc2 2 N2 0.0092
+Rp2 2 3 2000
+Cp2 2 3 7.8p
+L2 N2 3 6.8u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1415_7444211415082_8.2u
+*******
+.subckt 1415_7444211415100_10u 1 2 3 4
+Rdc1 1 N1 0.0092
+Rp1 1 4 2100
+Cp1 1 4 7.5p
+L1 N1 4 8.2u
+
+Rdc2 2 N2 0.0092
+Rp2 2 3 2100
+Cp2 2 3 7.5p
+L2 N2 3 8.2u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1415_7444211415100_10u
+*******
+.subckt 1415_7444211415150_15u 1 2 3 4
+Rdc1 1 N1 0.0146
+Rp1 1 4 2900
+Cp1 1 4 11p
+L1 N1 4 12.4u
+
+Rdc2 2 N2 0.0146
+Rp2 2 3 2900
+Cp2 2 3 11p
+L2 N2 3 12.4u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1415_7444211415150_15u
+*******
+.subckt 1415_7444211415220_22u 1 2 3 4
+Rdc1 1 N1 0.0148
+Rp1 1 4 3000
+Cp1 1 4 11.5p
+L1 N1 4 18.7u
+
+Rdc2 2 N2 0.0148
+Rp2 2 3 3000
+Cp2 2 3 11.5p
+L2 N2 3 18.7u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1415_7444211415220_22u
+*******
+.subckt 1521_74441521082_8.2u 1 2 3 4
+Rdc1 1 N1 0.0062
+Rp1 1 4 3050.4
+Cp1 1 4 10.0666p
+L1 N1 4 7.4941u
+
+Rdc2 2 N2 0.0062
+Rp2 2 3 3050.4
+Cp2 2 3 10.0666p
+L2 N2 3 7.4941u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1521_74441521082_8.2u
+*******
+.subckt 1521_74441521100_10u 1 2 3 4
+Rdc1 1 N1 0.0063
+Rp1 1 4 2222.9
+Cp1 1 4 8.91695p
+L1 N1 4 9.98375u
+
+Rdc2 2 N2 0.0063
+Rp2 2 3 2222.9
+Cp2 2 3 8.91695p
+L2 N2 3 9.98375u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1521_74441521100_10u
+*******
+.subckt 1521_74441521150_15u 1 2 3 4
+Rdc1 1 N1 0.0085
+Rp1 1 4 3000
+Cp1 1 4 7.8p
+L1 N1 4 12.9u
+
+Rdc2 2 N2 0.0085
+Rp2 2 3 3000
+Cp2 2 3 7.8p
+L2 N2 3 12.9u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1521_74441521150_15u
+*******
+.subckt 1521_74441521220_22u 1 2 3 4
+Rdc1 1 N1 0.0136
+Rp1 1 4 4500
+Cp1 1 4 10p
+L1 N1 4 20u
+
+Rdc2 2 N2 0.0136
+Rp2 2 3 4500
+Cp2 2 3 10p
+L2 N2 3 20u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1521_74441521220_22u
+*******

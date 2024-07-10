@@ -1,0 +1,28 @@
+**************************************************
+* Manufacturer:           Würth Elektronik 
+* Kinds:                  SMT Phototransistor Top Black
+* Matchcode:              WL-STTB
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Ella   
+* Date and Time:          2024-07-23
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 3528_1541411NEA210 Coll Emit params: Ee=0.25m
+G001 Emit Base In+ 0 398e-5
+V2 In+ 0 {Ee}
+Q001 Coll Base Emit STTB
+.MODEL STTB NPN (IS=22.500E-13 BF=714 NF=1.01 VAF=30.5
++ IKF=161E-3 ISE=6.02E-14 NE=2 RE=2.84)
+.ends
+*********************************

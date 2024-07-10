@@ -1,0 +1,859 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Flexible Transformer for DC/DC Converter 
+* Matchcode:              WE-FLEX
+* Library Type:           LTspice
+* Version:                rev23a
+* Created/modified by:    Toby    
+* Date and Time:          2023-07-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2023 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+************ WE-FLEX-ER11.5 ****************
+.Subckt WE-FLEX_ER11-5_749196101 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=11.9u 
++ Lm=14.7m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {772/100000000}
++ Rbase = 0.344*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.21u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER11-5_749196101
+
+.Subckt WE-FLEX_ER11-5_749196111 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=11.9u 
++ Lm=14.7m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {7598/100000000}
++ Rbase = 0.344*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.21u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER11-5_749196111
+
+.Subckt WE-FLEX_ER11-5_749196121 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=11.9u 
++ Lm=14.7m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {14335/100000000}
++ Rbase = 0.344*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.21u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER11-5_749196121
+
+.Subckt WE-FLEX_ER11-5_749196131 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=11.9u 
++ Lm=14.7m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {19820/100000000}
++ Rbase = 0.344*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.21u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER11-5_749196131
+
+.Subckt WE-FLEX_ER11-5_749196141 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=11.9u 
++ Lm=14.7m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {25650/100000000}
++ Rbase = 0.344*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.21u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER11-5_749196141
+
+************ WE-FLEX-ER14.5 ****************
+.Subckt WE-FLEX_ER14-5_749196201 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=17.6u 
++ Lm=19m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {1173/100000000}
++ Rbase = 0.159*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.17u
++ Trn = 10
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER14-5_749196201
+
+.Subckt WE-FLEX_ER14-5_749196211 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=17.6u 
++ Lm=19m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {9838/100000000}
++ Rbase = 0.159*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.17u
++ Trn = 10
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER14-5_749196211
+
+.Subckt WE-FLEX_ER14-5_749196221 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=17.6u 
++ Lm=19m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {18662/100000000}
++ Rbase = 0.159*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.17u
++ Trn = 10
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER14-5_749196221
+
+.Subckt WE-FLEX_ER14-5_749196231 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=17.6u 
++ Lm=19m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {26785/100000000}
++ Rbase = 0.159*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.17u
++ Trn = 10
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER14-5_749196231
+
+.Subckt WE-FLEX_ER14-5_749196241 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=17.6u 
++ Lm=19m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {33950/100000000}
++ Rbase = 0.159*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.17u
++ Trn = 10
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_ER14-5_749196241
+
+
+
+************ WE-FLEX-EFD15 ****************
+.Subckt WE-FLEX_EFD15_749196301 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=12.2u 
++ Lm=34m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {952/100000000}
++ Rbase = 0.140*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.13u
++ Trn = 13
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD15_749196301
+
+
+.Subckt WE-FLEX_EFD15_749196311 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=12.2u 
++ Lm=34m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {10375/100000000}
++ Rbase = 0.140*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.13u
++ Trn = 13
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD15_749196311
+
+
+.Subckt WE-FLEX_EFD15_749196321 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=12.2u 
++ Lm=34m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {17497/100000000}
++ Rbase = 0.140*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.13u
++ Trn = 13
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD15_749196321
+
+
+.Subckt WE-FLEX_EFD15_749196331 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=12.2u 
++ Lm=34m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {27119/100000000}
++ Rbase = 0.140*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.13u
++ Trn = 13
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD15_749196331
+
+
+.Subckt WE-FLEX_EFD15_749196341 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=12.2u 
++ Lm=34m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {32059/100000000}
++ Rbase = 0.140*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.13u
++ Trn = 13
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD15_749196341
+
+
+
+
+************ WE-FLEX-EFD20 ****************
+.Subckt WE-FLEX_EFD20_749196500 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {1837/100000000}
++ Rbase = 0.03*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.18u
++ Trn = 8
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196500
+
+.Subckt WE-FLEX_EFD20_749196501 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {1836/100000000}
++ Rbase = 0.0711*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.24u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196501
+
+.Subckt WE-FLEX_EFD20_749196510 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {24620/100000000}
++ Rbase = 0.03*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.18u
++ Trn = 8
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196510
+
+.Subckt WE-FLEX_EFD20_749196511 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {24129/100000000}
++ Rbase = 0.0711*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.24u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196511
+
+.Subckt WE-FLEX_EFD20_749196520 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {47668/100000000}
++ Rbase = 0.03*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.18u
++ Trn = 8
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196520
+
+.Subckt WE-FLEX_EFD20_749196521 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {46700/100000000}
++ Rbase = 0.0711*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.24u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196521
+
+.Subckt WE-FLEX_EFD20_749196530 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {59400/100000000}
++ Rbase = 0.03*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.18u
++ Trn = 8
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196530
+
+.Subckt WE-FLEX_EFD20_749196531 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {58250/100000000}
++ Rbase = 0.0711*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.24u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196531
+
+.Subckt WE-FLEX_EFD20_749196540 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {76525/100000000}
++ Rbase = 0.03*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.18u
++ Trn = 8
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196540
+
+.Subckt WE-FLEX_EFD20_749196541 PR1 PR2 PS1 PS2 params: temp=25 config_P=1 config_S=1
+.param 
++ A=31u 
++ Lm=47m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {75185/100000000}
++ Rbase = 0.0711*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.24u
++ Trn = 12
++ PR= tbl(config_P,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ PL= tbl(config_P,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
++ SR= tbl(config_S,1,1,2,0.5,3,0.333,4,2,5,3,6,4,7,5,8,1,9,1.5,10,0.25,11,0.2)
++ SL= tbl(config_S,1,1,2,1,3,1,4,2,5,3,6,4,7,5,8,2,9,2,10,1,11,1)
+LPf1 PR1 N001 {Llkgbase*(PL**2)}
+LSf1 N003 PS2 {Llkgbase*(SL**2)}
+RPp PR1 PR2 1meg
+RSp PS2 PS1 1meg
+RP1 N004 PR2 {Rbase*PR}
+RS1 PS1 N005 {Rbase*SR}
+CSp PS2 PS1 10p
+CPp PR1 PR2 10p
+G1 0 N002 N001 N004 {1/PL}
+G2 0 N002 N003 N005 {1/SL}
+R1 N002 0 1Meg
+G3 N005 N003 N002 0 {1/SL}
+G4 N004 N001 N002 0 {1/PL}
+Lp N001 N004 Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn*PL}
+Rg1 PR1 0 20meg
+Rg2 PS2 0 20meg
+.ends WE-FLEX_EFD20_749196541
+
+

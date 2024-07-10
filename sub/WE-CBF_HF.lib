@@ -1,0 +1,90 @@
+**************************************************
+* Manufacturer:           Würth Elektronik 
+* Kinds:                  SMT EMI Suppression Ferrite Bead (High Frequency)
+* Matchcode:              WE-CBF HF
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Ella
+* Date and Time:          6/18/2024
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* All Rights Reserved.	
+**************************************************	
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+**************************************************	
+.subckt 0402_742841160_600ohm 1 2
+Rp 1 2 1543.8
+Cp 1 2 0.105p
+Rs 1 N3 1.6
+L1 N3 2 0.93845u
+.ends 0402_742841160_600ohm
+*******
+.subckt 0402_742841210_1000ohm 1 2
+Rp 1 2 1664.2
+Cp 1 2 0.077p
+Rs 1 N3 1.8
+L1 N3 2 1.926u
+.ends 0402_742841210_1000ohm
+*******
+.subckt 0402_742843122_220ohm 1 2
+Rp 1 2 404.5
+Cp 1 2 0.155p
+Rs 1 N3 0.38
+L1 N3 2 0.4462u
+.ends 0402_742843122_220ohm
+*******
+.subckt 0603_742861118_180ohm 1 2
+Rp 1 2 228.16
+Cp 1 2 0.315p
+Rs 1 N3 0.55
+L1 N3 2 0.4875u
+.ends 0603_742861118_180ohm
+*******
+.subckt 0603_742861160_600ohm 1 2
+Rp 1 2 741.8
+Cp 1 2 0.157p
+Rs 1 N3 0.9
+L1 N3 2 1.6u
+.ends 0603_742861160_600ohm
+*******
+.subckt 0603_742861210_1000ohm 1 2
+Rp 1 2 2412.9
+Cp 1 2 0.097p
+Rs 1 N3 1.8
+L1 N3 2 1.6193u
+.ends 0603_742861210_1000ohm
+*******
+.subckt 0603_742862160_600ohm 1 2
+Rp 1 2 1412.6
+Cp 1 2 0.125p
+Rs 1 N3 1.5
+L1 N3 2 0.975u
+.ends 0603_742862160_600ohm
+*******
+.subckt 0603_742863122_220ohm 1 2
+Rp 1 2 422.66
+Cp 1 2 0.185p
+Rs 1 N3 0.25
+L1 N3 2 0.44873u
+.ends 0603_742863122_220ohm
+*******
+.subckt 0603_742863147_470ohm 1 2
+Rp 1 2 1083.3
+Cp 1 2 0.098p
+Rs 1 N3 0.32
+L1 N3 2 1.06438u
+.ends 0603_742863147_470ohm
+*******
+.subckt 0603_742863160_600ohm 1 2
+Rp 1 2 943
+Cp 1 2 0.135p
+Rs 1 N3 0.35
+L1 N3 2 0.8908u
+.ends 0603_742863160_600ohm
+*******

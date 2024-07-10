@@ -1,0 +1,435 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Mono-color TOP LED Diffused Dome 
+* Matchcode:              WL-SMTD
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Ella      
+* Date and Time:          2024-08-23
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 3528_150141BS63140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141GS63140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141RS63140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141SS63140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=10.968E-9
++ N=2.6575
++ RS=.83316
++ IKF=283.20E-12
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141YS63140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141BS63130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
+.ends
+*******
+.subckt 3528_150141GS63130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
+.ends
+*******
+.subckt 3528_150141RS63130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
+.ends
+*******
+.subckt 3528_150141SS63130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=10.968E-9
++ N=2.6575
++ RS=.83316
++ IKF=283.20E-12
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
+.ends
+*******
+.subckt 3528_150141YS63130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
+.ends
+*******
+.subckt 3528_150141BS66130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=157.51E-9
++ N=4.3415
++ RS=1.8573
++ IKF=17.359E-9
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141GS66130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=157.51E-9
++ N=4.3415
++ RS=1.8573
++ IKF=17.359E-9
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141RS66130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141SS66130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=62.148E-15
++ N=2.8197
++ RS=.56155
++ IKF=286.18E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141YS66130 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141BS66140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141GS66140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=48.651E-12
++ N=4.7513
++ RS=1.1837
++ IKF=431.41E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141RS66140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141SS66140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=62.148E-15
++ N=2.8197
++ RS=.56155
++ IKF=286.18E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141YS66140 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=56.578E-15
++ N=2.8031
++ RS=.55484
++ IKF=286.27E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141BS63120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=418.10E-15
++ N=3.2550
++ RS=.77919
++ IKF=35.712E-9
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141GS63120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=7.7334E-15
++ N=3.2549
++ RS=.77954
++ IKF=6.3270E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141RS63120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=133.33E-12
++ N=3.3921
++ RS=.54599
++ IKF=413.14E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141YS63120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=163.57E-12
++ N=3.4241
++ RS=1.0000E-6
++ IKF=382.03E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141BS66120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=418.10E-15
++ N=3.2550
++ RS=.77919
++ IKF=35.712E-9
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141GS66120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=7.7334E-15
++ N=3.2549
++ RS=.77954
++ IKF=6.3270E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141RS66120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=111.11E-6
++ N=3.2550
++ RS=.77919
++ IKF=19.364E-12
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******
+.subckt 3528_150141YS66120 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=133.33E-12
++ N=3.3921
++ RS=.54599
++ IKF=413.14E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-3
++ TT=5.0000E-9
+.ends
+*******

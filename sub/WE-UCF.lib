@@ -1,0 +1,480 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter
+* Matchcode:              WE-UCF 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 1712_744290103_10m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=4.74617949108858E-11
+.param dC4=1.38462941112749E-09
+.param dL4=4.95096492159064E-06
+.param dR5=17551.318359375
+.param dR6=48996.91015625
+.param Rdc=.920000016689301
+.param L1=1.25834280624986E-02
+.param C1=1.66831947562285E-11
+.param R1=184871.25
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290103_10m
+*****
+*****
+.subckt 1712_744290104_100m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=8.03334274102063E-11
+.param dC4=8.79059403047222E-09
+.param dL4=4.73879190394655E-05
+.param dR5=120012.125
+.param dR6=56807.0703125
+.param Rdc=8.89999961853027
+.param L1=.112887047231197
+.param C1=2.86326101717194E-11
+.param R1=1525863.375
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290104_100m
+*****
+*****
+.subckt 1712_744290121_0.12m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=1.21738964395379E-11
+.param dC4=1.22426535575926E-09
+.param dL4=4.21172146047866E-08
+.param dR5=930.412902832031
+.param dR6=34905
+.param Rdc=.010499999858439
+.param L1=5.51203193026595E-05
+.param C1=7.83036829821171E-11
+.param R1=422.040466308594
+.param L2=6.53777169645764E-05
+.param C2=1.38247234840461E-11
+.param R2=1372.61340332031
+.param L3=7.43812597647775E-06
+.param C3=1.92659451760113E-12
+.param R3=693.999389648438
+.ends 1712_744290121_0.12m
+*****
+*****
+.subckt 1712_744290130_13u 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=4.57795390138016E-12
+.param dC4=1.81477521898898E-09
+.param dL4=6.44908704217073E-09
+.param dR5=207.256896972656
+.param dR6=58693.20703125
+.param Rdc=2.70000007003546E-03
+.param L1=9.41628786677029E-06
+.param C1=1.43379502715035E-10
+.param R1=133.131927490234
+.param L2=2.81386269307404E-06
+.param C2=2.45268730455703E-13
+.param R2=107.987922668457
+.param L3=7.5519661635326E-09
+.param C3=2.99107028207957E-12
+.param R3=134.344955444336
+.ends 1712_744290130_13u
+*****
+*****
+.subckt 1712_744290152_1.5m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=2.64873695893231E-11
+.param dC4=1.1000000389727E-11
+.param dL4=7.46307364352106E-07
+.param dR5=9895.32421875
+.param dR6=26414.25390625
+.param Rdc=.119999997317791
+.param L1=1.89211196266115E-03
+.param C1=8.06618747489773E-12
+.param R1=24879.861328125
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290152_1.5m
+*****
+*****
+.subckt 1712_744290283_28m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=4.49225240339857E-11
+.param dC4=1.37190958593436E-09
+.param dL4=1.26334916785709E-05
+.param dR5=36557.671875
+.param dR6=47479.15625
+.param Rdc=2.79999995231628
+.param L1=3.25118005275726E-02
+.param C1=1.92766549250711E-11
+.param R1=428658.96875
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290283_28m
+*****
+*****
+.subckt 1712_744290321_0.32m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=1.42225406798979E-11
+.param dC4=1.01491937076759E-09
+.param dL4=1.37159545943177E-07
+.param dR5=2605.998046875
+.param dR6=49426.28125
+.param Rdc=.028999999165535
+.param L1=2.65387789113447E-04
+.param C1=6.81724555279262E-12
+.param R1=2490.7373046875
+.param L2=1.1344288213877E-04
+.param C2=9.37875818673994E-12
+.param R2=3506.99365234375
+.param L3=1.68796032085083E-05
+.param C3=3.19853084990163E-12
+.param R3=1128.4638671875
+.ends 1712_744290321_0.32m
+*****
+*****
+.subckt 1712_744290472_4.7m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=2.96738154881293E-11
+.param dC4=1.02935437951146E-09
+.param dL4=2.51910887527629E-06
+.param dR5=8836.4130859375
+.param dR6=40508.046875
+.param Rdc=.519999980926514
+.param L1=5.89522439986467E-03
+.param C1=1.05513132953039E-11
+.param R1=67842.5
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290472_4.7m
+*****
+*****
+.subckt 1712_744290473_47m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=3.7521298568155E-11
+.param dC4=1.20230003730626E-09
+.param dL4=2.11652914003935E-05
+.param dR5=127700.953125
+.param dR6=48777.77734375
+.param Rdc=4
+.param L1=5.58203496038914E-02
+.param C1=1.57894721602991E-11
+.param R1=759816.5625
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290473_47m
+*****
+*****
+.subckt 1712_744290560_56u 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=1.36055021415782E-11
+.param dC4=7.28196183907848E-11
+.param dL4=1.54179193856407E-08
+.param dR5=296.977081298828
+.param dR6=43570.71484375
+.param Rdc=4.69999993219972E-03
+.param L1=3.52823190041818E-05
+.param C1=6.85353510054831E-11
+.param R1=297.650543212891
+.param L2=2.31806388910627E-05
+.param C2=1.97330138340668E-11
+.param R2=503.99951171875
+.param L3=9.9998067071283E-07
+.param C3=2.16720500052781E-12
+.param R3=245.140625
+.ends 1712_744290560_56u
+*****
+*****
+.subckt 1712_744290683_68m 1 2 3 4
+R1 N001 1 {Rdc}
+R6 N007 2 {Rdc}
+R8 N003 N001 {dR6}
+C6 N002 N001 {dC4}
+L15 N006 N001 {dL4}
+L16 N007 N008 {dL4}
+C7 N006 N008 {ck}
+R9 N003 N002 {dR5}
+R10 N009 N012 {dR5}
+C8 N012 N007 {dC4}
+R11 N009 N007 {dR6}
+L17 N003 N006 {dL4}
+L18 N008 N009 {dL4}
+L9 N004 N003 {L1} Rpar={R1} Cpar={C1}
+L10 N005 N004 {L2} Rpar={R2} Cpar={C2}
+L11 4 N005 {L3} Rpar={R3} Cpar={C3}
+L12 N010 N009 {L1} Rpar={R1} Cpar={C1}
+L13 N011 N010 {L2} Rpar={R2} Cpar={C2}
+L14 3 N011 {L3} Rpar={R3} Cpar={C3}
+K1 L15 L16 L17 L18 0.9999
+K2 L9 L12 1
+K3 L10 L13 1
+K4 L11 L14 1
+.param ck=5.82679945959619E-11
+.param dC4=2.60948063157684E-09
+.param dL4=3.05886605929118E-05
+.param dR5=102559.84375
+.param dR6=58554.0703125
+.param Rdc=5
+.param L1=7.82001689076424E-02
+.param C1=2.37045088419263E-11
+.param R1=1450485.875
+.param L2=0
+.param C2=0
+.param R2=0
+.param L3=0
+.param C3=0
+.param R3=0
+.ends 1712_744290683_68m

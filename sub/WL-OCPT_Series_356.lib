@@ -1,0 +1,179 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Optocoupler Phototransistor
+* Matchcode:              WL-OCPT
+* Library Type:           LTspice
+* Version:                rev22b
+* Created/modified by:    Ella      
+* Date and Time:          2022-11-10
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+********************************************************
+***********************Series_356***********************
+********************************************************
+***********************
+.SUBCKT Series_356_140356145000 A K C E 
+D1 A D LED
+VH D K 0 
+Hd R 0 VH 1	
+Rd R T 10k
+Cd T 0 0.02n
+Rg B 0 4G
+Q1 C B E Detector 
+
+G1 C B TABLE
++ {if(V(T)<0.025,
++ (0.87984E+01*PWR(V(T),(0.13437E+01+0.38089E+01*V(T)))-.28829E+00*V(T))/100,
++ (0.19311E+05*PWR(V(T),(0.29342E+01+0.29886E+02*V(T)))+0.46089E+00*V(T))/99)}
++ (0,0.0000000001) (10,10)
+
+.model LED D 
++ IS=6.9809E-15
++ N=1.6332
++ RS=1.8224
++ IKF=.10986
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=6
++ IBV=10.00E-6
++ TT=5.0000E-9
+.model Detector NPN IS=3.64P BF=100 NF=1.145 BR=10 TF=20N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=100 IKF=20 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+***********************
+.SUBCKT Series_356_140356145100 A K C E 
+D1 A D LED	
+VH D K 0 
+Hd R 0 VH 1	
+Rd R T 10k
+Cd T 0 0.02n
+Rg B 0 4G
+Q1 C B E Detector 
+
+G1 C B TABLE
++ {if(V(T)<0.025,
++ (0.87984E+01*PWR(V(T),(0.13437E+01+0.38089E+01*V(T)))-.28829E+00*V(T))/100,
++ (0.19311E+05*PWR(V(T),(0.29342E+01+0.29886E+02*V(T)))+0.46089E+00*V(T))/99)}
++ (0,0.0000000001) (10,10)
+
+.model LED D 
++ IS=6.9809E-15
++ N=1.6332
++ RS=1.8224
++ IKF=.10986
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=6
++ IBV=10.00E-6
++ TT=5.0000E-9
+.model Detector NPN IS=3.64P BF=120 NF=1.145 BR=10 TF=20N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=100 IKF=20 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+***********************
+.SUBCKT Series_356_140356145200 A K C E 
+D1 A D LED
+VH D K 0
+Hd R 0 VH 1
+Rd R T 10k
+Cd T 0 0.02n
+Rg B 0 4G
+Q1 C B E Detector 
+
+G1 C B TABLE
++ {if(V(T)<0.025,
++ (0.87984E+01*PWR(V(T),(0.13437E+01+0.38089E+01*V(T)))-.28829E+00*V(T))/100,
++ (0.19311E+05*PWR(V(T),(0.29342E+01+0.29886E+02*V(T)))+0.46089E+00*V(T))/99)}
++ (0,0.0000000001) (10,10)
+
+.model LED D 
++ IS=6.9809E-15
++ N=1.6332
++ RS=1.8224
++ IKF=.10986
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=6
++ IBV=10.00E-6
++ TT=5.0000E-9
+.model Detector NPN IS=3.64P BF=200 NF=1.145 BR=10 TF=20N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=100 IKF=20 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+***********************
+.SUBCKT Series_356_140356145300 A K C E 
+D1 A D LED	
+VH D K 0 
+Hd R 0 VH 1	
+Rd R T 10k
+Cd T 0 0.02n
+Rg B 0 4G
+Q1 C B E Detector 
+
+G1 C B TABLE
++ {if(V(T)<0.025,
++ (0.87984E+01*PWR(V(T),(0.13437E+01+0.38089E+01*V(T)))-.28829E+00*V(T))/100,
++ (0.19311E+05*PWR(V(T),(0.29342E+01+0.29886E+02*V(T)))+0.46089E+00*V(T))/99)}
++ (0,0.0000000001) (10,10)
+
+.model LED D 
++ IS=6.9809E-15
++ N=1.6332
++ RS=1.8224
++ IKF=.10986
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=6
++ IBV=10.00E-6
++ TT=5.0000E-9
+.model Detector NPN IS=3.64P BF=300 NF=1.145 BR=10 TF=20N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=100 IKF=20 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+***********************
+.SUBCKT Series_356_140356145400 A K C E 
+D1 A D LED	
+VH D K 0 
+Hd R 0 VH 1	
+Rd R T 10k
+Cd T 0 0.02n
+Rg B 0 4G
+Q1 C B E Detector
+
+G1 C B TABLE
++ {if(V(T)<0.025,
++ (0.87984E+01*PWR(V(T),(0.13437E+01+0.38089E+01*V(T)))-.28829E+00*V(T))/100,
++ (0.19311E+05*PWR(V(T),(0.29342E+01+0.29886E+02*V(T)))+0.46089E+00*V(T))/99)}
++ (0,0.0000000001) (10,10)
+
+.model LED D 
++ IS=6.9809E-15
++ N=1.6332
++ RS=1.8224
++ IKF=.10986
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=6
++ IBV=10.00E-6
++ TT=5.0000E-9
+.model Detector NPN IS=3.64P BF=450 NF=1.145 BR=10 TF=20N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=100 IKF=20 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+***********************

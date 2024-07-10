@@ -1,0 +1,157 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Gate-Drive-Transformer
+* Matchcode:              WE-GDT
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Roberta   
+* Date and Time:          2022-07-14
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+*nominal
+.SUBCKT 760301103 1 2 3 4 5 6
+L1 2 N001 475u Rser=0.52
+L2 4 3 76u Rser=0.11
+L4 1 N001 2.3u
+C1 3 N001 3.5p
+L3 6 5 76u Rser=0.09
+C2 6 2 3.5p
+k1 L1 L2 L3 1
+.ENDS 760301103
+
+*nominal
+.SUBCKT 760301104 1 2 3 4 5 6
+L1 2 N001 470u Rser=0.46
+L2 4 3 117.5u Rser=0.17
+L4 1 N001 1.9u
+C1 3 N001 3.5p
+L3 6 5 117.5u Rser=0.17
+C2 6 2 3.5p
+k1 L1 L2 L3 1
+.ENDS 760301104
+
+*nominal
+.SUBCKT 760301105 1 2 3 4 5 6
+L1 2 N001 370u Rser=0.45
+L2 4 3 370u Rser=0.45
+L4 1 N001 1.1u
+C1 3 N001 4.5p
+L3 6 5 370u Rser=0.45
+C2 6 2 4.5p
+k1 L1 L2 L3 1
+.ENDS 760301105
+
+*nominal
+.SUBCKT 760301106 1 2 3 4
+L1 2 N001 510u Rser=0.38
+L2 4 3 510u Rser=0.47
+L3 1 N001 1.4u
+C1 3 N001 10p
+k1 L1 L2 1
+.ENDS 760301106
+
+*nominal
+.SUBCKT 760301107 1 2 3 4
+L1 2 N001 950u Rser=0.92
+L2 4 3 422u Rser=0.4
+L3 1 N001 2.5u
+C1 3 N001 9p
+k1 L1 L2 1
+.ENDS 760301107
+
+*nominal
+.SUBCKT 760301108 1 2 3 4
+L1 2 N001 700u Rser=0.55
+L2 4 3 112u Rser=0.1
+L3 1 N001 1.8u
+C1 3 N001 9p
+k1 L1 L2 1
+.ENDS 760301108
+
+.subckt	750316094		5  7  6  8  1  3  2  4		
+.param RxLkg=259.24ohm					
+.param Leakage=0.15uh					
+Rlkg	5	5a	{RxLkg/2}		
+L_Lkg	5	5a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	6	6a	{RxLkg/2}		
+L_Lkg2	6	6a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	5a	7	92.925uH	Rser=74mohm	
+Lpri2	6a	8	92.925uH	Rser=74mohm	
+Lsec1	1	3	2325uH	Rser=585mohm	
+Lsec2	2	4	2325uH	Rser=665mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=4.5pf					
+.param Cprm2=4.5pf					
+.param Rdmp1=160727.52ohm					
+.param Rdmp2=160727.52ohm					
+Cpri1	5	7	{Cprm1}	Rser=10mohm	
+Cpri2	6	8	{Cprm2}	Rser=10mohm	
+Rdmp1	5	7	{Rdmp1}		
+Rdmp2	6	8	{Rdmp2}		
+Rg3	5	0	20meg		
+Rg4	6	0	20meg		
+Rg7	7	0	20meg		
+Rg8	8	0	20meg		
+Rg11	1	0	20meg		
+Rg12	2	0	20meg		
+Rg19	3	0	20meg		
+Rg20	4	0	20meg		
+.ends					
+
+.subckt	750316093		5  7  6  8  1  3  2  4		
+.param RxLkg=127.58ohm					
+.param Leakage=0.5uh					
+Rlkg	5	5a	{RxLkg/2}		
+L_Lkg	5	5a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	6	6a	{RxLkg/2}		
+L_Lkg2	6	6a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	5a	7	599.75uH	Rser=324.5mohm	
+Lpri2	6a	8	599.75uH	Rser=324.5mohm	
+Lsec1	1	3	2400uH	Rser=594mohm	
+Lsec2	2	4	2400uH	Rser=677mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=32pf					
+.param Cprm2=32pf					
+.param Rdmp1=153092.32ohm					
+.param Rdmp2=153092.32ohm					
+Cpri1	5	7	{Cprm1}	Rser=10mohm	
+Cpri2	6	8	{Cprm2}	Rser=10mohm	
+Rdmp1	5	7	{Rdmp1}		
+Rdmp2	6	8	{Rdmp2}		
+Rg3	5	0	20meg		
+Rg4	6	0	20meg		
+Rg7	7	0	20meg		
+Rg8	8	0	20meg		
+Rg11	1	0	20meg		
+Rg12	2	0	20meg		
+Rg19	3	0	20meg		
+Rg20	4	0	20meg		
+.ends					
+
+.subckt	750311063		1  4  5  8		
+.param RxLkg=445.56ohm					
+.param Leakage=0.9uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	4	849.1uH	Rser=213mohm	
+Lsec1	5	8	850uH	Rser=250mohm	
+K Lpri1    Lsec1        1					
+.param Cprm1=12pf					
+.param Rdmp1=420810.37ohm					
+Cpri1	1	4	{Cprm1}	Rser=10mohm	
+Rdmp1	1	4	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg7	4	0	20meg		
+Rg11	5	0	20meg		
+Rg19	8	0	20meg		
+.ends					

@@ -1,0 +1,324 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Power Line Choke 
+* Matchcode:              WE-LF SMT
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  LFSMD  1  2  3  4  PARAMS:
+R_R9  N12325  3  {R2}
+R_R8  N13265  N13287  {Rs4}
+Kn_K6  L_L11  L_L12  
++  L_L13  L_L14  0.9999
+R_R3  N12571  N12583  {Rs3}
+R_R10  N13777  4  {R2}
+C_C10  N13029  N12821  {ck}
+R_R20  N13215  N13229  {dR4}
+L_L11  N12821  N12295  {dL4}
+R_R17  N12267  N12273  {dR3}
+L_L8  N13265  N13287  {L4}
+R_R7  N13287  N13305  {Rs3}
+L_L9  N12295  N12307  {L5}
+Kn_K4  L_L7  L_L8  1
+R_R2  N12583  N12599  {Rs2}
+Kn_K5  L_L9  L_L10  1
+R_R16  N13229  N13249  {dR6}
+Kn_K7  L_L15  L_L16  
++  L_L17  L_L18  0.9999
+C_C5  N12273  N12289  {dC4}
+L_L6  N13287  N13305  {L3}
+L_L7  N12307  N12571  {L4}
+R_R6  N13305  N13319  {Rs2}
+R_R21  1  N12257  {Rdc}
+Kn_K3  L_L5  L_L6  1
+L_L16  N12257  N12799  {dL3}
+C_C8  N13215  N13741  {dC3}
+L_L18  N13023  N13215  {dL3}
+R_R1  N12599  3  {Rs1}
+R_R13  N12289  N12295  {dR5}
+L_L4  N13305  N13319  {L2}
+L_L5  N12571  N12583  {L3}
+R_R15  N13755  N13249  {dR5}
+R_R5  N13319  4  {Rs1}
+R_R18  N12257  N12273  {dR4}
+Kn_K2  L_L3  L_L4  1
+R_R19  N13741  N13229  {dR3}
+L_L15  N12799  N12273  {dL3}
+L_L17  N13229  N13023  {dL3}
+L_L3  N12583  N12599  {L2}
+R_R11  N12295  N12307  {Rs5}
+L_L2  N13319  4  {L1}
+C_C4  N13249  N13265  {C2}
+L_L10  N13249  N13265  {L5}
+Kn_K1  L_L1  L_L2  1
+R_R14  N12273  N12295  {dR6}
+C_C6  N13229  N13755  {dC4}
+L_L12  N12273  N12821  {dL4}
+L_L14  N13029  N13229  {dL4}
+L_L1  N12599  3  {L1}
+C_C1  N12307  N12325  {C1}
+R_R12  N13249  N13265  {Rs5}
+C_C2  N13265  N13777  {C1}
+R_R22  2  N13215  {Rdc}
+C_C9  N13023  N12799  {ck}
+R_R4  N12307  N12571  {Rs4}
+C_C3  N12295  N12307  {C2}
+L_L13  N13249  N13029  {dL4}
+C_C7  N12257  N12267  {dC3}
+.ends  LFSMD
+******
+.subckt SH_74466340007_0.7m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.00000031
++  DL4=0.00000002
++  DC3=0.0000000000075
++  DC4=0.0000000000008
++  DR3=17
++  dR4=4.5k
++  DR5=23
++  dR6=2k
++  Rdc=0.025
++  ck=2.3pF
++  L1=500u
++  L2=80u
++  L3=23u
++  L4=4u
++  L5=60n
++  C1=2.8p
++  C2=0.5p
++  RS1=5500
++  RS2=1400
++  RS3=400
++  RS4=200
++  RS5=800
++  R2=1
+.ends SH_74466340007_0.7m
+******
+.subckt SH_7446632001_1m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.00000051
++  DL4=0.000000034
++  DC3=0.0000000000085
++  DC4=0.0000000000008
++  DR3=17
++  dR4=6k
++  DR5=23
++  dR6=1.5k
++  Rdc=0.05
++  ck=2pF
++  L1=1.2m
++  L2=120u
++  L3=23u
++  L4=4u
++  L5=90n
++  C1=3.1p
++  C2=0.7p
++  RS1=6500
++  RS2=1400
++  RS3=400
++  RS4=200
++  RS5=1000
++  R2=1
+.ends SH_7446632001_1m
+******
+.subckt SH_7446632002_2.2m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.0000009
++  DL4=0.000000044
++  DC3=0.000000000011
++  DC4=0.0000000000065
++  DR3=17
++  dR4=8k
++  DR5=23
++  dR6=1.5k
++  Rdc=0.08
++  ck=1.5pF
++  L1=2m
++  L2=620u
++  L3=23u
++  L4=4u
++  L5=120n
++  C1=3.7p
++  C2=2p
++  Rs1=10k
++  RS2=6400
++  RS3=400
++  RS4=200
++  RS5=1000
++  R2=1
+.ends SH_7446632002_2.2m
+******
+.subckt SH_7446632003_3.3m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.0000016
++  DL4=0.000000044
++  DC3=0.000000000008
++  DC4=0.000000000013
++  DR3=17
++  dR4=12k
++  DR5=23
++  dR6=1k
++  Rdc=0.125
++  ck=1.5pF
++  L1=4m
++  L2=620u
++  L3=23u
++  L4=4u
++  L5=110n
++  C1=3.9p
++  C2=4p
++  Rs1=17k
++  RS2=9400
++  RS3=400
++  RS4=200
++  RS5=1100
++  R2=1
+.ends SH_7446632003_3.3m
+******
+.subckt SH_7446631007_6.8m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.000003
++  DL4=0.000000056
++  DC3=0.0000000000132
++  DC4=0.000000000024
++  DR3=17
++  dR4=15k
++  DR5=23
++  dR6=5k
++  Rdc=0.25
++  ck=1pF
++  L1=7m
++  L2=820u
++  L3=23u
++  L4=4u
++  L5=300n
++  C1=4.2p
++  C2=7p
++  Rs1=35k
++  Rs2=12k
++  RS3=400
++  RS4=200
++  RS5=1400
++  R2=1
+.ends SH_7446631007_6.8m
+******
+.subckt SH_7446631010_10m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.0000053
++  DL4=0.000000096
++  DC3=0.0000000000097
++  DC4=0.000000000036
++  DR3=17
++  dR4=25k
++  DR5=23
++  dR6=6k
++  Rdc=0.48
++  ck=1pF
++  L1=12m
++  L2=1.3m
++  L3=23u
++  L4=4u
++  L5=300n
++  C1=4.4p
++  C2=7p
++  Rs1=58k
++  Rs2=12k
++  RS3=400
++  RS4=200
++  RS5=1400
++  R2=1
+.ends SH_7446631010_10m
+******
+.subckt SH_7446630027_27m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.000012
++  DL4=0.00000025
++  DC3=0.0000000000185
++  DC4=0.000000000037
++  DR3=17
++  dR4=35k
++  DR5=23
++  dR6=2k
++  Rdc=1.05
++  ck=1.2pF
++  L1=30m
++  L2=1.2m
++  L3=23u
++  L4=4u
++  L5=0.9u
++  C1=5.9p
++  C2=12p
++  Rs1=160k
++  Rs2=42k
++  RS3=400
++  RS4=200
++  RS5=1700
++  R2=1
+.ends SH_7446630027_27m
+******
+.subckt SH_7446630039_39m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.000016
++  DL4=0.000000325
++  DC3=0.00000000001
++  DC4=0.000000000037
++  DR3=17
++  dR4=35k
++  DR5=23
++  dR6=12k
++  Rdc=1.5
++  ck=2.2pF
++  L1=33m
++  L2=1.3m
++  L3=23u
++  L4=4u
++  L5=1200n
++  C1=5.1p
++  C2=13p
++  Rs1=180k
++  Rs2=42k
++  RS3=400
++  RS4=200
++  RS5=1700
++  R2=1
+.ends SH_7446630039_39m
+******
+.subckt SH_7446630047_47m 1 2 3 4
+X1  1  2  3  4  LFSMD  PARAMS:
++  DL3=0.000014
++  DL4=0.000001342
++  DC3=0.000000000014
++  DC4=0.000000000001
++  DR3=27
++  dR4=35k
++  DR5=230
++  dR6=22k
++  Rdc=2.1
++  ck=11pF
++  L1=36m
++  L2=12m
++  L3=1m
++  L4=5u
++  L5=255n
++  C1=9p
++  C2=14p
++  Rs1=220k
++  Rs2=83k
++  RS3=500
++  RS4=600
++  RS5=1400
++  R2=10.41
+.ends SH_7446630047_47m

@@ -1,0 +1,769 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter
+* Matchcode:              WE-SL5 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  1087_744272102_1m  1  2  3  4  PARAMS:
++  L1=953.27u
++  L2=174.16u
++  L3=138.94u
++  L4=84.94u
++  C1=1.16p
++  Rs1=1664.14
++  Rs2=723.16
++  Rs3=2150.48
++  Rs4=2129.37
++  R2=48.77
++  L5=40n
++  R5=600
++  C5=0.55p
++  dL3=361.34nH
++  dC3=1.39pF
++  dR3=501.94
++  dR4=14255.21
++  Rdc=0.143
++  ck=5.71pF
+L3  N005  N004  {L3}
+R50  N005  N004  {Rs3}
+C1  N500  N003  {C1}
+R500  4  N500  {R2}
+L7  4  N006  {L1}
+R51  4  N006  {Rs1}
+L5  N006  N005  {L2}
+R52  N006  N005  {Rs2}
+L4  N013  N012  {L3}
+R53  N013  N012  {Rs3}
+C2  N501  N011  {C1}
+R501  3  N501  {R2}
+L8  3  N014  {L1}
+R54  3  N014  {Rs1}
+L6  N014  N013  {L2}
+R55  N014  N013  {Rs2}
+L2  N012  N011  {L4}
+R56  N012  N011  {Rs4}
+L1  N004  N003  {L4}
+R57  N004  N003  {Rs4}
+L13  N003  N002  {L5}
+R58  N003  N002  {R5}
+C50  N003  N002  {C5}
+L14  N011  N010  {L5}
+R59  N011  N010  {R5}
+C51  N011  N010  {C5}
+R1  N001  1  {Rdc}
+R2  N009  2  {Rdc}
+R3  N002  N001  {dR4}
+C3  N502  N001  {dC3}
+R502  N002  N502  {dR3}
+L9  N007  N001  {dL3}
+L10  N009  N008  {dL3}
+C4  N007  N008  {ck}
+C5  N503  N009  {dC3}
+R503  N010  N503  {dR3}
+R4  N010  N009  {dR4}
+L11  N002  N007  {dL3}
+L12  N008  N010  {dL3}
+R5  N007  N008  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K5  L9  L10  L11  L12  1
+.ends  1087_744272102_1m
+**********
+.SUBCKT  1087_744272121_120u  1  2  3  4  PARAMS:
++  L1=153.26u
++  L2=13.12u
++  L3=18.62u
++  L4=8.85u
++  C1=0.631p
++  Rs1=121.2
++  Rs2=313.15
++  Rs3=210.35
++  Rs4=293.08
++  R2=16.68
++  L5=9n
++  R5=3600
++  C5=0.3p
++  dL3=49.17nH
++  dC3=1.3pF
++  dR3=637.27
++  dR4=6930.35
++  Rdc=0.155
++  ck=3.8pF
+L3  N005  N004  {L3}
+R50  N005  N004  {Rs3}
+C1  N500  N003  {C1}
+R500  4  N500  {R2}
+L7  4  N006  {L1}
+R51  4  N006  {Rs1}
+L5  N006  N005  {L2}
+R52  N006  N005  {Rs2}
+L4  N013  N012  {L3}
+R53  N013  N012  {Rs3}
+C2  N501  N011  {C1}
+R501  3  N501  {R2}
+L8  3  N014  {L1}
+R54  3  N014  {Rs1}
+L6  N014  N013  {L2}
+R55  N014  N013  {Rs2}
+L2  N012  N011  {L4}
+R56  N012  N011  {Rs4}
+L1  N004  N003  {L4}
+R57  N004  N003  {Rs4}
+L13  N003  N002  {L5}
+R58  N003  N002  {R5}
+C50  N003  N002  {C5}
+L14  N011  N010  {L5}
+R59  N011  N010  {R5}
+C51  N011  N010  {C5}
+R1  N001  1  {Rdc}
+R2  N009  2  {Rdc}
+R3  N002  N001  {dR4}
+C3  N502  N001  {dC3}
+R502  N002  N502  {dR3}
+L9  N007  N001  {dL3}
+L10  N009  N008  {dL3}
+C4  N007  N008  {ck}
+C5  N503  N009  {dC3}
+R503  N010  N503  {dR3}
+R4  N010  N009  {dR4}
+L11  N002  N007  {dL3}
+L12  N008  N010  {dL3}
+R5  N007  N008  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K5  L9  L10  L11  L12  1
+.ends  1087_744272121_120u
+**********
+.SUBCKT  1087_744272221_220u  1  2  3  4  PARAMS:
++  L1=136.42u
++  L2=11.01u
++  L3=31.73u
++  L4=10.65u
++  C1=0.766p
++  Rs1=238.39
++  Rs2=356.39
++  Rs3=489.72
++  Rs4=358.73
++  R2=0.1
++  L5=10n
++  R5=1000
++  C5=0.3p
++  dL3=77.03nH
++  dC3=0.357pF
++  dR3=760.87
++  dR4=2511.33
++  Rdc=0.0235
++  ck=4.4pF
+L3  N005  N004  {L3}
+R50  N005  N004  {Rs3}
+C1  N500  N003  {C1}
+R500  4  N500  {R2}
+L7  4  N006  {L1}
+R51  4  N006  {Rs1}
+L5  N006  N005  {L2}
+R52  N006  N005  {Rs2}
+L4  N013  N012  {L3}
+R53  N013  N012  {Rs3}
+C2  N501  N011  {C1}
+R501  3  N501  {R2}
+L8  3  N014  {L1}
+R54  3  N014  {Rs1}
+L6  N014  N013  {L2}
+R55  N014  N013  {Rs2}
+L2  N012  N011  {L4}
+R56  N012  N011  {Rs4}
+L1  N004  N003  {L4}
+R57  N004  N003  {Rs4}
+L13  N003  N002  {L5}
+R58  N003  N002  {R5}
+C50  N003  N002  {C5}
+L14  N011  N010  {L5}
+R59  N011  N010  {R5}
+C51  N011  N010  {C5}
+R1  N001  1  {Rdc}
+R2  N009  2  {Rdc}
+R3  N002  N001  {dR4}
+C3  N502  N001  {dC3}
+R502  N002  N502  {dR3}
+L9  N007  N001  {dL3}
+L10  N009  N008  {dL3}
+C4  N007  N008  {ck}
+C5  N503  N009  {dC3}
+R503  N010  N503  {dR3}
+R4  N010  N009  {dR4}
+L11  N002  N007  {dL3}
+L12  N008  N010  {dL3}
+R5  N007  N008  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K5  L9  L10  L11  L12  1
+.ends  1087_744272221_220u
+**********
+.SUBCKT  1087_744272251_250u  1  2  3  4  PARAMS:
++  L1=344.54u
++  L2=70.01u
++  L3=21.72u
++  L4=29.91u
++  C1=1.21p
++  Rs1=328.19
++  Rs2=315.21
++  Rs3=658.23
++  Rs4=643.55
++  R2=0.11
++  L5=11n
++  R5=600
++  C5=0.45p
++  dL3=98.32nH
++  dC3=1.18pF
++  dR3=1194.47
++  dR4=13765.42
++  Rdc=0.054
++  ck=5.6pF
+L3  N005  N004  {L3}
+R50  N005  N004  {Rs3}
+C1  N500  N003  {C1}
+R500  4  N500  {R2}
+L7  4  N006  {L1}
+R51  4  N006  {Rs1}
+L5  N006  N005  {L2}
+R52  N006  N005  {Rs2}
+L4  N013  N012  {L3}
+R53  N013  N012  {Rs3}
+C2  N501  N011  {C1}
+R501  3  N501  {R2}
+L8  3  N014  {L1}
+R54  3  N014  {Rs1}
+L6  N014  N013  {L2}
+R55  N014  N013  {Rs2}
+L2  N012  N011  {L4}
+R56  N012  N011  {Rs4}
+L1  N004  N003  {L4}
+R57  N004  N003  {Rs4}
+L13  N003  N002  {L5}
+R58  N003  N002  {R5}
+C50  N003  N002  {C5}
+L14  N011  N010  {L5}
+R59  N011  N010  {R5}
+C51  N011  N010  {C5}
+R1  N001  1  {Rdc}
+R2  N009  2  {Rdc}
+R3  N002  N001  {dR4}
+C3  N502  N001  {dC3}
+R502  N002  N502  {dR3}
+L9  N007  N001  {dL3}
+L10  N009  N008  {dL3}
+C4  N007  N008  {ck}
+C5  N503  N009  {dC3}
+R503  N010  N503  {dR3}
+R4  N010  N009  {dR4}
+L11  N002  N007  {dL3}
+L12  N008  N010  {dL3}
+R5  N007  N008  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K5  L9  L10  L11  L12  1
+.ends  1087_744272251_250u
+**********
+.SUBCKT  1087_744272471_470u  1  2  3  4  PARAMS:
++  L1=439.54u
++  L2=43.43u
++  L3=65.47u
++  L4=24.79u
++  C1=1.39p
++  Rs1=777.17
++  Rs2=949.82
++  Rs3=1089.23
++  Rs4=984.54
++  R2=3.68
++  L5=15n
++  R5=600
++  C5=0.55p
++  dL3=201.86nH
++  dC3=0.897pF
++  dR3=1499.05
++  dR4=6803.19
++  Rdc=0.063
++  ck=6.26pF
+L3  N005  N004  {L3}
+R50  N005  N004  {Rs3}
+C1  N500  N003  {C1}
+R500  4  N500  {R2}
+L7  4  N006  {L1}
+R51  4  N006  {Rs1}
+L5  N006  N005  {L2}
+R52  N006  N005  {Rs2}
+L4  N013  N012  {L3}
+R53  N013  N012  {Rs3}
+C2  N501  N011  {C1}
+R501  3  N501  {R2}
+L8  3  N014  {L1}
+R54  3  N014  {Rs1}
+L6  N014  N013  {L2}
+R55  N014  N013  {Rs2}
+L2  N012  N011  {L4}
+R56  N012  N011  {Rs4}
+L1  N004  N003  {L4}
+R57  N004  N003  {Rs4}
+L13  N003  N002  {L5}
+R58  N003  N002  {R5}
+C50  N003  N002  {C5}
+L14  N011  N010  {L5}
+R59  N011  N010  {R5}
+C51  N011  N010  {C5}
+R1  N001  1  {Rdc}
+R2  N009  2  {Rdc}
+R3  N002  N001  {dR4}
+C3  N502  N001  {dC3}
+R502  N002  N502  {dR3}
+L9  N007  N001  {dL3}
+L10  N009  N008  {dL3}
+C4  N007  N008  {ck}
+C5  N503  N009  {dC3}
+R503  N010  N503  {dR3}
+R4  N010  N009  {dR4}
+L11  N002  N007  {dL3}
+L12  N008  N010  {dL3}
+R5  N007  N008  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K5  L9  L10  L11  L12  1
+.ends  1087_744272471_470u
+**********
+.SUBCKT  1087_744272222_2.2m  1  2  3  4  PARAMS:
++  L1=25.84m
++  L2=1.4m
++  L3=482.43u
++  L4=186.2u
++  C1=2.21p
++  Rs1=2438.41
++  Rs2=2357.43
++  Rs3=4143.93
++  Rs4=5386.09
++  R2=76.12
++  L5=95n
++  R5=1100
++  C5=1.4p
++  dL3=2.9n
++  dC3=3.15pF
++  dR3=280
++  Rdc=0.308
+L3  N014  N013  {L3}
+R50  N014  N013  {Rs3}
+C1  N500  N001  {C1}
+R500  4  N500  {R2}
+L7  4  N015  {L1}
+R51  4  N015  {Rs1}
+L5  N015  N014  {L2}
+R52  N015  N014  {Rs2}
+L4  N029  N028  {L3}
+R53  N029  N028  {Rs3}
+C2  N501  N027  {C1}
+R501  3  N501  {R2}
+L8  3  N030  {L1}
+R54  3  N030  {Rs1}
+L6  N030  N029  {L2}
+R55  N030  N029  {Rs2}
+L2  N028  N027  {L4}
+R56  N028  N027  {Rs4}
+L1  N013  N001  {L4}
+R57  N013  N001  {Rs4}
+L13  N001  N003  {L5}
+R58  N001  N003  {R5}
+C50  N001  N003  {C5}
+L14  N027  N026  {L5}
+R59  N027  N026  {R5}
+C51  N027  N026  {C5}
+R1  N002  1  {Rdc}
+R2  N017  2  {Rdc}
+L9  N004  N002  {dL3}
+C3  N004  N016  {dC3}
+L10  N005  N004  {dL3}
+L11  N017  N016  {dL3}
+L12  N016  N018  {dL3}
+C4  N005  N018  {dC3}
+L15  N006  N005  {dL3}
+L16  N018  N019  {dL3}
+C5  N006  N019  {dC3}
+L17  N007  N006  {dL3}
+L18  N019  N020  {dL3}
+R3  N003  N002  {dR3}
+R4  N026  N017  {dR3}
+C6  N007  N020  {dC3}
+L19  N008  N007  {dL3}
+L20  N020  N021  {dL3}
+C7  N008  N021  {dC3}
+L21  N009  N008  {dL3}
+L22  N021  N022  {dL3}
+C8  N009  N022  {dC3}
+L23  N010  N009  {dL3}
+L24  N022  N023  {dL3}
+C9  N010  N023  {dC3}
+L25  N011  N010  {dL3}
+L26  N023  N024  {dL3}
+C10  N011  N024  {dC3}
+L27  N012  N011  {dL3}
+L28  N024  N025  {dL3}
+C11  N012  N025  {dC3}
+L29  N003  N012  {dL3}
+L30  N025  N026  {dL3}
+R5  N004  N016  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K10  L9  L11  1
+K11  L10  L12  1
+K12  L15  L16  1
+K13  L17  L18  1
+K14  L19  L20  1
+K15  L21  L22  1
+K16  L23  L24  1
+K17  L25  L26  1
+K18  L27  L28  1
+K19  L29  L30  1
+.ends  1087_744272222_2.2m
+**********
+.SUBCKT  1087_744272332_3.3m  1  2  3  4  PARAMS:
++  L1=22.04m
++  L2=300.57u
++  L3=758.21u
++  L4=264.69u
++  C1=2.47p
++  Rs1=5431.79
++  Rs2=5377.15
++  Rs3=505.07
++  Rs4=5496.33
++  R2=38.28
++  L5=165n
++  R5=1300
++  C5=2.4p
++  dL3=2.9n
++  dC3=4.1pF
++  dR3=280
++  Rdc=0.457
++  L6=11n
++  R6=600
++  C6=0.4p
+L3  N015  N014  {L3}
+R50  N015  N014  {Rs3}
+C1  N500  N001  {C1}
+R500  4  N500  {R2}
+L7  4  N016  {L1}
+R51  4  N016  {Rs1}
+L5  N016  N015  {L2}
+R52  N016  N015  {Rs2}
+L4  N031  N030  {L3}
+R53  N031  N030  {Rs3}
+C2  N501  N029  {C1}
+R501  3  N501  {R2}
+L8  3  N032  {L1}
+R54  3  N032  {Rs1}
+L6  N032  N031  {L2}
+R55  N032  N031  {Rs2}
+L2  N030  N029  {L4}
+R56  N030  N029  {Rs4}
+L1  N014  N001  {L4}
+R57  N014  N001  {Rs4}
+L13  N001  N013  {L5}
+R58  N001  N013  {R5}
+C50  N001  N013  {C5}
+L14  N029  N028  {L5}
+R59  N029  N028  {R5}
+C51  N029  N028  {C5}
+R1  N002  1  {Rdc}
+R2  N018  2  {Rdc}
+L9  N004  N002  {dL3}
+C3  N004  N017  {dC3}
+L10  N005  N004  {dL3}
+L11  N018  N017  {dL3}
+L12  N017  N019  {dL3}
+C4  N005  N019  {dC3}
+L15  N006  N005  {dL3}
+L16  N019  N020  {dL3}
+C5  N006  N020  {dC3}
+L17  N007  N006  {dL3}
+L18  N020  N021  {dL3}
+R3  N003  N002  {dR3}
+R4  N027  N018  {dR3}
+C6  N007  N021  {dC3}
+L19  N008  N007  {dL3}
+L20  N021  N022  {dL3}
+C7  N008  N022  {dC3}
+L21  N009  N008  {dL3}
+L22  N022  N023  {dL3}
+C8  N009  N023  {dC3}
+L23  N010  N009  {dL3}
+L24  N023  N024  {dL3}
+C9  N010  N024  {dC3}
+L25  N011  N010  {dL3}
+L26  N024  N025  {dL3}
+C10  N011  N025  {dC3}
+L27  N012  N011  {dL3}
+L28  N025  N026  {dL3}
+C11  N012  N026  {dC3}
+L29  N003  N012  {dL3}
+L30  N026  N027  {dL3}
+L31  N013  N003  {L6}
+R60  N013  N003  {R6}
+C52  N013  N003  {C6}
+L32  N028  N027  {L6}
+R61  N028  N027  {R6}
+C53  N028  N027  {C6}
+R5  N004  N017  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K10  L9  L11  1
+K11  L10  L12  1
+K12  L15  L16  1
+K13  L17  L18  1
+K14  L19  L20  1
+K15  L21  L22  1
+K16  L23  L24  1
+K17  L25  L26  1
+K18  L27  L28  1
+K19  L29  L30  1
+K7  L31  L32  1
+.ends  1087_744272332_3.3m
+**********
+.SUBCKT  1087_744272392_3.9m  1  2  3  4  PARAMS:
++  L1=104.4m
++  L2=4.07m
++  L3=202.74u
++  L4=300.61u
++  C1=2.26p
++  Rs1=3902.24
++  Rs2=6341.76
++  Rs3=4390.46
++  Rs4=5001.97
++  R2=66.46
++  L5=175n
++  R5=1400
++  C5=2.4p
++  dL3=3.5n
++  dC3=4pF
++  dR3=240
++  Rdc=0.406
++  L6=8n
++  R6=600
++  C6=0.4p
+L3  N015  N014  {L3}
+R50  N015  N014  {Rs3}
+C1  N500  N001  {C1}
+R500  4  N500  {R2}
+L7  4  N016  {L1}
+R51  4  N016  {Rs1}
+L5  N016  N015  {L2}
+R52  N016  N015  {Rs2}
+L4  N031  N030  {L3}
+R53  N031  N030  {Rs3}
+C2  N501  N029  {C1}
+R501  3  N501  {R2}
+L8  3  N032  {L1}
+R54  3  N032  {Rs1}
+L6  N032  N031  {L2}
+R55  N032  N031  {Rs2}
+L2  N030  N029  {L4}
+R56  N030  N029  {Rs4}
+L1  N014  N001  {L4}
+R57  N014  N001  {Rs4}
+L13  N001  N013  {L5}
+R58  N001  N013  {R5}
+C50  N001  N013  {C5}
+L14  N029  N028  {L5}
+R59  N029  N028  {R5}
+C51  N029  N028  {C5}
+R1  N002  1  {Rdc}
+R2  N018  2  {Rdc}
+L9  N004  N002  {dL3}
+C3  N004  N017  {dC3}
+L10  N005  N004  {dL3}
+L11  N018  N017  {dL3}
+L12  N017  N019  {dL3}
+C4  N005  N019  {dC3}
+L15  N006  N005  {dL3}
+L16  N019  N020  {dL3}
+C5  N006  N020  {dC3}
+L17  N007  N006  {dL3}
+L18  N020  N021  {dL3}
+R3  N003  N002  {dR3}
+R4  N027  N018  {dR3}
+C6  N007  N021  {dC3}
+L19  N008  N007  {dL3}
+L20  N021  N022  {dL3}
+C7  N008  N022  {dC3}
+L21  N009  N008  {dL3}
+L22  N022  N023  {dL3}
+C8  N009  N023  {dC3}
+L23  N010  N009  {dL3}
+L24  N023  N024  {dL3}
+C9  N010  N024  {dC3}
+L25  N011  N010  {dL3}
+L26  N024  N025  {dL3}
+C10  N011  N025  {dC3}
+L27  N012  N011  {dL3}
+L28  N025  N026  {dL3}
+C11  N012  N026  {dC3}
+L29  N003  N012  {dL3}
+L30  N026  N027  {dL3}
+L31  N013  N003  {L6}
+R60  N013  N003  {R6}
+C52  N013  N003  {C6}
+L32  N028  N027  {L6}
+R61  N028  N027  {R6}
+C53  N028  N027  {C6}
+R5  N004  N017  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K10  L9  L11  1
+K11  L10  L12  1
+K12  L15  L16  1
+K13  L17  L18  1
+K14  L19  L20  1
+K15  L21  L22  1
+K16  L23  L24  1
+K17  L25  L26  1
+K18  L27  L28  1
+K19  L29  L30  1
+K7  L31  L32  1
+.ends  1087_744272392_3.9m
+**********
+.SUBCKT  1087_744272472_4.7m  1  2  3  4  PARAMS:
++  L1=279.91u
++  L2=8.01m
++  L3=4.28m
++  L4=103.67u
++  C1=3.66p
++  Rs1=7341.26
++  Rs2=7341.26
++  Rs3=7341.26
++  Rs4=7341.26
++  R2=52.39
++  L5=195n
++  R5=1900
++  C5=2.4p
++  dL3=3.5n
++  dC3=4.6pF
++  dR3=270
++  Rdc=0.406
++  L6=12n
++  R6=800
++  C6=0.4p
+L3  N015  N014  {L3}
+R50  N015  N014  {Rs3}
+C1  N500  N001  {C1}
+R500  4  N500  {R2}
+L7  4  N016  {L1}
+R51  4  N016  {Rs1}
+L5  N016  N015  {L2}
+R52  N016  N015  {Rs2}
+L4  N031  N030  {L3}
+R53  N031  N030  {Rs3}
+C2  N501  N029  {C1}
+R501  3  N501  {R2}
+L8  3  N032  {L1}
+R54  3  N032  {Rs1}
+L6  N032  N031  {L2}
+R55  N032  N031  {Rs2}
+L2  N030  N029  {L4}
+R56  N030  N029  {Rs4}
+L1  N014  N001  {L4}
+R57  N014  N001  {Rs4}
+L13  N001  N013  {L5}
+R58  N001  N013  {R5}
+C50  N001  N013  {C5}
+L14  N029  N028  {L5}
+R59  N029  N028  {R5}
+C51  N029  N028  {C5}
+R1  N002  1  {Rdc}
+R2  N018  2  {Rdc}
+L9  N004  N002  {dL3}
+C3  N004  N017  {dC3}
+L10  N005  N004  {dL3}
+L11  N018  N017  {dL3}
+L12  N017  N019  {dL3}
+C4  N005  N019  {dC3}
+L15  N006  N005  {dL3}
+L16  N019  N020  {dL3}
+C5  N006  N020  {dC3}
+L17  N007  N006  {dL3}
+L18  N020  N021  {dL3}
+R3  N003  N002  {dR3}
+R4  N027  N018  {dR3}
+C6  N007  N021  {dC3}
+L19  N008  N007  {dL3}
+L20  N021  N022  {dL3}
+C7  N008  N022  {dC3}
+L21  N009  N008  {dL3}
+L22  N022  N023  {dL3}
+C8  N009  N023  {dC3}
+L23  N010  N009  {dL3}
+L24  N023  N024  {dL3}
+C9  N010  N024  {dC3}
+L25  N011  N010  {dL3}
+L26  N024  N025  {dL3}
+C10  N011  N025  {dC3}
+L27  N012  N011  {dL3}
+L28  N025  N026  {dL3}
+C11  N012  N026  {dC3}
+L29  N003  N012  {dL3}
+L30  N026  N027  {dL3}
+L31  N013  N003  {L6}
+R60  N013  N003  {R6}
+C52  N013  N003  {C6}
+L32  N028  N027  {L6}
+R61  N028  N027  {R6}
+C53  N028  N027  {C6}
+R5  N004  N017  1000g
+K2  L3  L4  1
+K3  L5  L6  1
+K4  L7  L8  1
+K1  L1  L2  1
+K6  L13  L14  1
+K10  L9  L11  1
+K11  L10  L12  1
+K12  L15  L16  1
+K13  L17  L18  1
+K14  L19  L20  1
+K15  L21  L22  1
+K16  L23  L24  1
+K17  L25  L26  1
+K18  L27  L28  1
+K19  L29  L30  1
+K7  L31  L32  1
+.ends  1087_744272472_4.7m

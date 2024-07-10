@@ -1,0 +1,577 @@
+**************************************************
+* Manufacturer:          Würth Elektronik
+* Kinds:                 MLCCs Capacitors
+* Matchcode:             WCAP-CSST DC bias
+* Library Type:          LTspice
+* Version:               rev22b
+* Created/modified by:   Richard
+* Date and Time:         2022/10/13
+* Team:                  eiSos EDA Service  
+* Contact:               libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 50V0603X7R_220pF_885382206001 1 2 
+.param
++ C0=2.200000000000E-10
++ Csat=1.979869671447E-10
++ Vth=4.954699231815E+03
++ Rs=1.500000000000E-03
++ Cs=2.200000000000E-10
++ Ls=5.000000000000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0603X7R_22nF_885382206003 1 2 
+.param
++ C0=2.200000000000E-08
++ Csat=2.200000174500E-09
++ Vth=3.809865530575E+01
++ Rs=9.000000000000E-02
++ Cs=2.200000000000E-11
++ Ls=8.028671120000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0603X7R_10nF_885382206002 1 2 
+.param
++ C0=1.000000000000E-08
++ Csat=1.000001062204E-09
++ Vth=4.122978062934E+01
++ Rs=1.900000000000E-01
++ Cs=1.000000000000E-11
++ Ls=8.432277420000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 200V0603X7R_1nF_885382206005 1 2 
+.param
++ C0=1.000000000000E-09
++ Csat=1.970636973729E-10
++ Vth=1.017754104730E+02
++ Rs=1.000000000000E-01
++ Cs=1.000000000000E-12
++ Ls=7.703373390000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0603X7R_100nF_885382206004 1 2 
+.param
++ C0=1.000000000000E-07
++ Csat=1.332169500482E-08
++ Vth=2.289122980402E+01
++ Rs=1.050000000000E-01
++ Cs=1.000000000000E-10
++ Ls=7.843522860000E-10
++ Rp=5.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 25V0805X7R_1uF_885382207003 1 2 
+.param
++ C0=1.000000000000E-06
++ Csat=2.486835909065E-07
++ Vth=7.018126320113E+00
++ Rs=2.012843782900E-02
++ Cs=9.204383179420E-07
++ Ls=8.475995320000E-10
++ Rp=5.000000000000E+08
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0805X7R_220nF_885382207008 1 2 
+.param
++ C0=2.200000000000E-07
++ Csat=7.262838474838E-08
++ Vth=1.765014744734E+01
++ Rs=5.187958515360E-02
++ Cs=2.200000000000E-07
++ Ls=9.058059920000E-10
++ Rp=2.300000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0805X7R_1nF_885382207004 1 2 
+.param
++ C0=1.000000000000E-09
++ Csat=6.902404779412E-10
++ Vth=1.143875742459E+02
++ Rs=1.100000000000E-01
++ Cs=1.000000000000E-09
++ Ls=8.480752010000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0805X7R_100nF_885382207007 1 2 
+.param
++ C0=1.000000000000E-07
++ Csat=3.823085001509E-08
++ Vth=1.906004256230E+01
++ Rs=3.977144658460E-02
++ Cs=1.000000000000E-07
++ Ls=9.111164140000E-10
++ Rp=5.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 25V0805X7R_330nF_885382207002 1 2 
+.param
++ C0=3.300000000000E-07
++ Csat=1.861388136417E-07
++ Vth=1.365069909813E+01
++ Rs=5.300000000000E-02
++ Cs=3.300000000000E-07
++ Ls=8.981453520000E-10
++ Rp=1.500000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0805X7R_10nF_885382207006 1 2 
+.param
++ C0=1.000000000000E-08
++ Csat=4.548928623919E-09
++ Vth=2.247916750380E+01
++ Rs=6.500000000000E-02
++ Cs=1.000000000000E-08
++ Ls=1.014725274000E-09
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V0805X7R_2-2nF_885382207005 1 2 
+.param
++ C0=2.200000000000E-09
++ Csat=1.763530414148E-09
++ Vth=2.996500896012E+01
++ Rs=1.100000000000E-01
++ Cs=2.200000000000E-09
++ Ls=9.600904070000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 16V0805X7R_1uF_885382207001 1 2 
+.param
++ C0=1.000000000000E-06
++ Csat=3.759984126512E-07
++ Vth=6.564353598421E+00
++ Rs=2.372656687320E-02
++ Cs=1.000000000000E-06
++ Ls=8.718150190000E-10
++ Rp=5.000000000000E+08
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V0805X7R_270pF_885382207010 1 2 
+.param
++ C0=2.700000000000E-10
++ Csat=1.557263400276E-10
++ Vth=1.790725935171E+02
++ Rs=8.000000000000E-01
++ Cs=2.700000000000E-10
++ Ls=7.500000000000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 100V0805X7R_10nF_885382207009 1 2 
+.param
++ C0=1.000000000000E-08
++ Csat=1.681071218780E-09
++ Vth=3.473052266375E+01
++ Rs=7.615690813150E-02
++ Cs=1.000000000000E-08
++ Ls=9.532445910000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V1206X7R_270pF_885382208008 1 2 
+.param
++ C0=2.700000000000E-10
++ Csat=2.703871506421E-11
++ Vth=1.319733620380E+03
++ Rs=1.650000000000E-03
++ Cs=2.700000000000E-10
++ Ls=8.000000000000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 2000V1206X7R_470pF_885382208013 1 2 
+.param
++ C0=4.700000000000E-10
++ Csat=1.069202363595E-10
++ Vth=4.000000000378E+02
++ Rs=8.000000000000E-02
++ Cs=4.700000000000E-10
++ Ls=8.452066020000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V1206X7R_33nF_885382208011 1 2 
+.param
++ C0=3.300000000000E-08
++ Csat=5.352803882159E-09
++ Vth=1.000000078498E+02
++ Rs=5.500000000000E-02
++ Cs=3.300000000000E-11
++ Ls=9.601502630000E-10
++ Rp=3.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 250V1206X7R_100nF_885382208007 1 2 
+.param
++ C0=1.000000000000E-07
++ Csat=1.628161093427E-08
++ Vth=5.000000103358E+01
++ Rs=3.000000000000E-02
++ Cs=1.000000000000E-07
++ Ls=1.025275106000E-09
++ Rp=1.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V1206X7R_10nF_885382208002 1 2 
+.param
++ C0=1.000000000000E-08
++ Csat=5.704347354832E-09
++ Vth=5.295494699292E+01
++ Rs=1.315525700550E-01
++ Cs=1.000000000000E-08
++ Ls=1.072395374000E-09
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 2000V1206X7R_680pF_885382208014 1 2 
+.param
++ C0=6.800000000000E-10
++ Csat=2.307629643639E-10
++ Vth=4.000000000085E+02
++ Rs=1.500000000000E-01
++ Cs=6.800000000000E-10
++ Ls=8.199202080000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V1206X7R_22nF_885382208010 1 2 
+.param
++ C0=2.200000000000E-08
++ Csat=3.704383556142E-09
++ Vth=1.169861551702E+02
++ Rs=6.000000000000E-02
++ Cs=2.200000000000E-11
++ Ls=9.802173770000E-10
++ Rp=4.500000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V1206X7R_10nF_885382208009 1 2 
+.param
++ C0=1.000000000000E-08
++ Csat=2.202186285339E-09
++ Vth=1.448161886737E+02
++ Rs=6.795398842770E-02
++ Cs=9.583715501220E-12
++ Ls=9.891977690000E-10
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 1000V1206X7R_4-7nF_885382208012 1 2 
+.param
++ C0=4.700000000000E-09
++ Csat=6.350971997692E-10
++ Vth=2.106996339753E+02
++ Rs=1.100000000000E-01
++ Cs=4.700000000000E-12
++ Ls=1.005825640000E-12
++ Rp=1.000000000000E+10
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 25V1206X7R_2-2uF_885382208001 1 2 
+.param
++ C0=2.200000000000E-06
++ Csat=7.373511410146E-07
++ Vth=1.067954913187E+01
++ Rs=1.734702981620E-01
++ Cs=3.300000000000E-08
++ Ls=7.880848210000E-10
++ Rp=2.000000000000E+08
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V1206X7R_100nF_885382208003 1 2 
+.param
++ C0=1.000000000000E-07
++ Csat=5.227679653329E-08
++ Vth=2.282206217165E+01
++ Rs=8.077023337460E-02
++ Cs=1.000000000000E-07
++ Ls=1.078982226000E-09
++ Rp=5.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 100V1206X7R_100nF_885382208006 1 2 
+.param
++ C0=1.000000000000E-07
++ Csat=1.559580373431E-08
++ Vth=3.898785984586E+01
++ Rs=3.711581934450E-02
++ Cs=9.659628873420E-11
++ Ls=1.097090305000E-12
++ Rp=1.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V1206X7R_1uF_885382208005 1 2 
+.param
++ C0=1.000000000000E-06
++ Csat=1.294952010851E-07
++ Vth=2.436791131575E+01
++ Rs=4.277686218270E-02
++ Cs=8.882235308360E-10
++ Ls=1.145259282000E-12
++ Rp=5.000000000000E+08
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 50V1206X7R_470nF_885382208004 1 2 
+.param
++ C0=4.700000000000E-07
++ Csat=6.808862974514E-08
++ Vth=2.409290329259E+01
++ Rs=1.720129152500E-02
++ Cs=4.351292854740E-10
++ Ls=1.116272700000E-12
++ Rp=1.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 500V1210X7R_33nF_885382209001 1 2 
+.param
++ C0=3.300000000000E-08
++ Csat=6.627757430324E-09
++ Vth=1.024371769644E+02
++ Rs=1.734702981620E-01
++ Cs=3.300000000000E-08
++ Ls=7.880848210000E-10
++ Rp=3.000000000000E+09
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends
+*******
+.subckt 100V1210X7R_2-2uF_885382209002 1 2 
+.param
++ C0=2.200000000000E-06
++ Csat=4.523944980904E-07
++ Vth=2.480859819408E+01
++ Rs=1.734702981620E-01
++ Cs=3.300000000000E-08
++ Ls=7.880848210000E-10
++ Rp=5.000000000000E+07
+Cs N002 2 Q=(x*{Csat})+({C0}*{Vth}*arctan(sinh(x/{Vth})))-({Csat}*{Vth}*(arctan(sinh(x/{Vth}))))
+Rs N001 1 {Rs}
+Ls N001 N002 {Ls}
+Rp N002 2 {Rp}
+RGND1 0 N002 1e12
+RGND2 2 0 1e12
+.backanno
+.ends

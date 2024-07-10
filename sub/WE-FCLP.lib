@@ -1,0 +1,298 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  Common Mode Power Line Choke 
+* Matchcode:              WE-FCLP
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  FCLP    1  2  3  4  PARAMS: 
+R_R9  N12325  3  {R2}
+R_R8  N13265  N13287  {Rs4}
+Kn_K6  L_L11  L_L12  
++  L_L13  L_L14  0.9999
+R_R3  N12571  N12583  {Rs3}
+R_R10  N13777  4  {R2}
+C_C10  N13029  N12821  {ck}
+R_R20  N13215  N13229  {dR4}
+L_L11  N12821  N12295  {dL4}
+R_R17  N12267  N12273  {dR3}
+L_L8  N13265  N13287  {L4}
+R_R7  N13287  N13305  {Rs3}
+L_L9  N12295  N12307  {L5}
+Kn_K4  L_L7  L_L8  1
+R_R2  N12583  N12599  {Rs2}
+Kn_K5  L_L9  L_L10  1
+R_R16  N13229  N13249  {dR6}
+Kn_K7  L_L15  L_L16  
++  L_L17  L_L18  0.9999
+C_C5  N12273  N12289  {dC4}
+L_L6  N13287  N13305  {L3}
+L_L7  N12307  N12571  {L4}
+R_R6  N13305  N13319  {Rs2}
+R_R21  1  N12257  {Rdc}
+Kn_K3  L_L5  L_L6  1
+L_L16  N12257  N12799  {dL3}
+C_C8  N13215  N13741  {dC3}
+L_L18  N13023  N13215  {dL3}
+R_R1  N12599  3  {Rs1}
+R_R13  N12289  N12295  {dR5}
+L_L4  N13305  N13319  {L2}
+L_L5  N12571  N12583  {L3}
+R_R15  N13755  N13249  {dR5}
+R_R5  N13319  4  {Rs1}
+R_R18  N12257  N12273  {dR4}
+Kn_K2  L_L3  L_L4  1
+R_R19  N13741  N13229  {dR3}
+L_L15  N12799  N12273  {dL3}
+L_L17  N13229  N13023  {dL3}
+L_L3  N12583  N12599  {L2}
+R_R11  N12295  N12307  {Rs5}
+L_L2  N13319  4  {L1}
+C_C4  N13249  N13265  {C2}
+L_L10  N13249  N13265  {L5}
+Kn_K1  L_L1  L_L2  1
+R_R14  N12273  N12295  {dR6}
+C_C6  N13229  N13755  {dC4}
+L_L12  N12273  N12821  {dL4}
+L_L14  N13029  N13229  {dL4}
+L_L1  N12599  3  {L1}
+C_C1  N12307  N12325  {C1}
+R_R12  N13249  N13265  {Rs5}
+C_C2  N13265  N13777  {C1}
+R_R22  2  N13215  {Rdc}
+C_C9  N13023  N12799  {ck}
+R_R4  N12307  N12571  {Rs4}
+C_C3  N12295  N12307  {C2}
+L_L13  N13249  N13029  {dL4}
+C_C7  N12257  N12267  {dC3} 
+.ends  FCLP
+****
+.subckt FCLP_744869161063 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=4.0u
++  DL4=5.0u
++  DC3=1p 
++  DC4=1p 
++  DR3=20000
++  DR4=80000
++  DR5=130000
++  DR6=100000
++  Rdc=0.1421
++  ck=1.1pF
++  L1=3.5m
++  L2=3.5m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=4.8p
++  C2=4.8p
++  RS1=50000
++  RS2=60000
++  RS3=10000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161063
+****
+.subckt FCLP_744869161103 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=7.5u
++  DL4=7.5u
++  DC3=1p 
++  DC4=1p 
++  DR3=100000
++  DR4=100000
++  DR5=85000
++  DR6=120000
++  Rdc=0.2787
++  ck=2.5pF
++  L1=7m
++  L2=7m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=6.7p
++  C2=7p
++  RS1=10000
++  RS2=120000
++  RS3=10000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161103
+****
+.subckt FCLP_744869161104 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=60u
++  DL4=52u
++  DC3=1p 
++  DC4=1p 
++  DR3=500000
++  DR4=50000
++  DR5=400000
++  DR6=500000
++  Rdc=2.913
++  ck=4pF
++  L1=50m
++  L2=50m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=8.5p
++  C2=8p
++  RS1=2800000
++  RS2=2000000
++  RS3=10000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161104
+****
+.subckt FCLP_744869161153 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=8u
++  DL4=10u
++  DC3=10p 
++  DC4=10p 
++  DR3=240000
++  DR4=50000
++  DR5=140000
++  DR6=200000
++  Rdc=0.44
++  ck=2.8pF
++  L1=8.5m
++  L2=8.2m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=8.2p
++  C2=8p
++  RS1=160000
++  RS2=160000
++  RS3=10000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161153
+****
+.subckt FCLP_744869161273 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=16u
++  DL4=16u
++  DC3=10p 
++  DC4=10p 
++  DR3=450000
++  DR4=50000
++  DR5=400000
++  DR6=400000
++  Rdc=0.759
++  ck=1.8pF
++  L1=16m
++  L2=16m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=5p
++  C2=6p
++  RS1=280000
++  RS2=280000
++  RS3=10000
++  RS4=12000
++  RS5=12000
++  R2=1
+.ends FCLP_744869161273
+****
+.subckt FCLP_744869161393 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=19u
++  DL4=19u
++  DC3=10p 
++  DC4=10p 
++  DR3=250000
++  DR4=30000
++  DR5=450000
++  DR6=550000
++  Rdc=1.048
++  ck=4.2pF
++  L1=22m
++  L2=20m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=8.5p
++  C2=7p
++  RS1=470000
++  RS2=560000
++  RS3=50000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161393
+****
+.subckt FCLP_744869161473 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=30u
++  DL4=30u
++  DC3=1p 
++  DC4=1p 
++  DR3=500000
++  DR4=20000
++  DR5=1500000
++  DR6=1500000
++  Rdc=1.227
++  ck=3.0p
++  L1=25m
++  L2=25m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=7.3p
++  C2=7p
++  RS1=740000
++  RS2=700000
++  RS3=50000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161473
+****
+.subckt FCLP_744869161683 1 2 3 4
+X1  1  2  3  4  FCLP  PARAMS:
++  DL3=35u
++  DL4=35u
++  DC3=10p 
++  DC4=10p 
++  DR3=500000
++  DR4=50000
++  DR5=500000
++  DR6=500000
++  Rdc=1.83
++  ck=2.6p
++  L1=35m
++  L2=32m
++  L3=50n
++  L4=15n
++  L5=23n
++  C1=7p
++  C2=7p
++  RS1=3700000
++  RS2=6000000
++  RS3=50000
++  RS4=10000
++  RS5=10000
++  R2=1
+.ends FCLP_744869161683
+****

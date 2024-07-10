@@ -1,0 +1,143 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter 
+* Matchcode:              WE-SL5 HC 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  WE-SL5HC  1  2  3  4  PARAMS:
+R_R47  N21893  N21911  {Rs3}
+R_R43  N21425  N21441  {Rs2}
+R_R4  N22217  N21871  {dR3}
+L_L3  N21425  N21441  {L2}
+L_L8  N21871  N21893  {L4}
+Kn_K1  L_L1  L_L2  1
+R_R37  N21241  4  {R2}
+R_R48  N21911  N21925  {Rs2}
+R_R44  N21441  4  {Rs1}
+C_C4  N21871  N22231  {C1}
+L_L1  N21441  4  {L1}
+C_C1  N21207  N21217  {dC3}
+L_L6  N21893  N21911  {L3}
+R_R1  1  N21207  {Rdc}
+L_L17  N21207  N21585  {dL3}
+R_R49  N21925  3  {Rs1}
+Kn_K5  L_L17  L_L18  
++  L_L19  L_L20  0.9999
+R_R3  N21217  N21223  {dR3}
+R_R55  N22231  3  {R2}
+L_L4  N21911  N21925  {L2}
+R_R2  N21207  N21223  {dR4}
+L_L19  N21585  N21223  {dL3}
+R_R6  2  N21857  {Rdc}
+C_C2  N21731  N21585  {ck}
+R_R500  N21731  N21585  1000g
+Kn_K4  L_L7  L_L8  1
+L_L2  N21925  3  {L1}
+R_R41  N21223  N21413  {Rs4}
+L_L7  N21223  N21413  {L4}
+R_R5  N21857  N21871  {dR4}
+L_L18  N21731  N21857  {dL3}
+Kn_K3  L_L5  L_L6  1
+R_R46  N21871  N21893  {Rs4}
+R_R42  N21413  N21425  {Rs3}
+L_L5  N21413  N21425  {L3}
+C_C9  N21857  N22217  {dC3}
+L_L20  N21871  N21731  {dL3}
+Kn_K2  L_L3  L_L4  1
+C_C3  N21223  N21241  {C1}
+.ends  WE-SL5HC
+**********
+.SUBCKT  9381_744273102_11u  1  2  3  4
+X1  1  2  3  4  WE-SL5HC  PARAMS:
++  dL3=8.06429777947728e-008
++  dC3=5.81235445708605e-013
++  dR3=1.17124465558291
++  dR4=2590.50229091806
++  Rdc=20.1m
++  ck=0.16p
++  L1=1.5e-6
++  L2=5.1e-8
++  L3=2.3e-8
++  L4=9u
++  C1=.38p
++  Rs1=1000
++  Rs2=330
++  Rs3=550
++  Rs4=1170
++  R2=10
+.ends  9381_744273102_11u
+**********
+.SUBCKT  9381_744273222_30u  1  2  3  4
+X1  1  2  3  4  WE-SL5HC  PARAMS:
++  dL3=1.9347898070121e-007
++  dC3=4.36997592474516e-013
++  dR3=70.4582642501494
++  dR4=5888.65352901148
++  Rdc=49.6m
++  ck=0.7p
++  L1=9.05935790096774e-006
++  L2=3.9126229725683e-006
++  L3=8.40613114272888e-007
++  L4=1.60693825679297e-005
++  C1=2.70788008553559e-013
++  Rs1=1235.29664616861
++  Rs2=2165.46826500008
++  Rs3=2200
++  Rs4=2000
++  R2=19.514735620877
+.ends  9381_744273222_30u
+**********
+.SUBCKT  9381_744273501_5u  1  2  3  4
+X1  1  2  3  4  WE-SL5HC  PARAMS:
++  dL3=3.93e-8
++  dC3=0.35e-12
++  dR3=13
++  dR4=1671
++  Rdc=5.45m
++  ck=0.7p
++  L1=1.70052241211097e-007
++  L2=3.28274952647289e-006
++  L3=2.55081340176458e-007
++  L4=6.43263664471381e-007
++  C1=3.22930375411713e-013
++  Rs1=16.058088983099
++  Rs2=625.149891133385
++  Rs3=78.6498315729959
++  Rs4=660.530733763676
++  R2=18.8618617984175
+.ends  9381_744273501_5u
+**********
+.SUBCKT  9381_744273801_9u  1  2  3  4
+X1  1  2  3  4  WE-SL5HC  PARAMS:
++  dL3=6.08964329298372e-008
++  dC3=3.33707038180949e-013
++  dR3=152.176867768252
++  dR4=2646.73687491363
++  Rdc=11.14m
++  ck=.7p
++  L1=2.96000149874127e-006
++  L2=2.95115820659312e-006
++  L3=1.14971476193807e-006
++  L4=2.74879474900035e-007
++  C1=3.77271706082393e-013
++  Rs1=258.50646466325
++  Rs2=1133.43225325348
++  Rs3=261.645717438879
++  Rs4=980.665595606167
++  R2=26.5362339479427
+.ends  9381_744273801_9u
+

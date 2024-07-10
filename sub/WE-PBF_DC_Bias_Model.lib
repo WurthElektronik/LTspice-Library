@@ -1,0 +1,69 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  Flat Wire High Current SMT Ferrite Bead
+* Matchcode:              WE-PBF
+* Library Type:           LTspice
+* Version:                rev22c
+* Created/modified by:    Ella 
+* Date and Time:          2022/08/17
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+* Copyright(C) Wuerth Elektronik eiSos GmbH & Co. KG
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 4030_7427930_42ohm_DC 1 2
+B1 1 2 I=V(1,2)/(0.65163E+02*EXP(0.51329E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))-.91657E-01*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),0.5))-.30054E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.80754E-03*EXP(-.39833E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))+0.25576E+01*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),0.5))+0.49559E-02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+L1 1 2 FLux=1n*x*(0.12897E+02*EXP(-.43085E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.11958E+03*EXP(-.83470E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 4030_7427930_42ohm_DC
+************
+.subckt 4030_74279390_42ohm_DC 1 2
+B1 1 2 I=V(1,2)/(0.65163E+02*EXP(0.51329E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))-.91657E-01*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),0.5))-.30054E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.80754E-03*EXP(-.39833E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))+0.25576E+01*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),0.5))+0.49559E-02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+L1 1 2 FLux=1n*x*(0.12897E+02*EXP(-.43085E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.11958E+03*EXP(-.83470E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 4030_74279390_42ohm_DC
+************
+.subckt 8530_7427931_91ohm_DC 1 2
+B1 1 2 I=V(1,2)/(SQRT(0.14651E+04+.41968E+02*PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))-0.20013E+02),2))+0.41307E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.14420E+00*EXP((PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))-0.11715E+02),2))/-.42240E+02)+0.14552E-02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+L1 1 2 FLux=1n*x*(0.34981E+03*EXP(-.58057E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.24096E+02*EXP(-.21922E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 8530_7427931_91ohm_DC
+************
+.subckt 8530_74279391_91ohm_DC 1 2
+B1 1 2 I=V(1,2)/(SQRT(0.14651E+04+.41968E+02*PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))-0.20013E+02),2))+0.41307E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.14420E+00*EXP((PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))-0.11715E+02),2))/-.42240E+02)+0.14552E-02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+L1 1 2 FLux=1n*x*(0.34981E+03*EXP(-.58057E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.24096E+02*EXP(-.21922E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 8530_74279391_91ohm_DC
+************
+.subckt 7847_7427932_98ohm_DC 1 2
+B1 1 2 I=V(1,2)/(SQRT(0.12920E+05+.99772E+04*PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))+.86263E+00),2))-.96666E+02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.48727E-01/(1+0.14948E+03*EXP(-.41981E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))+0.19119E-01)
+L1 1 2 FLux=1n*x*(0.34654E+03*EXP(-.54436E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.57225E+02*EXP(-.80690E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 7847_7427932_98ohm_DC
+************
+.subckt 7847_74279392_98ohm_DC 1 2
+B1 1 2 I=V(1,2)/(SQRT(0.12920E+05+.99772E+04*PWR(((abs(I(B1))+abs(I(L1))+abs(I(C1)))+.86263E+00),2))-.96666E+02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+C1 1 2 Q=1p*x*(0.48727E-01/(1+0.14948E+03*EXP(-.41981E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))+0.19119E-01)
+L1 1 2 FLux=1n*x*(0.34654E+03*EXP(-.54436E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.57225E+02*EXP(-.80690E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+.ends 7847_74279392_98ohm_DC
+************
+.subckt 3029_7427933_39ohm_DC 1 2
+B1 1 2 I=V(1,2)/(0.16521E+02*EXP(-.14947E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.32023E+02*EXP(0.88812E-02*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+C1 1 2 Q=1p*x*(0.29643E+00*EXP(-.65894E+01*EXP(-.33334E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))+0.25938E-01)
+L1 1 2 FLux=1n*x*(PWR((0.35374E+00+0.70306E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))),-.46289E+01)+0.23903E+01)
+.ends 3029_7427933_39ohm_DC
+************
+.subckt 4030_7427934_42ohm_DC 1 2
+B1 1 2 I=V(1,2)/(0.20402E+02*EXP(-.10287E+01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))+0.33666E+02*EXP(0.18643E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))))
+C1 1 2 Q=1p*x*(0.47160E-01*EXP(-.74140E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1)))+0.10837E+01*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),0.5))-.56485E-01*(abs(I(B1))+abs(I(L1))+abs(I(C1))))
+L1 1 2 FLux=1n*x*((0.14506E+03+0.11252E+02*(abs(I(B1))+abs(I(L1))+abs(I(C1))))/(1+0.26564E+00*(abs(I(B1))+abs(I(L1))+abs(I(C1)))+0.48150E+00*PWR((abs(I(B1))+abs(I(L1))+abs(I(C1))),2)))
+.ends 4030_7427934_42ohm_DC
+************

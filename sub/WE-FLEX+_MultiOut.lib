@@ -1,0 +1,319 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Flexible Transformer for DC/DC Converter
+* Matchcode:              WE-FLEX+
+* Library Type:           LTspice
+* Version:                rev23a
+* Created/modified by:    Toby    
+* Date and Time:          2023-07-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2023 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+************ WE-FLEX+-ETD29 ****************
+.Subckt WE-FLEX+_ETD29_749197101 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=71u 
++ Lm=70.4m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {4005/100000000}
++ Rbase = 0.045*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 11
+.ends WE-FLEX+_ETD29_749197101
+
+.Subckt WE-FLEX+_ETD29_749197111 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=71u 
++ Lm=70.4m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {12829/100000000}
++ Rbase = 0.045*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 11
+.ends WE-FLEX+_ETD29_749197111
+
+.Subckt WE-FLEX+_ETD29_749197121 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=71u 
++ Lm=70.4m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {21777/100000000}
++ Rbase = 0.045*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 11
+.ends WE-FLEX+_ETD29_749197121
+
+.Subckt WE-FLEX+_ETD29_749197131 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=71u 
++ Lm=70.4m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {42889/100000000}
++ Rbase = 0.045*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 11
+.ends WE-FLEX+_ETD29_749197131
+
+.Subckt WE-FLEX+_ETD29_749197141 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=71u 
++ Lm=70.4m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {71998/100000000}
++ Rbase = 0.045*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 11
+.ends WE-FLEX+_ETD29_749197141
+
+
+************ WE-FLEX+-ETD34 ****************
+.Subckt WE-FLEX+_ETD34_749197201 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=91.6u 
++ Lm=78.6m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {2711/100000000}
++ Rbase = 0.051*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 12
+.ends WE-FLEX+_ETD34_749197201
+
+.Subckt WE-FLEX+_ETD34_749197211 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=91.6u 
++ Lm=78.6m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {12844/100000000}
++ Rbase = 0.051*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 12
+.ends WE-FLEX+_ETD34_749197211
+
+.Subckt WE-FLEX+_ETD34_749197221 PR1 PR2 PS1 PS2 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=91.6u 
++ Lm=78.6m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {22165/100000000}
++ Rbase = 0.051*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 12
+.ends WE-FLEX+_ETD34_749197221
+
+.Subckt WE-FLEX+_ETD34_749197231 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=91.6u 
++ Lm=78.6m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {44196/100000000}
++ Rbase = 0.051*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 12
+.ends WE-FLEX+_ETD34_749197231
+
+.Subckt WE-FLEX+_ETD34_749197241 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=91.6u 
++ Lm=78.6m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {73624/100000000}
++ Rbase = 0.051*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.32u
++ Trn = 12
+.ends WE-FLEX+_ETD34_749197241
+
+************ WE-FLEX+-ETD39 ****************
+.Subckt WE-FLEX+_ETD39_749197301 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=123u 
++ Lm=92.2m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {3710/100000000}
++ Rbase = 0.034*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.35u
++ Trn = 11
+.ends WE-FLEX+_ETD39_749197301
+
+.Subckt WE-FLEX+_ETD39_749197311 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=123u 
++ Lm=92.2m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {12538/100000000}
++ Rbase = 0.034*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.35u
++ Trn = 11
+.ends WE-FLEX+_ETD39_749197311
+
+.Subckt WE-FLEX+_ETD39_749197321 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=123u 
++ Lm=92.2m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {22178/100000000}
++ Rbase = 0.034*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.35u
++ Trn = 11
+.ends WE-FLEX+_ETD39_749197321
+
+.Subckt WE-FLEX+_ETD39_749197331 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=123u 
++ Lm=92.2m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {45451/100000000}
++ Rbase = 0.034*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.35u
++ Trn = 11
+.ends WE-FLEX+_ETD39_749197331
+
+.Subckt WE-FLEX+_ETD39_749197341 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6
+X1 S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 ModelWinds params:
++ temp=temp
++ A=123u 
++ Lm=92.2m 
++ Hc= tbl(temp,25,14,100,9)
++ Bs= tbl(temp,25,510m,100,390m)
++ Br= tbl(temp,25,100m,100,55m)
++ Lg= {76878/100000000}
++ Rbase = 0.034*(1+(0.00393*(temp - 25)))
++ Llkgbase = 0.35u
++ Trn = 11
+.ends WE-FLEX+_ETD39_749197341
+
+********************************************
+
+.Subckt ModelWinds S1 F1 S2 F2 S3 F3 S4 F4 S5 F5 S6 F6 params:
++ temp=temp
++ A=1
++ Lm=1 
++ Hc=1
++ Bs=1
++ Br=0.5
++ Lg=1
++ Rbase=1
++ Llkgbase=1
++ Trn=1
+**
+Lp N01 N02a Hc={Hc} Bs={Bs} Br={Br} A={A} Lm={Lm} Lg={Lg} N={Trn}
+Rp N02a N02 0.00001
+Rgc N01 0 20meg
+**
+Lk1 N13 S1 {Llkgbase}
+Rp1 S1 F1 1meg
+Rs1 F1 N12 {Rbase}
+Cp1 S1 F1 10p
+G11 0 N11 N01 N02 1
+G12 0 N11 N13 N12 1
+R1 N11 0 1Meg
+G13 N12 N13 N11 0 1
+G14 N02 N01 N11 0 1
+Rg1 S1 0 20meg
+**
+Lk2 N23 S2 {Llkgbase}
+Rp2 S2 F2 1meg
+Rs2 F2 N22 {Rbase}
+Cp2 S2 F2 10p
+G21 0 N21 N01 N02 1
+G22 0 N21 N23 N22 1
+R2 N21 0 1Meg
+G23 N22 N23 N21 0 1
+G24 N02 N01 N21 0 1
+Rg2 S2 0 20meg
+**
+Lk3 N33 S3 {Llkgbase}
+Rp3 S3 F3 1meg
+Rs3 F3 N32 {Rbase}
+Cp3 S3 F3 10p
+G31 0 N31 N01 N02 1
+G32 0 N31 N33 N32 1
+R3 N31 0 1Meg
+G33 N32 N33 N31 0 1
+G34 N02 N01 N31 0 1
+Rg3 S3 0 20meg
+**
+Lk4 N43 S4 {Llkgbase}
+Rp4 S4 F4 1meg
+Rs4 F4 N42 {Rbase}
+Cp4 S4 F4 10p
+G41 0 N41 N01 N02 1
+G42 0 N41 N43 N42 1
+R4 N41 0 1Meg
+G43 N42 N43 N41 0 1
+G44 N02 N01 N41 0 1
+Rg4 S4 0 20meg
+**
+Lk5 N53 S5 {Llkgbase}
+Rp5 S5 F5 1meg
+Rs5 F5 N52 {Rbase}
+Cp5 S5 F5 10p
+G51 0 N51 N01 N02 1
+G52 0 N51 N53 N52 1
+R5 N51 0 1Meg
+G53 N52 N53 N51 0 1
+G54 N02 N01 N51 0 1
+Rg5 S5 0 20meg
+**
+Lk6 N63 S6 {Llkgbase}
+Rp6 S6 F6 1meg
+Rs6 F6 N62 {Rbase}
+Cp6 S6 F6 10p
+G61 0 N61 N01 N02 1
+G62 0 N61 N63 N62 1
+R6 N61 0 1Meg
+G63 N62 N63 N61 0 1
+G64 N02 N01 N61 0 1
+Rg6 S6 0 20meg
+**
+.ends ModelWinds

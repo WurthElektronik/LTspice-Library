@@ -1,0 +1,183 @@
+**************************************************
+* Manufacturer:           Wurth Elektronik 
+* Kinds:                  SMT Common Mode Line Filter
+* Matchcode:              WE-SCC 
+* Library Type:           LTspice
+* Version:                rev22a
+* Created/modified by:    Ella      
+* Date and Time:          2022-05-26
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.SUBCKT  SCC    1  2  3  4  PARAMS:
+R_R1         1 N00270  {Rdc} TC=0,0 
+R_R2         2 N00427  {Rdc} TC=0,0 
+R_R3         N00304 N00289  {dR5} TC=0,0 
+R_R4         N00270 N00289  {dR6} TC=0,0 
+R_R5         N00427 N00408  {dR6} TC=0,0 
+R_R6         N00423 N00408  {dR5} TC=0,0 
+L_L1         N00270 N00285  {dL4}  
+L_L2         N00285 N00289  {dL4}  
+L_L3         N00369 N00427  {dL4}  
+L_L4         N00408 N00369  {dL4}  
+C_C1         N00270 N00304  {dC4}  TC=0,0 
+C_C2         N00427 N00423  {dC4}  TC=0,0 
+C_C3         N00369 N00285  {ck}  TC=0,0 
+L_L5         N00289 4  {L1}  
+L_L8         N00408 3  {L1}  
+R_R7         N00289 4  {R1} TC=0,0 
+C_C4         N00289 4  {C1}  TC=0,0 
+R_R10         N00408 3  {R1} TC=0,0 
+C_C7         N00408 3  {C1}  TC=0,0 
+Kn_K1         L_L1 L_L2 
++ L_L3 L_L4   0.9999
+Kn_K2         L_L5 L_L8     1
+R_R13         N00369 N00285  100g TC=0,0 
+
+.ends SCC
+
+*************
+.SUBCKT  7345_744281100_10u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=0.075n
++ dC4=1n
++ dL4=5n
++ dR5=128
++ dR6=1000
++ Rdc=0.42
++ L1=12u
++ C1=2.2p
++ R1=20500
+.ends  7345_744281100_10u
+************
+.SUBCKT  7345_744281101_100u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=2.59424871509595e-010
++ dC4=3.90749966372341e-007
++ dL4=6.54822049179388e-008
++ dR5=107.99036952448
++ dR6=1153.7966609136363
++ Rdc=0.93
++ L1=9.5E-5
++ C1=2.8E-12
++ R1=1.05e5
+.ends  7345_744281101_100u
+*************
+.SUBCKT  7345_744281471_470u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=3.67863759838795e-011
++ dC4=2.01445437944939e-008
++ dL4=6.80562709915258e-009
++ dR5=693.907429910977
++ dR6=1268.24951963994
++ Rdc=4.085
++ L1=4.15E-4
++ C1=3.05E-12
++ R1=2.3e5
+.ends  7345_744281471_470u
+*************
+.SUBCKT  1260_744282010_1u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=2.3961850087583e-011
++ dC4=3.2753790145783e-006
++ dL4=3.7872128552487e-009
++ dR5=1231.728842566627
++ dR6=145
++ Rdc=0.0095
++ L1=0.96E-6
++ C1=1.7E-12
++ R1=3.3e3
+.ends  1260_744282010_1u
+*************
+.SUBCKT  1260_744282100_10u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=4.09424871509595e-011
++ dC4=3.90749966372341e-006
++ dL4=1.549179388e-008
++ dR5=905.99036952448
++ dR6=300
++ Rdc=0.236
++ L1=0.96E-5
++ C1=2.6E-12
++ R1=17.7e3
+.ends  1260_744282100_10u
+*************
+.SUBCKT  1260_744282101_100u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=1.29424871509595e-010
++ dC4=3.90749966372341e-006
++ dL4=0.449179388e-007
++ dR5=1905.99036952448
++ dR6=190
++ Rdc=0.58
++ L1=0.88E-4
++ C1=3.25E-12
++ R1=84e3
+.ends  1260_744282101_100u
+*************
+.SUBCKT  1260_744282102_1m  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=3.29424871509595e-010
++ dC4=3.90749966372341e-009
++ dL4=1.349179388e-006
++ dR5=3205.99036952448
++ dR6=298
++ Rdc=2.575
++ L1=0.46E-3
++ C1=8.46E-12
++ R1=152e3
++ L2=0.46E-3
++ C2=8.46E-12
++ R2=152e3
+.ends  1260_744282102_1m
+*************
+.SUBCKT  1210_744284100_10u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=8.67863759838795e-011
++ dC4=2.01445437944939e-008
++ dL4=7.50562709915258e-009
++ dR5=1260.907429910977
++ dR6=206.24951963994
++ Rdc=0.0293
++ L1=0.9E-5
++ C1=1.66E-12
++ R1=24e3
+.ends  1210_744284100_10u
+*************
+.SUBCKT  1210_744284101_100u  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=2.67863759838795e-010
++ dC4=2.01445437944939e-008
++ dL4=2.0562709915258e-008
++ dR5=5260.907429910977
++ dR6=226.24951963994
++ Rdc=0.237
++ L1=0.89E-4
++ C1=0.87E-11
++ R1=83e3
+.ends  1210_744284101_100u
+*************
+.SUBCKT  1210_744284102_1m  1  2  3  4
+X1  1  2  3  4  SCC  PARAMS:
++ ck=4.57863759838795e-010
++ dC4=2.01445437944939e-006
++ dL4=3.400562709915258e-007
++ dR5=260.907429910977
++ dR6=540.24951963994
++ Rdc=2.355
++ L1=0.45E-3
++ C1=2.1E-11
++ R1=144e3
++ L2=0.45E-3
++ C2=2.1E-11
++ R2=144e3
+.ends   1210_744284102_1m

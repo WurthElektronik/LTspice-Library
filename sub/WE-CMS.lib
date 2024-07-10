@@ -1,0 +1,83 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Bead Array
+* Matchcode:              WE-CMS
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Ella
+* Date and Time:          6/18/2024
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* All Rights Reserved.	
+**************************************************	
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+**************************************************	
+.subckt 4856_7427520_com_30ohm 1 2
+Rp 1 2 35
+Cp 1 2 0.1p
+Rs 1 N3 0.003
+L1 N3 2 0.175u
+.ends 4856_7427520_com_30ohm
+*******
+.subckt 9056_7427521_com_52ohm 1 2
+Rp 1 2 65
+Cp 1 2 0.0001p
+Rs 1 N3 0.003
+L1 N3 2 0.4u
+.ends 9056_7427521_com_52ohm
+*******
+.subckt 9085_7427523_com_83ohm 1 2
+Rp 1 2 96
+Cp 1 2 0.01p
+Rs 1 N3 0.003
+L1 N3 2 0.44u
+.ends 9085_7427523_com_83ohm
+*******
+.subckt 4856_7427520_2turns_115ohm 1 2
+Rp 1 2 131
+Cp 1 2 0.015p
+Rs 1 N3 0.003
+L1 N3 2 0.5u
+.ends 4856_7427520_2turns_115ohm
+*******
+.subckt 4856_7427520_diff_92ohm 1 2
+Rp 1 2 130
+Cp 1 2 0.16p
+Rs 1 N3 0.003
+L1 N3 2 0.71u
+.ends 4856_7427520_diff_92ohm
+*******
+.subckt 9056_7427521_2turns_211ohm 1 2
+Rp 1 2 230
+Cp 1 2 1.17p
+Rs 1 N3 0.003
+L1 N3 2 1.265u
+.ends 9056_7427521_2turns_211ohm
+*******
+.subckt 9056_7427521_diff_14ohm 1 2
+Rp 1 2 340
+Cp 1 2 0.25p
+Rs 1 N3 0.003
+L1 N3 2 0.018u
+.ends 9056_7427521_diff_14ohm
+*******
+.subckt 9085_7427523_2turns_319ohm 1 2
+Rp 1 2 355
+Cp 1 2 0.329p
+Rs 1 N3 0.003
+L1 N3 2 1.62u
+.ends 9085_7427523_2turns_319ohm
+*******
+.subckt 9085_7427523_diff_290ohm 1 2
+Rp 1 2 320
+Cp 1 2 0.327p
+Rs 1 N3 0.003
+L1 N3 2 1.7u
+.ends 9085_7427523_diff_290ohm
+*******

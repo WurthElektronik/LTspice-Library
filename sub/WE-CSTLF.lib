@@ -1,0 +1,110 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Line Frequency Current Sense Transformer 
+* Matchcode:              WE-CSTLF 
+* Library Type:           LTspice
+* Version:                rev24a
+* Created/modified by:    Emil    
+* Date and Time:          2024-05-10
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************	
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* All Rights Reserved.	
+**************************************************	
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+**************************************************	
+.subckt 7492550500 P+ P- S+ S-
+.param N=500
+.param Lsec=1.23H
+.param Lleaks=129mH
+.param DCRs=15.496R
+.param DCRp=0.22m
+.param Cps=12.06pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
+.subckt 7492551000 P+ P- S+ S-
+.param N=1000
+.param Lsec=4.51H
+.param Lleaks=503mH
+.param DCRs=75R
+.param DCRp=0.22m
+.param Cps=12.94pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
+.subckt 7492551500 P+ P- S+ S-
+.param N=1500
+.param Lsec=9.73H
+.param Lleaks=1300mH
+.param DCRs=172.3R
+.param DCRp=0.22m
+.param Cps=13.7pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
+.subckt 7492552000 P+ P- S+ S-
+.param N=2000
+.param Lsec=16.28H
+.param Lleaks=1740mH
+.param DCRs=301.5R
+.param DCRp=0.22m
+.param Cps=14.87pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
+.subckt 7492552500 P+ P- S+ S-
+.param N=2500
+.param Lsec=24.62H
+.param Lleaks=3228mH
+.param DCRs=451.4R
+.param DCRp=0.22m
+.param Cps=13.51pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
+.subckt 7492553000 P+ P- S+ S-
+.param N=3000
+.param Lsec=32.94H
+.param Lleaks=3960mH
+.param DCRs=723R
+.param DCRp=0.22m
+.param Cps=14.61pF
+.param Lpri={Lsec/N/N}
+.param coupling=sqrt(1-Lleaks/Lsec)
+ 
+L1 P+ P- {Lpri} Rser={DCRp} Cpar={Cps*N*N*0.5}
+L2 S+ S- {Lsec} Rser={DCRs} Cpar={Cps*0.5}
+K1 L1 L2 {coupling}
+.ends
+******
