@@ -1,4 +1,4 @@
-**LTspice Models for Würth Elektronik Products**
+**LTspice Library for Würth Elektronik Products**
 =
 
 ## Introduction
@@ -8,7 +8,7 @@ For how to use models in GitHub repository, you can refer to the help document i
 
 **Please read Disclaimer carefully before downloading and using Würth Elektronik Models.**
 
-**Note: LTspice Models in GitHub repository is always the latest.**
+**Note: LTspice Library in GitHub repository is always the latest.**
 
 ## Component Classification
 * WE - Automotive
