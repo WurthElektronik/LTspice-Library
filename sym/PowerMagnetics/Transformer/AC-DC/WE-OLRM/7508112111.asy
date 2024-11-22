@@ -1,10 +1,10 @@
 Version 4
 SymbolType Block
-SYMATTR Description WE-OLRM Offline Flyback Transformer\n600uH, 120-375Vin, 5V/4A, 20V\n Please note disclaimer in lib/sub/contrib/wurth/WE-OLRM.lib
+SYMATTR Description WE-OLRM Offline Flyback Transformer\n600uH, 120-375Vin, 5V/4A, 20V\n Please note disclaimer in WE-OLRM.lib
 SYMATTR Value2 7508112111
 SYMATTR Prefix X
 SYMATTR InstName T
-SYMATTR SpiceModel Contrib/Wurth/WE-OLRM.lib
+SYMATTR SpiceModel WE-OLRM.lib
 WINDOW 0 64 -64 Center 2
 TEXT 64 -32 Center 2 7508112111
 LINE Normal 61 0 61 320
