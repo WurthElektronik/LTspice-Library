@@ -3,20 +3,20 @@
 * Kinds:                 Multilayer Ceramic Chip Capacitors
 * Matchcode:             WCAP-CSRF
 * Library Type:          LTspice
-* Version:               rev24a
+* Version:               rev25a
 * Created/modified by:   Ella
-* Date and Time:         7/11/2024
+* Date and Time:         1/16/2025
 * Team:                  eiSos EDA Service  
 * Contact:               libraries@we-online.com
 **************************************************
-* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
-* All Rights Reserved.	
-**************************************************	
-* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
-* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on	
-* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.	
-* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
-* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 0201_885392004001_0.2pF 1 2
 Rser 1 3 0.5187
@@ -263,6 +263,20 @@ C1 3 4 0.0000000000043
 Rpar 3 4 10000000000
 .ends 0402_885392005051_4.3pF
 *******
+.subckt 0402_885392005058_5.1pF 1 2
+Rser 1 3 0.219
+Lser 2 4 0.0000000003074
+C1 3 4 0.0000000000051
+Rpar 3 4 10000000000
+.ends 0402_885392005058_5.1pF
+*******
+.subckt 0402_885392005068_6.2pF 1 2
+Rser 1 3 0.27
+Lser 2 4 0.00000000028
+C1 3 4 0.0000000000062
+Rpar 3 4 10000000000
+.ends 0402_885392005068_6.2pF
+*******
 .subckt 0402_885392005074_6.8pF 1 2
 Rser 1 3 0.3481
 Lser 2 4 0.000000000353
@@ -339,4 +353,18 @@ Lser 2 4 0.0000000003
 C1 3 4 0.00000000002
 Rpar 3 4 10000000000
 .ends 0402_885392005131_20pF
+*******
+.subckt 0402_885392005146_0.2pF 1 2
+Rser 1 3 27
+Lser 2 4 0.0000000003
+C1 3 4 0.0000000000002
+Rpar 3 4 10000000000
+.ends 0402_885392005146_0.2pF
+*******
+.subckt 0402_885392005147_18pF 1 2
+Rser 1 3 0.172
+Lser 2 4 0.00000000027
+C1 3 4 0.000000000018
+Rpar 3 4 10000000000
+.ends 0402_885392005147_18pF
 *******
