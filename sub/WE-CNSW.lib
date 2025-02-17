@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik 
 * Kinds:                  SMT Common Mode Line Filter
 * Matchcode:              WE-CNSW 
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev25a
 * Created/modified by:    Ella      
-* Date and Time:          2022-05-26
+* Date and Time:          2025-02-14
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -18,48 +18,6 @@
 * Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
 * Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
-.SUBCKT  CNSW  1  2  3  4  PARAMS:
-R_R47  N21893  N21911  {Rs3}
-R_R43  N21425  N21441  {Rs2}
-R_R4  N22217  N21871  {dR3}
-L_L3  N21425  N21441  {L2}
-L_L8  N21871  N21893  {L4}
-Kn_K1  L_L1  L_L2  1
-R_R37  N21241  3  {R2}
-R_R48  N21911  N21925  {Rs2}
-R_R44  N21441  3  {Rs1}
-C_C4  N21871  N22231  {C1}
-L_L1  N21441  3  {L1}
-C_C1  N21207  N21217  {dC3}
-L_L6  N21893  N21911  {L3}
-R_R1  1  N21207  {Rdc}
-L_L17  N21207  N21585  {dL3}
-R_R49  N21925  4  {Rs1}
-Kn_K5  L_L17  L_L18  
-+  L_L19  L_L20  0.9999
-R_R3  N21217  N21223  {dR3}
-R_R55  N22231  4  {R2}
-L_L4  N21911  N21925  {L2}
-R_R2  N21207  N21223  {dR4}
-L_L19  N21585  N21223  {dL3}
-R_R6  2  N21857  {Rdc}
-C_C2  N21731  N21585  {ck}
-Kn_K4  L_L7  L_L8  1
-L_L2  N21925  4  {L1}
-R_R41  N21223  N21413  {Rs4}
-L_L7  N21223  N21413  {L4}
-R_R5  N21857  N21871  {dR4}
-L_L18  N21731  N21857  {dL3}
-Kn_K3  L_L5  L_L6  1
-R_R46  N21871  N21893  {Rs4}
-R_R42  N21413  N21425  {Rs3}
-L_L5  N21413  N21425  {L3}
-C_C9  N21857  N22217  {dC3}
-L_L20  N21871  N21731  {dL3}
-Kn_K2  L_L3  L_L4  1
-C_C3  N21223  N21241  {C1}
-.ends  CNSW
-*****
 .subckt 0603_744230121_120ohm 1 2 3 4
 X1  1  2  3  4  CNSW  PARAMS:
 +  DL3=3.21356440083719E-10
@@ -859,4 +817,166 @@ X1  1  2  3  4  CNSW  PARAMS:
 +  Rdc=0.85
 +  ck=25p
 .ends 1812_744235510_3000ohm
+*****
+.subckt 1210_744234101_100u 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=54.4613u
++  L2=9.2707u
++  L3=822.5747n
++  L4=98.4462n
++  C1=76.5065f
++  RS1=28.3896k
++  RS2=19.7934k
++  RS3=3.7071k
++  RS4=4.5028k
++  R2=805.4365m
++  DL3=5.1526n
++  DC3=12.4684p
++  DR3=312.9775
++  DR4=256.7231
++  ck=22.6021p
++  Rdc=3
+.ends
+*****
+.subckt 1210_744234201_200u 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=132.8883u
++  L2=20.7383u
++  L3=823.3701n
++  L4=98.4558n
++  C1=70.0859f
++  RS1=48.4302k
++  RS2=19.8302k
++  RS3=3.7071k
++  RS4=3.7071k
++  R2=805.4365m
++  DL3=5.3994n
++  DC3=16.3865p
++  DR3=311.8793
++  DR4=150.8681
++  ck=34.3735p
++  Rdc=5.5
+.ends
+*****
+.subckt 1210_744234510_51u 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=19.4868u
++  L2=6.8053u
++  L3=67.3816n
++  L4=9.4443n
++  C1=72.4246f
++  RS1=10.2868k
++  RS2=8.7887k
++  RS3=2.7071k
++  RS4=1.5028k
++  R2=805.4439m
++  DL3=2.6388n
++  DC3=12.4099p
++  DR3=412.6943
++  DR4=306.3945
++  ck=17.1893p
++  Rdc=1.1
+.ends
+*****
+.subckt 1210_744234101_5500ohm 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=51.9485u
++  L2=9.1368u
++  L3=821.1649n
++  L4=98.4323n
++  C1=45.4398f
++  RS1=28.2345k
++  RS2=19.7853k
++  RS3=3.7071k
++  RS4=4.5028k
++  R2=805.4634m
++  DL3=6.3287n
++  DC3=4.9311p
++  DR3=32.5719
++  DR4=40.7475
++  ck=3.2614p
++  Rdc=3
+.ends
+*****
+.subckt 1210_744234201_10000ohm 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=156.3020u
++  L2=6.9124u
++  L3=822.4762n
++  L4=98.4569n
++  C1=38.4142f
++  RS1=48.2053k
++  RS2=19.8471k
++  RS3=3.7072k
++  RS4=3.7071k
++  R2=805.4891m
++  DL3=6.8406n
++  DC3=8.9539p
++  DR3=12.0819
++  DR4=33.0692
++  ck=5.0980p
++  Rdc=5.5
+.ends
+*****
+.subckt 1210_744234510_2800ohm 1 2 3 4
+X1  1  2  3  4  CNSW  PARAMS:
++  L1=29.6763u
++  L2=6.9103u
++  L3=67.5638n
++  L4=9.4455n
++  C1=43.7510f
++  RS1=15.2708k
++  RS2=11.6960k
++  RS3=2.7071k
++  RS4=1.5028k
++  R2=805.3785m
++  DL3=3.6653n
++  DC3=43.2008p
++  DR3=61.6807
++  DR4=85.5323
++  ck=1.7254p
++  Rdc=1.1
+.ends
+*****
+.SUBCKT  CNSW  1  2  3  4  PARAMS:
+R_R47  N21893  N21911  {Rs3}
+R_R43  N21425  N21441  {Rs2}
+R_R4  N22217  N21871  {dR3}
+L_L3  N21425  N21441  {L2}
+L_L8  N21871  N21893  {L4}
+Kn_K1  L_L1  L_L2  1
+R_R37  N21241  3  {R2}
+R_R48  N21911  N21925  {Rs2}
+R_R44  N21441  3  {Rs1}
+C_C4  N21871  N22231  {C1}
+L_L1  N21441  3  {L1}
+C_C1  N21207  N21217  {dC3}
+L_L6  N21893  N21911  {L3}
+R_R1  1  N21207  {Rdc}
+L_L17  N21207  N21585  {dL3}
+R_R49  N21925  4  {Rs1}
+Kn_K5  L_L17  L_L18  
++  L_L19  L_L20  0.9999
+R_R3  N21217  N21223  {dR3}
+R_R55  N22231  4  {R2}
+L_L4  N21911  N21925  {L2}
+R_R2  N21207  N21223  {dR4}
+L_L19  N21585  N21223  {dL3}
+R_R6  2  N21857  {Rdc}
+C_C2  N21731  N21585  {ck}
+Kn_K4  L_L7  L_L8  1
+L_L2  N21925  4  {L1}
+R_R41  N21223  N21413  {Rs4}
+L_L7  N21223  N21413  {L4}
+R_R5  N21857  N21871  {dR4}
+L_L18  N21731  N21857  {dL3}
+Kn_K3  L_L5  L_L6  1
+R_R46  N21871  N21893  {Rs4}
+R_R42  N21413  N21425  {Rs3}
+L_L5  N21413  N21425  {L3}
+C_C9  N21857  N22217  {dC3}
+L_L20  N21871  N21731  {dL3}
+Kn_K2  L_L3  L_L4  1
+C_C3  N21223  N21241  {C1}
+.ends  CNSW
 *****

@@ -29,22 +29,22 @@ ARC Normal -32 16 -16 32 -16 24 -32 24
 ARC Normal -16 16 0 32 0 24 -16 24
 ARC Normal 0 16 16 32 16 24 0 24
 ARC Normal 16 16 32 32 32 24 16 24
-WINDOW 0 -17 -77 Left 2
-WINDOW 38 -102 84 Left 2
-SYMATTR Description WE-CNSW SMT Common Mode Line Filter \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-CNSW \n\nPlease note disclaimer in WE-CNSW.lib.
+WINDOW 0 0 -80 Center 2
+WINDOW 38 0 80 Center 2
 SYMATTR SpiceModel 1206_744232101_6000ohm
+SYMATTR Description WE-CNSW SMT Common Mode Line Filter \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-CNSW \n\nPlease note disclaimer in WE-CNSW.lib.
 SYMATTR Prefix X
 SYMATTR InstName L
 SYMATTR ModelFile WE-CNSW.lib
-PIN -96 -48 BOTTOM 8
+PIN -96 -48 NONE 8
 PINATTR PinName 4
 PINATTR SpiceOrder 1
-PIN -96 48 BOTTOM 8
+PIN -96 48 NONE 8
 PINATTR PinName 1
 PINATTR SpiceOrder 2
-PIN 96 -48 BOTTOM 8
+PIN 96 -48 NONE 8
 PINATTR PinName 3
 PINATTR SpiceOrder 3
-PIN 96 48 BOTTOM 8
+PIN 96 48 NONE 8
 PINATTR PinName 2
 PINATTR SpiceOrder 4
