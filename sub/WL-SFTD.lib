@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Full-color Top LED Diffused 
 * Matchcode:              WL-SFTD
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev25a
 * Created/modified by:    Ella      
-* Date and Time:          2022-02-17
+* Date and Time:          2025-03-14
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -174,36 +174,42 @@ D3 5 6 Blue
 + TT=5.0000E-9
 .ends
 *****************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.subckt 2828_150282M167310 1 2 3 4 5 6
+D1 6 1 Blue
+.MODEL Blue D
++ IS=95.232E-18
++ N=3.3921
++ RS=.54619
++ IKF=413.52E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=6.0000E-6
++ TT=5.0000E-9
+D2 5 2 Green
+.MODEL Green D
++ IS=150.24E-18
++ N=3.3921
++ RS=.54619
++ IKF=413.52E-6
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=6.0000E-6
++ TT=5.0000E-9
+D3 4 3 Red
+.MODEL Red D
++ IS=9.7994E-18
++ N=2.1908
++ RS=1.0000E-6
++ IKF=.23331
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=6.0000E-6
++ TT=5.0000E-9
+.ends
+*****************
