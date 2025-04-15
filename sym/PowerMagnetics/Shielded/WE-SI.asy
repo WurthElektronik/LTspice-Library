@@ -9,7 +9,7 @@ ARC Normal 16 8 32 -8 32 0 19 0
 ARC Normal -16 8 0 -8 0 0 -13 0
 WINDOW 38 0 32 Center 2
 WINDOW 0 0 -32 Center 2
-SYMATTR Description WE-SI Leaded Toroidal Storage Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-SI \n\nPlease note disclaimer in WE-SI.lib.
+SYMATTR Description WE-SI Leaded Toroidal Storage Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-SI \n\nPlease note disclaimer in WE-SI.lib.
 SYMATTR InstName L
 SYMATTR SpiceModel 744101_50u
 SYMATTR Prefix x

@@ -1,22 +1,22 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  Leaded Toroidal Storage Choke
 * Matchcode:              WE-SI
 * Library Type:           LTspice
-* Version:                rev22a
-* Created/modified by:    Ella      
-* Date and Time:          2022-06-10
+* Version:                rev25a
+* Created/modified by:    Ella
+* Date and Time:          4/15/2025
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 WÃ¼rth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 744101_50u 1 2
 Rp 1 2 2496
@@ -70,21 +70,21 @@ L1 N3 2 557u
 .subckt 744111_37u 1 2
 Rp 1 2 1859
 Cp 1 2 3.285p
-Rs 1 N3 0.6
+Rs 1 N3 0.06
 L1 N3 2 37u
 .ends 744111_37u
 *******
-.subckt 7441110_1.619m 1 2
+.subckt 7441110_1619u 1 2
 Rp 1 2 33391
 Cp 1 2 52.463p
 Rs 1 N3 0.48
 L1 N3 2 1886u
-.ends 7441110_1.619m
+.ends 7441110_1619u
 *******
 .subckt 744112_53u 1 2
 Rp 1 2 2824
 Cp 1 2 3.487p
-Rs 1 N3 0.8
+Rs 1 N3 0.08
 L1 N3 2 53u
 .ends 744112_53u
 *******
@@ -105,7 +105,7 @@ L1 N3 2 127u
 .subckt 744115_200u 1 2
 Rp 1 2 5105
 Cp 1 2 17.753p
-Rs 1 N3 0.2
+Rs 1 N3 0.18
 L1 N3 2 200u
 .ends 744115_200u
 *******
@@ -140,35 +140,35 @@ L1 N3 2 890u
 .subckt 744131_34u 1 2
 Rp 1 2 2079
 Cp 1 2 6.846p
-Rs 1 N3 0.38
+Rs 1 N3 0.038
 L1 N3 2 34u
 .ends 744131_34u
 *******
 .subckt 744132_49u 1 2
 Rp 1 2 2192
 Cp 1 2 4.265p
-Rs 1 N3 0.5
+Rs 1 N3 0.05
 L1 N3 2 49u
 .ends 744132_49u
 *******
 .subckt 744133_75u 1 2
 Rp 1 2 1830
 Cp 1 2 4.388p
-Rs 1 N3 0.4
+Rs 1 N3 0.04
 L1 N3 2 75u
 .ends 744133_75u
 *******
 .subckt 744134_92u 1 2
 Rp 1 2 3470
 Cp 1 2 5.871p
-Rs 1 N3 0.5
+Rs 1 N3 0.05
 L1 N3 2 92u
 .ends 744134_92u
 *******
 .subckt 744135_157u 1 2
 Rp 1 2 4918
 Cp 1 2 20.26p
-Rs 1 N3 0.63
+Rs 1 N3 0.063
 L1 N3 2 157u
 .ends 744135_157u
 *******
@@ -193,17 +193,17 @@ Rs 1 N3 0.24
 L1 N3 2 727u
 .ends 744138_727u
 *******
-.subckt 744139_1.124m 1 2
+.subckt 744139_1124u 1 2
 Rp 1 2 22487
 Cp 1 2 56.634p
 Rs 1 N3 0.28
 L1 N3 2 1124u
-.ends 744139_1.124m
+.ends 744139_1124u
 *******
 .subckt 744150_26u 1 2
 Rp 1 2 1011
 Cp 1 2 4.237p
-Rs 1 N3 0.15
+Rs 1 N3 0.015
 L1 N3 2 26u
 .ends 744150_26u
 *******
@@ -217,42 +217,42 @@ L1 N3 2 9.86u
 .subckt 744151_48u 1 2
 Rp 1 2 2470
 Cp 1 2 4.961p
-Rs 1 N3 0.25
+Rs 1 N3 0.025
 L1 N3 2 48u
 .ends 744151_48u
 *******
 .subckt 744152_82u 1 2
 Rp 1 2 2962
 Cp 1 2 14.976p
-Rs 1 N3 0.3
+Rs 1 N3 0.03
 L1 N3 2 82u
 .ends 744152_82u
 *******
 .subckt 744153_137u 1 2
 Rp 1 2 4790
 Cp 1 2 7.32p
-Rs 1 N3 0.5
+Rs 1 N3 0.05
 L1 N3 2 137u
 .ends 744153_137u
 *******
 .subckt 744154_172u 1 2
 Rp 1 2 4572
 Cp 1 2 19.529p
-Rs 1 N3 0.55
+Rs 1 N3 0.055
 L1 N3 2 172u
 .ends 744154_172u
 *******
 .subckt 744155_220u 1 2
 Rp 1 2 3702
 Cp 1 2 8.927p
-Rs 1 N3 0.6
+Rs 1 N3 0.06
 L1 N3 2 220u
 .ends 744155_220u
 *******
 .subckt 744156_380u 1 2
 Rp 1 2 7345
 Cp 1 2 33.096p
-Rs 1 N3 0.7
+Rs 1 N3 0.07
 L1 N3 2 380u
 .ends 744156_380u
 *******
