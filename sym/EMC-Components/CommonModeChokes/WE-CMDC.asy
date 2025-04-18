@@ -32,7 +32,7 @@ ARC Normal 16 16 32 32 32 24 16 24
 WINDOW 0 0 -80 Center 2
 WINDOW 38 0 80 Center 2
 SYMATTR SpiceModel 1211_744237701_9u
-SYMATTR Description WE-CMDC Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-CMDC\n\nPlease note disclaimer in WE-CMDC.lib.
+SYMATTR Description WE-CMDC Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-CMDC\n\nPlease note disclaimer in WE-CMDC.lib.
 SYMATTR Prefix X
 SYMATTR InstName L
 SYMATTR ModelFile WE-CMDC.lib
