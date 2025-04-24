@@ -1,13 +1,22 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Power Inductor
 * Matchcode:              WE-PD4
-* Library Type:           spice
-* Version:                rev
+* Library Type:           LTspice
+* Version:                rev24a
 * Created/modified by:    Ella
 * Date and Time:          7/12/2024
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt TypeL_7445601_1u 1 2
 Rp 1 2 2750
