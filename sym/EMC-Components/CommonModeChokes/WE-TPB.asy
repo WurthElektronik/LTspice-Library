@@ -29,7 +29,7 @@ WINDOW 38 -16 64 Top 2
 SYMATTR SpiceModel 744833005240
 SYMATTR Prefix X
 SYMATTR InstName L
-SYMATTR Description WE-TPB Three-Phase Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-TPB \n\nPlease note disclaimer in WE-TPB.lib.
+SYMATTR Description WE-TPB Three-Phase Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-TPB \n\nPlease note disclaimer in WE-TPB.lib.
 SYMATTR ModelFile WE-TPB.lib
 PIN -112 -48 BOTTOM 8
 PINATTR PinName 1
