@@ -68,8 +68,8 @@ D1 1 2 led
 + VJ=.75
 .ends
 ******
- .subckt 3535_15335327BA250  1  2
- D1 1 2 led
+.subckt 3535_15335327BA250  1  2
+D1 1 2 led
 .MODEL led D
 + IS=1.1407E-18
 + N=4.9950
@@ -80,9 +80,9 @@ D1 1 2 led
 + VJ=.75
 .ends
 ******
- .subckt 3535_15335327BA252  1  2
- D1 1 2 led
- .MODEL led D
+.subckt 3535_15335327BA252  1  2
+D1 1 2 led
+.MODEL led D
 + IS=10.010E-21
 + N=4.9950
 + RS=1.2404

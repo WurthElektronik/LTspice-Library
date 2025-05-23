@@ -31,7 +31,7 @@ ARC Normal 0 16 16 32 16 24 0 24
 ARC Normal 16 16 32 32 32 24 16 24
 WINDOW 0 -17 -77 Left 2
 WINDOW 38 -102 84 Left 2
-SYMATTR Description WE-CMBNC Common Mode Power Line Choke Nanocrystalline \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-CMBNC \n\nPlease note disclaimer in WE-CMBNC.lib.
+SYMATTR Description WE-CMBNC Common Mode Power Line Choke Nanocrystalline \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-CMBNC \n\nPlease note disclaimer in WE-CMBNC.lib.
 SYMATTR SpiceModel XS_7448010911_11m
 SYMATTR Prefix X
 SYMATTR InstName L

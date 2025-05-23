@@ -1,22 +1,22 @@
 **************************************************
-* Manufacturer:          WÃ¼rth Elektronik 
-* Kinds:                 MLCCs - Multilayer Ceramic Chip Capacitors
-* Matchcode:             WCAP-CSGP_100V
-* Library Type:          LTspice
-* Version:               rev24a
-* Created/modified by:   Ella
-* Date and Time:         7/11/2024
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  MLCCs - Multilayer Ceramic Chip Capacitors
+* Matchcode:              WCAP-CSGP_6-3V
+* Library Type:           LTspice
+* Version:                rev25a
+* Created/modified by:    Ella
+* Date and Time:          5/19/2025
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2024 WÃ¼rth Elektronik eiSos GmbH & Co. KG	
-* All Rights Reserved.	
-**************************************************	
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on	
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.	
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 0402_885012005074_10pF 1 2
 Rser 1 3 0.421651463477
@@ -53,6 +53,13 @@ C1 3 4 0.0000000001
 Rpar 3 4 10000000000
 .ends 0402_885012005080_100pF
 *******
+.subckt 0402_885012005083_2.2pF 1 2
+Rser 1 3 0.644
+Lser 2 4 0.00000000032
+C1 3 4 0.0000000000022
+Rpar 3 4 10000000000
+.ends 0402_885012005083_2.2pF
+*******
 .subckt 0402_885012005085_8.2pF 1 2
 Rser 1 3 0.352598551895
 Lser 2 4 4.16869039E-10
@@ -61,8 +68,8 @@ Rpar 3 4 10000000000
 .ends 0402_885012005085_8.2pF
 *******
 .subckt 0402_885012205080_1nF 1 2
-Rser 1 3 0.25
-Lser 2 4 0.00000000044
+Rser 1 3 0.266
+Lser 2 4 0.0000000008
 C1 3 4 0.000000001
 Rpar 3 4 10000000000
 .ends 0402_885012205080_1nF
@@ -228,13 +235,6 @@ C1 3 4 0.00000001
 Rpar 3 4 10000000000
 .ends 0603_885012206114_10nF
 *******
-.subckt 0603_885012206114R_10nF 1 2
-Rser 1 3 0.0614305159536
-Lser 2 4 4.58570264E-10
-C1 3 4 0.00000001
-Rpar 3 4 10000000000
-.ends 0603_885012206114R_10nF
-*******
 .subckt 0603_885012206118_47nF 1 2
 Rser 1 3 0.0260966431276
 Lser 2 4 4.02961106E-10
@@ -248,6 +248,13 @@ Lser 2 4 0.0000000008
 C1 3 4 0.0000001
 Rpar 3 4 1000000000
 .ends 0603_885012206120_100nF
+*******
+.subckt 0603_885012206114R_10nF 1 2
+Rser 1 3 0.0614305159536
+Lser 2 4 4.58570264E-10
+C1 3 4 0.00000001
+Rpar 3 4 10000000000
+.ends 0603_885012206114R_10nF
 *******
 .subckt 0805_885012007076_10pF 1 2
 Rser 1 3 0.348978588999
@@ -474,8 +481,8 @@ Rpar 3 4 200000000
 .ends 0805_885012207130_470nF
 *******
 .subckt 1206_885012008061_10pF 1 2
-Rser 1 3 0.375598705152
-Lser 2 4 5.61558997E-10
+Rser 1 3 0.3685
+Lser 2 4 0.00000000065
 C1 3 4 0.00000000001
 Rpar 3 4 10000000000
 .ends 1206_885012008061_10pF
@@ -676,6 +683,20 @@ C1 3 4 0.00000015
 Rpar 3 4 700000000
 .ends 1206_885012208119_150nF
 *******
+.subckt 1206_885012208122_470nF 1 2
+Rser 1 3 0.010704092868
+Lser 2 4 6.6200966E-10
+C1 3 4 0.00000047
+Rpar 3 4 200000000
+.ends 1206_885012208122_470nF
+*******
+.subckt 1206_885012208124_2.2uF 1 2
+Rser 1 3 0.015
+Lser 2 4 0.0000000030781
+C1 3 4 0.0000022
+Rpar 3 4 50000000
+.ends 1206_885012208124_2.2uF
+*******
 .subckt 1210_885012209069_1uF 1 2
 Rser 1 3 0.0053441098735
 Lser 2 4 6.51295361E-10
@@ -690,13 +711,6 @@ C1 3 4 0.0000022
 Rpar 3 4 50000000
 .ends 1210_885012209071_2.2uF
 *******
-.subckt 2220_885012214001_10uF 1 2
-Rser 1 3 0.003
-Lser 2 4 0.0000000012
-C1 3 4 0.00001
-Rpar 3 4 10000000
-.ends 2220_885012214001_10uF
-*******
 .subckt 2220_885012214002_3.3uF 1 2
 Rser 1 3 0.0056
 Lser 2 4 0.0000000012
@@ -710,6 +724,13 @@ Lser 2 4 0.0000000013
 C1 3 4 0.0000047
 Rpar 3 4 20000000
 .ends 2220_885012214003_4.7uF
+*******
+.subckt 2220_885012214001_10uF 1 2
+Rser 1 3 0.003
+Lser 2 4 0.0000000012
+C1 3 4 0.00001
+Rpar 3 4 10000000
+.ends 2220_885012214001_10uF
 *******
 .subckt 2220_885012214006_10uF 1 2
 Rser 1 3 0.003

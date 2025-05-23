@@ -1,22 +1,22 @@
 **************************************************
-* Manufacturer:          WÃ¼rth Elektronik 
-* Kinds:                 Aluminum Hybrid Polymer Capacitors
-* Matchcode:             WCAP-HTG5
-* Library Type:          LTspice
-* Version:               rev21a
-* Created/modified by:   Ella
-* Date and Time:         4/26/2023
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  Aluminum Hybrid Polymer Capacitors
+* Matchcode:              WCAP-HTG5
+* Library Type:           LTspice
+* Version:                rev25a
+* Created/modified by:    Ella
+* Date and Time:          5/20/2025
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 WÃ¼rth Elektronik eiSos GmbH & Co. KG	
-* All Rights Reserved.	
-**************************************************	
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on	
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.	
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 870575373001_120uF 1 2
 Rser 1 3 0.0085
@@ -45,6 +45,13 @@ Lser 2 4 0.0000000022
 C1 3 4 0.00001
 Rpar 3 4 10000000
 .ends 870575873001_10uF
+*******
+.subckt 870575374002_270uF 1 2
+Rser 1 3 0.0069
+Lser 2 4 0.0000000024
+C1 3 4 0.00027
+Rpar 3 4 370370.37037037
+.ends 870575374002_270uF
 *******
 .subckt 870575574002_150uF 1 2
 Rser 1 3 0.007

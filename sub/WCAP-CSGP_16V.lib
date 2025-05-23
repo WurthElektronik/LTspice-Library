@@ -1,22 +1,22 @@
 **************************************************
-* Manufacturer:          WÃ¼rth Elektronik 
-* Kinds:                 MLCCs - Multilayer Ceramic Chip Capacitors
-* Matchcode:             WCAP-CSGP_16V
-* Library Type:          LTspice
-* Version:               rev24a
-* Created/modified by:   Ella
-* Date and Time:         7/11/2024
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  MLCCs - Multilayer Ceramic Chip Capacitors
+* Matchcode:              WCAP-CSGP_16V
+* Library Type:           LTspice
+* Version:                rev25a
+* Created/modified by:    Ella
+* Date and Time:          5/20/2025
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2024 WÃ¼rth Elektronik eiSos GmbH & Co. KG	
-* All Rights Reserved.	
-**************************************************	
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on	
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.	
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 0201_885012104001_100nF 1 2
 Rser 1 3 0.038
@@ -131,8 +131,8 @@ Rpar 3 4 10000000000
 .ends 0402_885012005033_220pF
 *******
 .subckt 0402_885012105014_33nF 1 2
-Rser 1 3 0.026490919016
-Lser 2 4 2.00303378E-10
+Rser 1 3 0.034439
+Lser 2 4 0.000000001077
 C1 3 4 0.000000033
 Rpar 3 4 10000000000
 .ends 0402_885012105014_33nF
@@ -298,6 +298,20 @@ C1 3 4 0.0000001
 Rpar 3 4 5000000000
 .ends 0402_885012205037R_100nF
 *******
+.subckt 0402_885012205087_220nF 1 2
+Rser 1 3 0.024
+Lser 2 4 0.00000000065
+C1 3 4 0.00000022
+Rpar 3 4 450000000
+.ends 0402_885012205087_220nF
+*******
+.subckt 0402_885012105019_1uF 1 2
+Rser 1 3 0.018
+Lser 2 4 0.00000000055
+C1 3 4 0.000001
+Rpar 3 4 50000000
+.ends 0402_885012105019_1uF
+*******
 .subckt 0603_885012006017_10pF 1 2
 Rser 1 3 0.4238423835
 Lser 2 4 6.15454653E-10
@@ -430,6 +444,13 @@ Lser 2 4 2.59345303E-10
 C1 3 4 0.0000022
 Rpar 3 4 50000000
 .ends 0603_885012106018_2.2uF
+*******
+.subckt 0603_885012106029_2.2uF 1 2
+Rser 1 3 0.011
+Lser 2 4 0.0000000008
+C1 3 4 0.0000022
+Rpar 3 4 50000000
+.ends 0603_885012106029_2.2uF
 *******
 .subckt 0603_885012206028_100pF 1 2
 Rser 1 3 0.83279
@@ -605,13 +626,6 @@ Lser 2 4 2.51142993E-10
 C1 3 4 0.000001
 Rpar 3 4 100000000
 .ends 0603_885012206052_1uF
-*******
-.subckt 0603_885012106029_2.2uF 1 2
-Rser 1 3 0.011
-Lser 2 4 0.0000000008
-C1 3 4 0.0000022
-Rpar 3 4 50000000
-.ends 0603_885012106029_2.2uF
 *******
 .subckt 0805_885012007010_10pF 1 2
 Rser 1 3 0.372486331807
@@ -929,8 +943,8 @@ Rpar 3 4 50000000
 .ends 0805_885012207052_2.2uF
 *******
 .subckt 0805_885012207053_4.7uF 1 2
-Rser 1 3 0.00357806469138
-Lser 2 4 4.01525773E-10
+Rser 1 3 0.0105
+Lser 2 4 0.0000000007
 C1 3 4 0.0000047
 Rpar 3 4 10000000
 .ends 0805_885012207053_4.7uF
@@ -1209,8 +1223,8 @@ Rpar 3 4 2000000
 .ends 1210_885012109010_22uF
 *******
 .subckt 1210_885012109011_47uF 1 2
-Rser 1 3 0.00225907860771
-Lser 2 4 0.0000000009
+Rser 1 3 0.00321292248127
+Lser 2 4 1.005881796E-09
 C1 3 4 0.000047
 Rpar 3 4 1000000
 .ends 1210_885012109011_47uF

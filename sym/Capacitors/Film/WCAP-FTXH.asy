@@ -6,9 +6,9 @@ LINE Normal -16 27 -48 27
 LINE Normal -16 37 -48 37
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-FTXH Film Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-FTXH \n\nPlease note disclaimer in WCAP-FTXH.lib.
+SYMATTR Description WCAP-FTXH Film Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WCAP-FTXH \n\nPlease note disclaimer in WCAP-FTXH.lib.
 SYMATTR InstName C
-SYMATTR SpiceModel 890414025001CS_0.1uF
+SYMATTR SpiceModel 890414025007CS_33nF
 SYMATTR Prefix x
 SYMATTR ModelFile WCAP-FTXH.lib
 PIN -32 0 NONE 8

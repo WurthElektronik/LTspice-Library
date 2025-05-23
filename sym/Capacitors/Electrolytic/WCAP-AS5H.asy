@@ -8,9 +8,9 @@ LINE Normal -41 22 -41 11
 ARC Normal -58 37 -6 78 -19 41 -42 44
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-AS5H Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-AS5H \n\nPlease note disclaimer in WCAP-AS5H.lib.
+SYMATTR Description WCAP-AS5H Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WCAP-AS5H \n\nPlease note disclaimer in WCAP-AS5H.lib.
 SYMATTR InstName C
-SYMATTR SpiceModel 865230140001_22uF
+SYMATTR SpiceModel 865230640004_470nF
 SYMATTR Prefix x
 SYMATTR ModelFile WCAP-AS5H.lib
 PIN -32 0 NONE 8

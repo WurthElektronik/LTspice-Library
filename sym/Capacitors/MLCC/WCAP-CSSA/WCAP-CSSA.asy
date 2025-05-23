@@ -6,7 +6,7 @@ LINE Normal -16 27 -48 27
 LINE Normal -16 37 -48 37
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-CSSA MLCCs \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-CSSA \n\nPlease note disclaimer in WCAP-CSSA.lib.
+SYMATTR Description WCAP-CSSA MLCCs \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WCAP-CSSA \n\nPlease note disclaimer in WCAP-CSSA.lib.
 SYMATTR InstName C
 SYMATTR SpiceModel 1808_8853520100071_33pF
 SYMATTR Prefix x

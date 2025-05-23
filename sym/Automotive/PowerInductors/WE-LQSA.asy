@@ -9,7 +9,7 @@ ARC Normal -16 8 0 -8 0 0 -13 0
 WINDOW 38 0 23 Center 2
 WINDOW 0 0 -25 Center 2
 SYMATTR SpiceModel 5040_78404054010_1u
-SYMATTR Description WE-LQSA SMD Semi-Shielded Power Inductor  \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-LQSA \n\nPlease note disclaimer in WE-LQSA.lib.
+SYMATTR Description WE-LQSA SMD Semi-Shielded Power Inductor  \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-LQSA \n\nPlease note disclaimer in WE-LQSA.lib.
 SYMATTR InstName L
 SYMATTR Prefix x
 SYMATTR ModelFile WE-LQSA.lib

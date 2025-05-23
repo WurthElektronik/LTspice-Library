@@ -1,23 +1,23 @@
 **************************************************
-* Manufacturer:          Wurth Elektronik 
-* Kinds:                 SMT Semi-Shielded Power Inductor
-* Matchcode:             WE-LQSA
-* Library Type:          LTspice
-* Version:               rev22a
-* Created/modified by:   Ella
-* Date and Time:         05/31/2022
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Semi-Shielded Power Inductor
+* Matchcode:              WE-LQSA
+* Library Type:           LTspice
+* Version:                rev25a
+* Created/modified by:    Ella
+* Date and Time:          5/22/2025
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 WÃ¼rth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
-************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
 .subckt 5040_78404054010_1u 1 2
 Rp 1 2 2437
 Cp 1 2 1.137p
@@ -74,6 +74,20 @@ Rs 1 N3 0.09
 L1 N3 2 13.424u
 .ends 5040_78404054150_15u
 *******
+.subckt 5040_78404054220_22u 1 2
+Rp 1 2 17211
+Cp 1 2 5.18p
+Rs 1 N3 0.129
+L1 N3 2 20.354u
+.ends 5040_78404054220_22u
+*******
+.subckt 5040_78404054330_33u 1 2
+Rp 1 2 25363
+Cp 1 2 5.002p
+Rs 1 N3 0.188
+L1 N3 2 29.938u
+.ends 5040_78404054330_33u
+*******
 .subckt 5040_78404054470_47u 1 2
 Rp 1 2 28181
 Cp 1 2 6.194p
@@ -94,6 +108,20 @@ Cp 1 2 5.441p
 Rs 1 N3 0.6
 L1 N3 2 89.367u
 .ends 5040_78404054101_100u
+*******
+.subckt 5040_78404054151_150u 1 2
+Rp 1 2 68277
+Cp 1 2 5.058p
+Rs 1 N3 0.81
+L1 N3 2 147.926u
+.ends 5040_78404054151_150u
+*******
+.subckt 5040_78404054221_220u 1 2
+Rp 1 2 70395
+Cp 1 2 6.286p
+Rs 1 N3 1.4
+L1 N3 2 219.811u
+.ends 5040_78404054221_220u
 *******
 .subckt 6045_78404064010_1u 1 2
 Rp 1 2 2256
@@ -186,6 +214,62 @@ Rs 1 N3 0.443
 L1 N3 2 88.257u
 .ends 6045_78404064101_100u
 *******
+.subckt 8040_78404084010_1u 1 2
+Rp 1 2 2130
+Cp 1 2 1.698p
+Rs 1 N3 0.008
+L1 N3 2 0.889475u
+.ends 8040_78404084010_1u
+*******
+.subckt 8040_78404084015_1.5u 1 2
+Rp 1 2 3196
+Cp 1 2 2.104p
+Rs 1 N3 0.01
+L1 N3 2 1.311u
+.ends 8040_78404084015_1.5u
+*******
+.subckt 8040_78404084022_2.2u 1 2
+Rp 1 2 3927
+Cp 1 2 3.957p
+Rs 1 N3 0.012
+L1 N3 2 1.903u
+.ends 8040_78404084022_2.2u
+*******
+.subckt 8040_78404084033_3.3u 1 2
+Rp 1 2 6138
+Cp 1 2 5.236p
+Rs 1 N3 0.017
+L1 N3 2 3.347u
+.ends 8040_78404084033_3.3u
+*******
+.subckt 8040_78404084047_4.7u 1 2
+Rp 1 2 7450
+Cp 1 2 5.06p
+Rs 1 N3 0.019
+L1 N3 2 4.122u
+.ends 8040_78404084047_4.7u
+*******
+.subckt 8040_78404084068_6.8u 1 2
+Rp 1 2 9160
+Cp 1 2 5.947p
+Rs 1 N3 0.024
+L1 N3 2 6.157u
+.ends 8040_78404084068_6.8u
+*******
+.subckt 8040_78404084100_10u 1 2
+Rp 1 2 11924
+Cp 1 2 5.735p
+Rs 1 N3 0.029
+L1 N3 2 8.258u
+.ends 8040_78404084100_10u
+*******
+.subckt 8040_78404084330_33u 1 2
+Rp 1 2 27221
+Cp 1 2 5.903p
+Rs 1 N3 0.097
+L1 N3 2 28.036u
+.ends 8040_78404084330_33u
+*******
 .subckt 8040_78404084150_15u 1 2
 Rp 1 2 15890
 Cp 1 2 5.125p
@@ -213,4 +297,11 @@ Cp 1 2 6.106p
 Rs 1 N3 0.204
 L1 N3 2 64.281u
 .ends 8040_78404084680_47u
+*******
+.subckt 8040_78404084101_100u 1 2
+Rp 1 2 53166
+Cp 1 2 6.443p
+Rs 1 N3 0.29
+L1 N3 2 81.159u
+.ends 8040_78404084101_100u
 *******

@@ -3,9 +3,9 @@
 * Kinds:                  SMT Mono-color Chip LED Waterclear
 * Matchcode:              WL-SMCW
 * Library Type:           LTspice
-* Version:                rev24a
+* Version:                rev24b
 * Created/modified by:    Ella      
-* Date and Time:          2024-08-23
+* Date and Time:          2029-09-05
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
@@ -104,6 +104,21 @@ D1 1 2 SMCW
 + VJ=.75
 + BV=5
 + IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+******
+.subckt 0603_150060WS75000  1  2
+D1 1 2 SMCW
+.MODEL SMCW D
++ IS=10.000E-21
++ N=2.5054
++ RS=4.2562
++ IKF=.27327
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=1.00E-6
 + TT=5.0000E-9
 .ends
 ******
