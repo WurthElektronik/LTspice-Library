@@ -113,19 +113,20 @@ WINDOW 0 -2 -70 Bottom 2
 WINDOW 38 -7 71 Top 2
 SYMATTR SpiceModel 810913006
 SYMATTR Prefix X
-SYMATTR Description WE-CLFS Line Filter - Two-Stage \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-CLFS \n\nPlease note disclaimer in WE-CLFS-Two-Stage.lib.
+SYMATTR Description WE-CLFS Line Filter - Two-Stage \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-CLFS \n\nPlease note disclaimer in WE-CLFS-Two-Stage.lib.
 SYMATTR ModelFile WE-CLFS-Two-Stage.lib
 PIN -176 0 NONE 8
-PINATTR SpiceOrder 1
+PINATTR PinName GND
+PINATTR SpiceOrder 5
 PIN -176 -48 NONE 8
 PINATTR PinName Port_1
-PINATTR SpiceOrder 2
+PINATTR SpiceOrder 1
 PIN 160 -48 NONE 8
 PINATTR PinName Port_2
-PINATTR SpiceOrder 3
+PINATTR SpiceOrder 2
 PIN -176 48 NONE 8
 PINATTR PinName Port_3
-PINATTR SpiceOrder 4
+PINATTR SpiceOrder 3
 PIN 160 48 NONE 8
 PINATTR PinName Port_4
-PINATTR SpiceOrder 5
+PINATTR SpiceOrder 4
