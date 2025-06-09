@@ -1,23 +1,37 @@
 **************************************************
-* Manufacturer:           WÃ¼rth Elektronik
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Power Inductor (High Voltage)
 * Matchcode:              WE-PD HV
 * Library Type:           LTspice
-* Version:                rev24a
+* Version:                rev25a
 * Created/modified by:    Ella
-* Date and Time:          7/12/2024
+* Date and Time:          6/9/2025
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2024 WÃ¼rth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
+.subckt 1040_7687719821_820u 1 2
+Rp 1 2 245.751
+Cp 1 2 5.284p
+Rs 1 N3 2.1
+L1 N3 2 726.79u
+.ends 1040_7687719821_820u
+*******
+.subckt 1040_7687719102_1000u 1 2
+Rp 1 2 274.328
+Cp 1 2 4.789p
+Rs 1 N3 2.7
+L1 N3 2 949.779u
+.ends 1040_7687719102_1000u
+*******
 .subckt 1060_7687714470_47u 1 2
 Rp 1 2 45600
 Cp 1 2 5.8p
@@ -136,6 +150,13 @@ Cp 1 2 20.2p
 Rs 1 N3 8
 L1 N3 2 6100u
 .ends 1210_7687709682_6800u
+*******
+.subckt 1280_768770331_330u 1 2
+Rp 1 2 154000
+Cp 1 2 11.7p
+Rs 1 N3 0.5
+L1 N3 2 313.8u
+.ends 1280_768770331_330u
 *******
 .subckt 7332_7687789471_470u 1 2
 Rp 1 2 239000
