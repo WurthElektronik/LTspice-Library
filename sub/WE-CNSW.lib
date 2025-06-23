@@ -3,9 +3,9 @@
 * Kinds:                  SMT Common Mode Line Filter
 * Matchcode:              WE-CNSW 
 * Library Type:           LTspice
-* Version:                rev25a
+* Version:                rev25b
 * Created/modified by:    Ella      
-* Date and Time:          2025-02-14
+* Date and Time:          2025-06-18
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
@@ -818,7 +818,7 @@ X1  1  2  3  4  CNSW  PARAMS:
 +  ck=25p
 .ends 1812_744235510_3000ohm
 *****
-.subckt 1210_744234101_100u 1 2 3 4
+.subckt 1210_744234101_5500ohm 1 2 3 4
 X1  1  2  3  4  CNSW  PARAMS:
 +  L1=54.4613u
 +  L2=9.2707u
@@ -838,7 +838,7 @@ X1  1  2  3  4  CNSW  PARAMS:
 +  Rdc=3
 .ends
 *****
-.subckt 1210_744234201_200u 1 2 3 4
+.subckt 1210_744234201_10000ohm 1 2 3 4
 X1  1  2  3  4  CNSW  PARAMS:
 +  L1=132.8883u
 +  L2=20.7383u
@@ -858,7 +858,7 @@ X1  1  2  3  4  CNSW  PARAMS:
 +  Rdc=5.5
 .ends
 *****
-.subckt 1210_744234510_51u 1 2 3 4
+.subckt 1210_744234510_2800ohm 1 2 3 4
 X1  1  2  3  4  CNSW  PARAMS:
 +  L1=19.4868u
 +  L2=6.8053u
@@ -875,66 +875,6 @@ X1  1  2  3  4  CNSW  PARAMS:
 +  DR3=412.6943
 +  DR4=306.3945
 +  ck=17.1893p
-+  Rdc=1.1
-.ends
-*****
-.subckt 1210_744234101_5500ohm 1 2 3 4
-X1  1  2  3  4  CNSW  PARAMS:
-+  L1=51.9485u
-+  L2=9.1368u
-+  L3=821.1649n
-+  L4=98.4323n
-+  C1=45.4398f
-+  RS1=28.2345k
-+  RS2=19.7853k
-+  RS3=3.7071k
-+  RS4=4.5028k
-+  R2=805.4634m
-+  DL3=6.3287n
-+  DC3=4.9311p
-+  DR3=32.5719
-+  DR4=40.7475
-+  ck=3.2614p
-+  Rdc=3
-.ends
-*****
-.subckt 1210_744234201_10000ohm 1 2 3 4
-X1  1  2  3  4  CNSW  PARAMS:
-+  L1=156.3020u
-+  L2=6.9124u
-+  L3=822.4762n
-+  L4=98.4569n
-+  C1=38.4142f
-+  RS1=48.2053k
-+  RS2=19.8471k
-+  RS3=3.7072k
-+  RS4=3.7071k
-+  R2=805.4891m
-+  DL3=6.8406n
-+  DC3=8.9539p
-+  DR3=12.0819
-+  DR4=33.0692
-+  ck=5.0980p
-+  Rdc=5.5
-.ends
-*****
-.subckt 1210_744234510_2800ohm 1 2 3 4
-X1  1  2  3  4  CNSW  PARAMS:
-+  L1=29.6763u
-+  L2=6.9103u
-+  L3=67.5638n
-+  L4=9.4455n
-+  C1=43.7510f
-+  RS1=15.2708k
-+  RS2=11.6960k
-+  RS3=2.7071k
-+  RS4=1.5028k
-+  R2=805.3785m
-+  DL3=3.6653n
-+  DC3=43.2008p
-+  DR3=61.6807
-+  DR4=85.5323
-+  ck=1.7254p
 +  Rdc=1.1
 .ends
 *****
