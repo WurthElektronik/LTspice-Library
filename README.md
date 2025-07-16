@@ -63,4 +63,5 @@ For how to use models in GitHub repository, you can refer to the help document i
   * Filter
   * RF Inductors
   * Transformers
+* WE - Power Modules
 
