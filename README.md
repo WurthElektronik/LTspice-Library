@@ -9,7 +9,9 @@ For how to use models in GitHub repository, you can refer to the help document i
 **Please read Disclaimer carefully before downloading and using Würth Elektronik Models.**
 
 **Note: LTspice Library in GitHub repository is always the latest.**
-
+## examples Classification
+* WPME-VDLM - predefined circuits
+  
 ## Component Classification
 * WE - Automotive
   
@@ -64,4 +66,3 @@ For how to use models in GitHub repository, you can refer to the help document i
   * RF Inductors
   * Transformers
 * WE - Power Modules
-
