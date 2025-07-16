@@ -1,0 +1,11 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -64 -24 64 24
+WINDOW 0 0 -24 Bottom 2
+WINDOW 3 0 24 Top 2
+SYMATTR Prefix X
+SYMATTR Value G_TEMP_0
+SYMATTR ModelFile 171033801.lib
+PIN -64 0 LEFT 8
+PINATTR PinName G_Temp
+PINATTR SpiceOrder 1

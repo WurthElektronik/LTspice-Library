@@ -1,0 +1,1 @@
+The user can build his own simulation models using the 1710x3801 .lib and .asy files or use the already-made simulation models inside the folders (Efficiency, Enable, etc..)

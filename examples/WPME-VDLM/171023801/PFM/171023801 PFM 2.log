@@ -1,0 +1,38 @@
+Stray ".ends" card: .ends
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\Mahmoud.Shousha\Desktop\171023801_Encrypted\PFM\171023801 PFM 2.asc
+Start Time: Tue Apr 15 10:58:20 2025
+solver = Alternate
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = Gear
+abstol = 1e-09
+trtol = 7
+c1: Increased Cpar to 1e-12
+Instance "m:u1:u1:drv:q2:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:u1:drv:q1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:u1:ldo:q1:1": Length shorter than recommended for a level 1 MOSFET.
+u1:u1:ldo:u1:d_1: Emission coefficient, N=0.1, too small, limited to 0.1
+u1:u1:soft:d3:d_zr: Emission coefficient, N=0.1, too small, limited to 0.1
+u1:u1:soft:d2:d_zr: Emission coefficient, N=0.1, too small, limited to 0.1
+u1:u1:soft:d1:d_zr: Emission coefficient, N=0.1, too small, limited to 0.1
+u1:u1:erroui:ota:dx: Emission coefficient, N=0.1, too small, limited to 0.1
+viout: Missing value, assumed 0V @ DC
+Per .tran options, skipping operating point for transient analysis.
+Changing Tseed to 2.79297e-10
+Changing Tseed to 2.79297e-12
+Changing Tseed to 2.79297e-09
+Changing Tseed to 2.79297e-13
+Changing Tseed to 2.79297e-08
+Changing Tseed to 2.79297e-14
+Changing Tseed to 2.79297e-07
+Changing Tseed to 2.79297e-15
+Changing Tseed to 2.79297e-06
+Changing Tseed to 2.79297e-16
+Changing Tseed to 2.79297e-05
+Changing Tseed to 2.79297e-17
+Heightened Def Con from 3.49121e-18 to 1.14476e-14
+Heightened Def Con from 1.82034e-05 to 1.82034e-05
+Total elapsed time: 0.865 seconds.
+
