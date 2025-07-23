@@ -1,24 +1,23 @@
-*$
-* BEGIN ANSOFT HEADER
-* node 1    Port1
-*    Setup: D
-*   Format: PSpice
-*   Topckt: s74889102450
-*     Date: Wed May 26 10:54:17 2021
-*    Notes: Frequency range: 1e+09 to 1e+10 Hz, 801 points
-*         : Maximum number of poles: 10000
-*         : S-Matrix fitting error tolerance: 0.005
-*         : Causality check tolerance: 0.01
-*         : Passivity enforcement: off
-*         : Causality enforcement: off
-*         : Fitting method: FastFit
-*         : Matrix fitting: By entire matrix (required by FastFit)
-*         : Ensure Z-parameter accuracy: on
-*         : Relative error control: off
-*         : Common ground option: on
-*         : Final fitting error: 0.00386374
-*         : Final model order: 110
-* END ANSOFT HEADER
+**************************************************
+* Manufacturer:          Würth Elektronik
+* Kinds:                 Antennas
+* Matchcode:             WE-MCA
+* Library Type:          LTspice
+* Version:               rev25a
+* Created/modified by:   Ella
+* Date and Time:         04/09/2025
+* Team:                  eiSos EDA Service  
+* Contact:               libraries@we-online.com
+**************************************************
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
 
 .subckt 74889102450 1
 Vam1 1 n2 dc 0
@@ -581,27 +580,6 @@ Gc1_110 0 n2 ns110 0 -8.07511419279e-09
 Gd1_1 0 n2 ni1 0 0.00397664296003
 .ends 74889102450
 
-*$
-* BEGIN ANSOFT HEADER
-* node 1    Port1
-*    Setup: D
-*   Format: PSpice
-*   Topckt: s74889302450
-*     Date: Wed May 26 10:56:59 2021
-*    Notes: Frequency range: 1e+06 to 1e+10 Hz, 801 points
-*         : Maximum number of poles: 10000
-*         : S-Matrix fitting error tolerance: 0.005
-*         : Causality check tolerance: 0.01
-*         : Passivity enforcement: off
-*         : Causality enforcement: off
-*         : Fitting method: FastFit
-*         : Matrix fitting: By entire matrix (required by FastFit)
-*         : Ensure Z-parameter accuracy: on
-*         : Relative error control: off
-*         : Common ground option: on
-*         : Final fitting error: 0.00478309
-*         : Final model order: 123
-* END ANSOFT HEADER
 
 .subckt 74889302450 1
 Vam1 1 n2 dc 0
@@ -1228,27 +1206,6 @@ Gc1_123 0 n2 ns123 0 1.24899040214e-07
 Gd1_1 0 n2 ni1 0 0.00749327257878
 .ends 74889302450
 
-*$
-* BEGIN ANSOFT HEADER
-* node 1    Port1
-*    Setup: D
-*   Format: PSpice
-*   Topckt: s74889402450
-*     Date: Wed May 26 10:58:16 2021
-*    Notes: Frequency range: 1e+06 to 1e+10 Hz, 801 points
-*         : Maximum number of poles: 10000
-*         : S-Matrix fitting error tolerance: 0.005
-*         : Causality check tolerance: 0.01
-*         : Passivity enforcement: off
-*         : Causality enforcement: off
-*         : Fitting method: FastFit
-*         : Matrix fitting: By entire matrix (required by FastFit)
-*         : Ensure Z-parameter accuracy: on
-*         : Relative error control: off
-*         : Common ground option: on
-*         : Final fitting error: 0.003866
-*         : Final model order: 95
-* END ANSOFT HEADER
 
 .subckt 74889402450 1
 Vam1 1 n2 dc 0
@@ -1733,27 +1690,6 @@ Gc1_95 0 n2 ns95 0 -1.17376844987e-06
 Gd1_1 0 n2 ni1 0 -0.00993276450089
 .ends 74889402450
 
-*$
-* BEGIN ANSOFT HEADER
-* node 1    Port1
-*    Setup: D
-*   Format: PSpice
-*   Topckt: s74889502450
-*     Date: Wed May 26 11:01:35 2021
-*    Notes: Frequency range: 2e+09 to 3e+09 Hz, 801 points
-*         : Maximum number of poles: 10000
-*         : S-Matrix fitting error tolerance: 0.005
-*         : Causality check tolerance: 0.01
-*         : Passivity enforcement: off
-*         : Causality enforcement: off
-*         : Fitting method: FastFit
-*         : Matrix fitting: By entire matrix (required by FastFit)
-*         : Ensure Z-parameter accuracy: on
-*         : Relative error control: off
-*         : Common ground option: on
-*         : Final fitting error: 0.0189016
-*         : Final model order: 270
-* END ANSOFT HEADER
 
 .subckt 74889502450 1
 Vam1 1 n2 dc 0
@@ -3118,28 +3054,6 @@ Gc1_270 0 n2 ns270 0 7.15833957049e-09
 Gd1_1 0 n2 ni1 0 -0.00568861367085
 .ends 74889502450
 
-*$
-* BEGIN ANSOFT HEADER
-* node 1    Port1
-*    Setup: E
-*    Sweep: s7488918022.S1P
-*   Format: PSpice
-*   Topckt: s7488918022
-*     Date: Mon Jan 17 14:43:42 2022
-*    Notes: Frequency range: 5e+08 to 6e+09 Hz, 801 points
-*         : Maximum number of poles: 10000
-*         : S-Matrix fitting error tolerance: 0.005
-*         : Causality check tolerance: 0.01
-*         : Passivity enforcement: off
-*         : Causality enforcement: off
-*         : Fitting method: FastFit
-*         : Matrix fitting: By entire matrix (required by FastFit)
-*         : Ensure Z-parameter accuracy: on
-*         : Relative error control: off
-*         : Common ground option: on
-*         : Final fitting error: 0.0124287
-*         : Final model order: 231
-* END ANSOFT HEADER
 
 .subckt 7488918022 1
 Vam1 1 n2 dc 0
@@ -4308,3 +4222,472 @@ Gc1_231 0 n2 ns231 0 1.90054661059e-07
 Gd1_1 0 n2 ni1 0 0.0113593638556
 .ends 7488918022
 
+
+.subckt 74889100921 1
+Vam1 1 n2 dc 0
+Rport1 n2 0 50
+
+Fi1 0 ni1 Vam1 50
+Gi1 0 ni1 1 0 1
+Rt1 ni1 0 1
+
+Ca1 ns1 0 1e-12
+Ra1 ns1 0 0.568433483865
+Ca2 ns2 0 1e-12
+Ca3 ns3 0 1e-12
+Ra2 ns2 0 535.934410601
+Ra3 ns3 0 535.934410601
+Ga2 ns2 0 ns3 0 -0.0087540312356
+Ga3 ns3 0 ns2 0 0.0087540312356
+Ca4 ns4 0 1e-12
+Ca5 ns5 0 1e-12
+Ra4 ns4 0 348.659889669
+Ra5 ns5 0 348.659889669
+Ga4 ns4 0 ns5 0 -0.00359969060799
+Ga5 ns5 0 ns4 0 0.00359969060799
+Ca6 ns6 0 1e-12
+Ra6 ns6 0 505.143203338
+Ca7 ns7 0 1e-12
+Ca8 ns8 0 1e-12
+Ra7 ns7 0 1844080.99652
+Ra8 ns8 0 1844080.99652
+Ga7 ns7 0 ns8 0 -0.00684358883362
+Ga8 ns8 0 ns7 0 0.00684358883362
+Ca9 ns9 0 1e-12
+Ca10 ns10 0 1e-12
+Ra9 ns9 0 7619803.57908
+Ra10 ns10 0 7619803.57908
+Ga9 ns9 0 ns10 0 -0.00679464318591
+Ga10 ns10 0 ns9 0 0.00679464318591
+Ca11 ns11 0 1e-12
+Ca12 ns12 0 1e-12
+Ra11 ns11 0 20425750.7187
+Ra12 ns12 0 20425750.7187
+Ga11 ns11 0 ns12 0 -0.00669106620266
+Ga12 ns12 0 ns11 0 0.00669106620266
+Ca13 ns13 0 1e-12
+Ca14 ns14 0 1e-12
+Ra13 ns13 0 11062373.5393
+Ra14 ns14 0 11062373.5393
+Ga13 ns13 0 ns14 0 -0.00666468845886
+Ga14 ns14 0 ns13 0 0.00666468845886
+Ca15 ns15 0 1e-12
+Ca16 ns16 0 1e-12
+Ra15 ns15 0 5822856.76161
+Ra16 ns16 0 5822856.76161
+Ga15 ns15 0 ns16 0 -0.00656305243431
+Ga16 ns16 0 ns15 0 0.00656305243431
+Ca17 ns17 0 1e-12
+Ca18 ns18 0 1e-12
+Ra17 ns17 0 5299420.96285
+Ra18 ns18 0 5299420.96285
+Ga17 ns17 0 ns18 0 -0.00651257876106
+Ga18 ns18 0 ns17 0 0.00651257876106
+Ca19 ns19 0 1e-12
+Ca20 ns20 0 1e-12
+Ra19 ns19 0 17532665.7062
+Ra20 ns20 0 17532665.7062
+Ga19 ns19 0 ns20 0 -0.00645653302275
+Ga20 ns20 0 ns19 0 0.00645653302275
+Ca21 ns21 0 1e-12
+Ca22 ns22 0 1e-12
+Ra21 ns21 0 3367.74613904
+Ra22 ns22 0 3367.74613904
+Ga21 ns21 0 ns22 0 -0.0059592736249
+Ga22 ns22 0 ns21 0 0.0059592736249
+Ca23 ns23 0 1e-12
+Ca24 ns24 0 1e-12
+Ra23 ns23 0 13770.1522632
+Ra24 ns24 0 13770.1522632
+Ga23 ns23 0 ns24 0 -0.00611959648574
+Ga24 ns24 0 ns23 0 0.00611959648574
+Ca25 ns25 0 1e-12
+Ca26 ns26 0 1e-12
+Ra25 ns25 0 1679644.48067
+Ra26 ns26 0 1679644.48067
+Ga25 ns25 0 ns26 0 -0.00609471811019
+Ga26 ns26 0 ns25 0 0.00609471811019
+Ca27 ns27 0 1e-12
+Ca28 ns28 0 1e-12
+Ra27 ns27 0 23974.7247469
+Ra28 ns28 0 23974.7247469
+Ga27 ns27 0 ns28 0 -0.00586601308404
+Ga28 ns28 0 ns27 0 0.00586601308404
+Ca29 ns29 0 1e-12
+Ca30 ns30 0 1e-12
+Ra29 ns29 0 6047.95474207
+Ra30 ns30 0 6047.95474207
+Ga29 ns29 0 ns30 0 -0.0057107917337
+Ga30 ns30 0 ns29 0 0.0057107917337
+Ca31 ns31 0 1e-12
+Ca32 ns32 0 1e-12
+Ra31 ns31 0 3436435.98246
+Ra32 ns32 0 3436435.98246
+Ga31 ns31 0 ns32 0 -0.00571592443212
+Ga32 ns32 0 ns31 0 0.00571592443212
+Ca33 ns33 0 1e-12
+Ca34 ns34 0 1e-12
+Ra33 ns33 0 1708.71236531
+Ra34 ns34 0 1708.71236531
+Ga33 ns33 0 ns34 0 -0.00517373837288
+Ga34 ns34 0 ns33 0 0.00517373837288
+Ca35 ns35 0 1e-12
+Ca36 ns36 0 1e-12
+Ra35 ns35 0 21902.4911592
+Ra36 ns36 0 21902.4911592
+Ga35 ns35 0 ns36 0 -0.00524151693048
+Ga36 ns36 0 ns35 0 0.00524151693048
+Ca37 ns37 0 1e-12
+Ca38 ns38 0 1e-12
+Ra37 ns37 0 1721928.66563
+Ra38 ns38 0 1721928.66563
+Ga37 ns37 0 ns38 0 -0.00521816800708
+Ga38 ns38 0 ns37 0 0.00521816800708
+Ca39 ns39 0 1e-12
+Ca40 ns40 0 1e-12
+Ra39 ns39 0 7152.79712321
+Ra40 ns40 0 7152.79712321
+Ga39 ns39 0 ns40 0 -0.00492602654855
+Ga40 ns40 0 ns39 0 0.00492602654855
+Ca41 ns41 0 1e-12
+Ca42 ns42 0 1e-12
+Ra41 ns41 0 1138064.30414
+Ra42 ns42 0 1138064.30414
+Ga41 ns41 0 ns42 0 -0.00503290808331
+Ga42 ns42 0 ns41 0 0.00503290808331
+Ca43 ns43 0 1e-12
+Ca44 ns44 0 1e-12
+Ra43 ns43 0 5380.38295547
+Ra44 ns44 0 5380.38295547
+Ga43 ns43 0 ns44 0 -0.004731449134
+Ga44 ns44 0 ns43 0 0.004731449134
+Ca45 ns45 0 1e-12
+Ca46 ns46 0 1e-12
+Ra45 ns45 0 941142.974495
+Ra46 ns46 0 941142.974495
+Ga45 ns45 0 ns46 0 -0.00200667199595
+Ga46 ns46 0 ns45 0 0.00200667199595
+Ca47 ns47 0 1e-12
+Ca48 ns48 0 1e-12
+Ra47 ns47 0 8865099.52591
+Ra48 ns48 0 8865099.52591
+Ga47 ns47 0 ns48 0 -0.00202420124043
+Ga48 ns48 0 ns47 0 0.00202420124043
+Ca49 ns49 0 1e-12
+Ca50 ns50 0 1e-12
+Ra49 ns49 0 4272435.55412
+Ra50 ns50 0 4272435.55412
+Ga49 ns49 0 ns50 0 -0.00437371017986
+Ga50 ns50 0 ns49 0 0.00437371017986
+Ca51 ns51 0 1e-12
+Ca52 ns52 0 1e-12
+Ra51 ns51 0 180789.057653
+Ra52 ns52 0 180789.057653
+Ga51 ns51 0 ns52 0 -0.00422172701078
+Ga52 ns52 0 ns51 0 0.00422172701078
+Ca53 ns53 0 1e-12
+Ca54 ns54 0 1e-12
+Ra53 ns53 0 4973.08796201
+Ra54 ns54 0 4973.08796201
+Ga53 ns53 0 ns54 0 -0.00393849513327
+Ga54 ns54 0 ns53 0 0.00393849513327
+Ca55 ns55 0 1e-12
+Ca56 ns56 0 1e-12
+Ra55 ns55 0 2230.29221519
+Ra56 ns56 0 2230.29221519
+Ga55 ns55 0 ns56 0 -0.00309946846712
+Ga56 ns56 0 ns55 0 0.00309946846712
+Ca57 ns57 0 1e-12
+Ca58 ns58 0 1e-12
+Ra57 ns57 0 8962695.58421
+Ra58 ns58 0 8962695.58421
+Ga57 ns57 0 ns58 0 -0.00372030233362
+Ga58 ns58 0 ns57 0 0.00372030233362
+Ca59 ns59 0 1e-12
+Ca60 ns60 0 1e-12
+Ra59 ns59 0 6032044.15665
+Ra60 ns60 0 6032044.15665
+Ga59 ns59 0 ns60 0 -0.00350008712748
+Ga60 ns60 0 ns59 0 0.00350008712748
+Ca61 ns61 0 1e-12
+Ca62 ns62 0 1e-12
+Ra61 ns61 0 1370103.53717
+Ra62 ns62 0 1370103.53717
+Ga61 ns61 0 ns62 0 -0.0032920192762
+Ga62 ns62 0 ns61 0 0.0032920192762
+Ca63 ns63 0 1e-12
+Ca64 ns64 0 1e-12
+Ra63 ns63 0 5810008.92626
+Ra64 ns64 0 5810008.92626
+Ga63 ns63 0 ns64 0 -0.00269027194475
+Ga64 ns64 0 ns63 0 0.00269027194475
+Ca65 ns65 0 1e-12
+Ca66 ns66 0 1e-12
+Ra65 ns65 0 238998.45863
+Ra66 ns66 0 238998.45863
+Ga65 ns65 0 ns66 0 -0.00276581925503
+Ga66 ns66 0 ns65 0 0.00276581925503
+Ca67 ns67 0 1e-12
+Ca68 ns68 0 1e-12
+Ra67 ns67 0 33405947.1423
+Ra68 ns68 0 33405947.1423
+Ga67 ns67 0 ns68 0 -0.00287629259312
+Ga68 ns68 0 ns67 0 0.00287629259312
+Ca69 ns69 0 1e-12
+Ca70 ns70 0 1e-12
+Ra69 ns69 0 4272542.44311
+Ra70 ns70 0 4272542.44311
+Ga69 ns69 0 ns70 0 -0.00290596931707
+Ga70 ns70 0 ns69 0 0.00290596931707
+Ca71 ns71 0 1e-12
+Ca72 ns72 0 1e-12
+Ra71 ns71 0 25871615.532
+Ra72 ns72 0 25871615.532
+Ga71 ns71 0 ns72 0 -0.00309443480692
+Ga72 ns72 0 ns71 0 0.00309443480692
+
+Gb1_1 ns1 0 ni1 0 1.75922078552
+Gb2_1 ns2 0 ni1 0 0.00912929466534
+Gb3_1 ns3 0 ni1 0 -0.000105319101369
+Gb4_1 ns4 0 ni1 0 0.00320574453728
+Gb5_1 ns5 0 ni1 0 -0.00333068524035
+Gb6_1 ns6 0 ni1 0 -0.00197963665232
+Gb7_1 ns7 0 ni1 0 0.00684344399843
+Gb8_1 ns8 0 ni1 0 -0.00182838151331
+Gb9_1 ns9 0 ni1 0 -0.00679459205035
+Gb10_1 ns10 0 ni1 0 -0.00264761572626
+Gb11_1 ns11 0 ni1 0 -0.00418473019326
+Gb12_1 ns12 0 ni1 0 0.0066910355838
+Gb13_1 ns13 0 ni1 0 -0.00666466461171
+Gb14_1 ns14 0 ni1 0 0.00175827612204
+Gb15_1 ns15 0 ni1 0 -0.00656302589348
+Gb16_1 ns16 0 ni1 0 0.00101444833103
+Gb17_1 ns17 0 ni1 0 0.00651244863107
+Gb18_1 ns18 0 ni1 0 0.00449135159533
+Gb19_1 ns19 0 ni1 0 0.00645650634532
+Gb20_1 ns20 0 ni1 0 0.0030199483191
+Gb21_1 ns21 0 ni1 0 0.00124745340649
+Gb22_1 ns22 0 ni1 0 -0.00591191183706
+Gb23_1 ns23 0 ni1 0 0.00607799347734
+Gb24_1 ns24 0 ni1 0 -0.00357841380622
+Gb25_1 ns25 0 ni1 0 0.000986467541926
+Gb26_1 ns26 0 ni1 0 -0.00609462180502
+Gb27_1 ns27 0 ni1 0 0.00585163605411
+Gb28_1 ns28 0 ni1 0 -0.00206363928044
+Gb29_1 ns29 0 ni1 0 -0.00562578954769
+Gb30_1 ns30 0 ni1 0 -0.00310120249985
+Gb31_1 ns31 0 ni1 0 0.00197788956973
+Gb32_1 ns32 0 ni1 0 0.00571582375208
+Gb33_1 ns33 0 ni1 0 -0.00509949958305
+Gb34_1 ns34 0 ni1 0 0.00124153888519
+Gb35_1 ns35 0 ni1 0 -0.0052044358074
+Gb36_1 ns36 0 ni1 0 0.00430265431593
+Gb37_1 ns37 0 ni1 0 0.00521813662489
+Gb38_1 ns38 0 ni1 0 0.000282559570687
+Gb39_1 ns39 0 ni1 0 0.0037842799882
+Gb40_1 ns40 0 ni1 0 -0.00482259279972
+Gb41_1 ns41 0 ni1 0 0.00503245780116
+Gb42_1 ns42 0 ni1 0 -0.00257999262442
+Gb43_1 ns43 0 ni1 0 0.0046951169474
+Gb44_1 ns44 0 ni1 0 -0.00111076915118
+Gb45_1 ns45 0 ni1 0 0.00200648778955
+Gb46_1 ns46 0 ni1 0 0.000348948340279
+Gb47_1 ns47 0 ni1 0 -0.00202412289614
+Gb48_1 ns48 0 ni1 0 0.00140598109976
+Gb49_1 ns49 0 ni1 0 -0.000138527423527
+Gb50_1 ns50 0 ni1 0 -0.0043737027791
+Gb51_1 ns51 0 ni1 0 0.0022460006944
+Gb52_1 ns52 0 ni1 0 0.004218791547
+Gb53_1 ns53 0 ni1 0 0.000159189048483
+Gb54_1 ns54 0 ni1 0 0.00394063401951
+Gb55_1 ns55 0 ni1 0 0.00195118953736
+Gb56_1 ns56 0 ni1 0 -0.0028820695688
+Gb57_1 ns57 0 ni1 0 -0.00372023701968
+Gb58_1 ns58 0 ni1 0 0.002177935505
+Gb59_1 ns59 0 ni1 0 0.00273417228357
+Gb60_1 ns60 0 ni1 0 -0.00349995763154
+Gb61_1 ns61 0 ni1 0 0.00116071328191
+Gb62_1 ns62 0 ni1 0 -0.00329176209689
+Gb63_1 ns63 0 ni1 0 8.33141646394e-05
+Gb64_1 ns64 0 ni1 0 0.00269026662553
+Gb65_1 ns65 0 ni1 0 -0.0027630856458
+Gb66_1 ns66 0 ni1 0 0.00181117237611
+Gb67_1 ns67 0 ni1 0 -0.00169713451032
+Gb68_1 ns68 0 ni1 0 -0.00287627493064
+Gb69_1 ns69 0 ni1 0 -0.00103973279458
+Gb70_1 ns70 0 ni1 0 -0.00290588559373
+Gb71_1 ns71 0 ni1 0 -0.00309443335686
+Gb72_1 ns72 0 ni1 0 -0.000116127997645
+
+Gc1_1 0 n2 ns1 0 -8.60250328143e-05
+Gc1_2 0 n2 ns2 0 -0.00624683386559
+Gc1_3 0 n2 ns3 0 0.00260451915936
+Gc1_4 0 n2 ns4 0 -0.0461357782766
+Gc1_5 0 n2 ns5 0 -0.0757322829203
+Gc1_6 0 n2 ns6 0 0.0892740115641
+Gc1_7 0 n2 ns7 0 1.27514925492e-08
+Gc1_8 0 n2 ns8 0 3.41575092295e-09
+Gc1_9 0 n2 ns9 0 5.64159014906e-09
+Gc1_10 0 n2 ns10 0 -2.1982085274e-09
+Gc1_11 0 n2 ns11 0 6.42580016803e-10
+Gc1_12 0 n2 ns12 0 1.02716871162e-09
+Gc1_13 0 n2 ns13 0 -6.18562074006e-09
+Gc1_14 0 n2 ns14 0 -1.63168202756e-09
+Gc1_15 0 n2 ns15 0 -6.79836508134e-09
+Gc1_16 0 n2 ns16 0 -1.04777752844e-09
+Gc1_17 0 n2 ns17 0 9.12145843176e-09
+Gc1_18 0 n2 ns18 0 -6.28728701686e-09
+Gc1_19 0 n2 ns19 0 4.36753308907e-09
+Gc1_20 0 n2 ns20 0 -2.04254897604e-09
+Gc1_21 0 n2 ns21 0 0.00192511117045
+Gc1_22 0 n2 ns22 0 0.00336421320126
+Gc1_23 0 n2 ns23 0 5.80257076675e-06
+Gc1_24 0 n2 ns24 0 7.39570254261e-06
+Gc1_25 0 n2 ns25 0 -2.45634756492e-09
+Gc1_26 0 n2 ns26 0 -1.93165946495e-08
+Gc1_27 0 n2 ns27 0 4.24096025407e-06
+Gc1_28 0 n2 ns28 0 3.45369958993e-06
+Gc1_29 0 n2 ns29 0 0.00035764727878
+Gc1_30 0 n2 ns30 0 -0.00145157753823
+Gc1_31 0 n2 ns31 0 -4.38022474046e-09
+Gc1_32 0 n2 ns32 0 1.25922831105e-08
+Gc1_33 0 n2 ns33 0 -0.0101927586303
+Gc1_34 0 n2 ns34 0 -0.00666958421075
+Gc1_35 0 n2 ns35 0 5.08102444929e-06
+Gc1_36 0 n2 ns36 0 3.13182086181e-06
+Gc1_37 0 n2 ns37 0 -3.09532193928e-08
+Gc1_38 0 n2 ns38 0 2.22118033974e-09
+Gc1_39 0 n2 ns39 0 0.000100825926582
+Gc1_40 0 n2 ns40 0 -3.28887820324e-06
+Gc1_41 0 n2 ns41 0 3.28248389332e-08
+Gc1_42 0 n2 ns42 0 1.6777278915e-08
+Gc1_43 0 n2 ns43 0 5.356134741e-05
+Gc1_44 0 n2 ns44 0 0.00016940589702
+Gc1_45 0 n2 ns45 0 1.4219324234e-07
+Gc1_46 0 n2 ns46 0 -2.4081401318e-08
+Gc1_47 0 n2 ns47 0 3.68834263519e-08
+Gc1_48 0 n2 ns48 0 2.55920171246e-08
+Gc1_49 0 n2 ns49 0 3.19711643786e-10
+Gc1_50 0 n2 ns50 0 -9.4104590699e-09
+Gc1_51 0 n2 ns51 0 1.14154921872e-07
+Gc1_52 0 n2 ns52 0 -1.93946061091e-07
+Gc1_53 0 n2 ns53 0 2.14716020903e-05
+Gc1_54 0 n2 ns54 0 4.58353339177e-05
+Gc1_55 0 n2 ns55 0 9.18428992487e-05
+Gc1_56 0 n2 ns56 0 0.000154963146623
+Gc1_57 0 n2 ns57 0 1.60178350552e-08
+Gc1_58 0 n2 ns58 0 9.36826892435e-09
+Gc1_59 0 n2 ns59 0 6.31399712774e-09
+Gc1_60 0 n2 ns60 0 8.10187777601e-09
+Gc1_61 0 n2 ns61 0 1.26895867646e-08
+Gc1_62 0 n2 ns62 0 3.75992467106e-08
+Gc1_63 0 n2 ns63 0 -6.73048477739e-10
+Gc1_64 0 n2 ns64 0 2.1317065e-08
+Gc1_65 0 n2 ns65 0 -2.05724682407e-07
+Gc1_66 0 n2 ns66 0 -1.36247296799e-07
+Gc1_67 0 n2 ns67 0 5.92461552314e-09
+Gc1_68 0 n2 ns68 0 -1.00400634898e-08
+Gc1_69 0 n2 ns69 0 9.91526720471e-09
+Gc1_70 0 n2 ns70 0 -2.76216232004e-08
+Gc1_71 0 n2 ns71 0 -3.87117579704e-09
+Gc1_72 0 n2 ns72 0 1.43417097464e-10
+Gd1_1 0 n2 ni1 0 -0.00417770467474
+.ends
+
+
+.subckt 74889302451 1
+Vam1 1 n2 dc 0
+Rport1 n2 0 50
+
+Fi1 0 ni1 Vam1 50
+Gi1 0 ni1 1 0 1
+Rt1 ni1 0 1
+
+Ca1 ns1 0 1e-12
+Ra1 ns1 0 950.685870333
+Ca2 ns2 0 1e-12
+Ca3 ns3 0 1e-12
+Ra2 ns2 0 662.18022631
+Ra3 ns3 0 662.18022631
+Ga2 ns2 0 ns3 0 -0.0189971744348
+Ga3 ns3 0 ns2 0 0.0189971744348
+Ca4 ns4 0 1e-12
+Ca5 ns5 0 1e-12
+Ra4 ns4 0 299.193382495
+Ra5 ns5 0 299.193382495
+Ga4 ns4 0 ns5 0 -0.0120326960303
+Ga5 ns5 0 ns4 0 0.0120326960303
+Ca6 ns6 0 1e-12
+Ca7 ns7 0 1e-12
+Ra6 ns6 0 4295.1680914
+Ra7 ns7 0 4295.1680914
+Ga6 ns6 0 ns7 0 -0.017658912303
+Ga7 ns7 0 ns6 0 0.017658912303
+Ca8 ns8 0 1e-12
+Ca9 ns9 0 1e-12
+Ra8 ns8 0 996.139943096
+Ra9 ns9 0 996.139943096
+Ga8 ns8 0 ns9 0 -0.0151839267584
+Ga9 ns9 0 ns8 0 0.0151839267584
+Ca10 ns10 0 1e-12
+Ca11 ns11 0 1e-12
+Ra10 ns10 0 1718339.99941
+Ra11 ns11 0 1718339.99941
+Ga10 ns10 0 ns11 0 -0.0127904040335
+Ga11 ns11 0 ns10 0 0.0127904040335
+Ca12 ns12 0 1e-12
+Ca13 ns13 0 1e-12
+Ra12 ns12 0 921743.45769
+Ra13 ns13 0 921743.45769
+Ga12 ns12 0 ns13 0 -0.0130449039174
+Ga13 ns13 0 ns12 0 0.0130449039174
+Ca14 ns14 0 1e-12
+Ca15 ns15 0 1e-12
+Ra14 ns14 0 4384.21191422
+Ra15 ns15 0 4384.21191422
+Ga14 ns14 0 ns15 0 -0.0157952503807
+Ga15 ns15 0 ns14 0 0.0157952503807
+Ca16 ns16 0 1e-12
+Ca17 ns17 0 1e-12
+Ra16 ns16 0 100304.439396
+Ra17 ns17 0 100304.439396
+Ga16 ns16 0 ns17 0 -0.015494943412
+Ga17 ns17 0 ns16 0 0.015494943412
+
+Gb1_1 ns1 0 ni1 0 0.0010518721601
+Gb2_1 ns2 0 ni1 0 -0.00862839443702
+Gb3_1 ns3 0 ni1 0 0.018431317174
+Gb4_1 ns4 0 ni1 0 -0.00163649326888
+Gb5_1 ns5 0 ni1 0 -0.0125065232045
+Gb6_1 ns6 0 ni1 0 -0.0175948125223
+Gb7_1 ns7 0 ni1 0 0.00509465971251
+Gb8_1 ns8 0 ni1 0 0.013452720666
+Gb9_1 ns9 0 ni1 0 -0.0143608797753
+Gb10_1 ns10 0 ni1 0 -0.00911569541169
+Gb11_1 ns11 0 ni1 0 0.0127899893004
+Gb12_1 ns12 0 ni1 0 -0.00562551528445
+Gb13_1 ns13 0 ni1 0 -0.0130444361525
+Gb14_1 ns14 0 ni1 0 -0.00763747071019
+Gb15_1 ns15 0 ni1 0 0.0156882553052
+Gb16_1 ns16 0 ni1 0 0.0154919996895
+Gb17_1 ns17 0 ni1 0 0.00458513739251
+
+Gc1_1 0 n2 ns1 0 -0.0134155223458
+Gc1_2 0 n2 ns2 0 -0.00135613351182
+Gc1_3 0 n2 ns3 0 -0.00307108324189
+Gc1_4 0 n2 ns4 0 -0.00688543298963
+Gc1_5 0 n2 ns5 0 -0.0121499944205
+Gc1_6 0 n2 ns6 0 1.13814228323e-05
+Gc1_7 0 n2 ns7 0 3.70328026435e-06
+Gc1_8 0 n2 ns8 0 0.00152478917249
+Gc1_9 0 n2 ns9 0 0.0016688145806
+Gc1_10 0 n2 ns10 0 -1.47453790145e-08
+Gc1_11 0 n2 ns11 0 -2.06884442271e-08
+Gc1_12 0 n2 ns12 0 1.78310956792e-08
+Gc1_13 0 n2 ns13 0 -4.13083026428e-08
+Gc1_14 0 n2 ns14 0 -7.5946791379e-06
+Gc1_15 0 n2 ns15 0 -1.98341256702e-05
+Gc1_16 0 n2 ns16 0 3.83956836313e-07
+Gc1_17 0 n2 ns17 0 -1.02028752738e-07
+Gd1_1 0 n2 ni1 0 0.000963315987523
+.ends
