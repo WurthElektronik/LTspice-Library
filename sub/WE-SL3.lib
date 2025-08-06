@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Common Mode Line Filter
 * Matchcode:              WE-SL3 
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev25a
 * Created/modified by:    Ella      
-* Date and Time:          2022-05-26
+* Date and Time:          2025-07-31
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -18,7 +18,7 @@
 * Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
 * Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
-.SUBCKT  9065_744252101_0.1m  1  2  3  4  PARAMS:
+.subckt 9065_744252101_0.1m  1  2  3  4  PARAMS:
 +  L1=62.14u
 +  L2=20.53u
 +  L3=14.10u
@@ -95,9 +95,9 @@ K13  L17  L18  1
 K5  L13  L14  1
 K14  L19  L20  1
 K15  L21  L22  1
-.ends  9065_744252101_0.1m
+.ends
 *******
-.SUBCKT  9065_744252220_22u  1  2  3  4  PARAMS:
+.subckt 9065_744252220_22u  1  2  3  4  PARAMS:
 +  L1=16.30u
 +  L2=0.977u
 +  L3=3.18u
@@ -156,70 +156,9 @@ K10  L9  L11  1
 K11  L10  L12  1
 K12  L15  L16  1
 K13  L17  L18  1
-.ends  9065_744252220_22u
+.ends
 **********
-.SUBCKT  9065_744252470_47u  1  2  3  4  PARAMS:
-+  L1=53.96u
-+  L2=10.09u
-+  L3=6.05u
-+  L4=11.67u
-+  C1=0.278p
-+  Rs1=1645.53
-+  Rs2=1245.53
-+  Rs3=2245.53
-+  Rs4=2045.53
-+  R2=32.3
-+  Rdc=0.2
-+  dL3=4n
-+  dC3=1.775pF
-+  dR3=525
-L3  N007  N006  {L3}
-R50  N007  N006  {Rs3}
-C1  N500  N001  {C1}
-R500  4  N500  {R2}
-L7  4  N008  {L1}
-R51  4  N008  {Rs1}
-L5  N008  N007  {L2}
-R52  N008  N007  {Rs2}
-L4  N015  N014  {L3}
-R53  N015  N014  {Rs3}
-C2  N501  N013  {C1}
-R501  3  N501  {R2}
-L8  3  N016  {L1}
-R54  3  N016  {Rs1}
-L6  N016  N015  {L2}
-R55  N016  N015  {Rs2}
-L2  N014  N013  {L4}
-R56  N014  N013  {Rs4}
-L1  N006  N001  {L4}
-R57  N006  N001  {Rs4}
-R17  N002  1  {Rdc}
-R18  N009  2  {Rdc}
-L9  N003  N002  {dL3}
-C3  N003  N010  {dC3}
-R900  N003  N010  1000g
-L10  N004  N003  {dL3}
-L11  N009  N010  {dL3}
-L12  N010  N011  {dL3}
-C4  N004  N011  {dC3}
-L15  N005  N004  {dL3}
-L16  N011  N012  {dL3}
-C5  N005  N012  {dC3}
-L17  N001  N005  {dL3}
-L18  N012  N013  {dL3}
-R1  N001  N002  {dR3}
-R2  N013  N009  {dR3}
-K2  L3  L4  1
-K3  L5  L6  1
-K4  L7  L8  1
-K1  L1  L2  1
-K10  L9  L11  1
-K11  L10  L12  1
-K12  L15  L16  1
-K13  L17  L18  1
-.ends  9065_744252470_47u
-************
-.SUBCKT  9065_744252510_51u  1  2  3  4  PARAMS:
+.subckt 9065_744252510_51u  1  2  3  4  PARAMS:
 +  L1=34.3u
 +  L2=27.38u
 +  L3=14.5u
@@ -278,9 +217,9 @@ K10  L9  L11  1
 K11  L10  L12  1
 K12  L15  L16  1
 K13  L17  L18  1
-.ends  9065_744252510_51u
+.ends
 **********************
-.subckt 9065_744253200_20u 1 2 3 4  PARAMS:
+.subckt 9065_744253200_20u  1  2  3  4  PARAMS:
 +  L1=10.30u
 +  L2=1.977u
 +  L3=10.18u
@@ -339,9 +278,9 @@ K10  L9  L11  1
 K11  L10  L12  1
 K12  L15  L16  1
 K13  L17  L18  1
-.ends 9065_744253200_20u
+.ends
 *********
-.SUBCKT 9065_744253101_0.1m  1  2  3  4  PARAMS:
+.subckt 9065_744253101_0.1m  1  2  3  4  PARAMS:
 +  L1=20u
 +  L2=80u
 +  L3=0.1p
@@ -418,5 +357,5 @@ K13  L17  L18  1
 K5  L13  L14  1
 K14  L19  L20  1
 K15  L21  L22  1
-.ends 9065_744253101_0.1m
+.ends
 *******
