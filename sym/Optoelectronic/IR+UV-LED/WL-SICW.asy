@@ -17,7 +17,7 @@ ARC Normal 38 -27 49 -16 39 -24 48 -19
 ARC Normal 38 -11 49 0 39 -8 48 -3
 WINDOW 38 17 15 Left 2
 WINDOW 0 17 -44 Left 2
-SYMATTR Description WL-SICW SMT Chip LED Infrared Waterclear\nAfter inserting, right-click on the symbol to select the part number.\nwww.we-online.com/catalog/WL-SICW \n\nPlease note disclaimer in WL-SICW.lib.
+SYMATTR Description WL-SICW SMT Chip LED Infrared Waterclear\nAfter inserting, right-click on the symbol to select the part number.\nwww.we-online.com/components/products/WL-SICW \n\nPlease note disclaimer in WL-SICW.lib.
 SYMATTR Prefix X
 SYMATTR InstName D
 SYMATTR SpiceModel 0402_15404085BA420

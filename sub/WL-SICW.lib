@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Chip LED Infrared Waterclear
 * Matchcode:              WL-SICW
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev25a
 * Created/modified by:    Ella   
-* Date and Time:          2021-02-14
+* Date and Time:          2025-08-27
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -184,72 +184,30 @@ D1 1 2 SICW
 + TT=5.0000E-9
 .ends
 ********************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.subckt 0603_15406085B6000 1 2
+D1 1 2 SICW
+.MODEL SICW D
++ IS=10.145E-18
++ N=1.4993
++ RS=1.6611
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ TT=5.0000E-9
+.ends
+********************************
+.subckt 0603_15406094B6000 1 2
+D1 1 2 SICW
+.MODEL SICW D
++ IS=3.1502E-15
++ N=1.5651
++ RS=1.2970
++ IKF=68.016
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ TT=5.0000E-9
+.ends
+********************************
