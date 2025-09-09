@@ -8,9 +8,9 @@ LINE Normal -41 22 -41 11
 ARC Normal -58 37 -6 78 -19 41 -42 44
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-AI3H Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-AI3H \n\nPlease note disclaimer in WCAP-AI3H.lib.
+SYMATTR Description WCAP-AI3H Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WCAP-AI3H \n\nPlease note disclaimer in WCAP-AI3H.lib.
 SYMATTR InstName C
-SYMATTR SpiceModel 861140783006_2.2mF
+SYMATTR SpiceModel 861141483001_68uF
 SYMATTR Prefix x
 SYMATTR ModelFile WCAP-AI3H.lib
 PIN -32 0 NONE 8

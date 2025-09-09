@@ -8,9 +8,9 @@ LINE Normal -41 22 -41 11
 ARC Normal -58 37 -6 78 -19 41 -42 44
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-AIG5 Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-AIG5 \n\nPlease note disclaimer in WCAP-AIG5.lib.
+SYMATTR Description WCAP-AIG5 Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WCAP-AIG5 \n\nPlease note disclaimer in WCAP-AIG5.lib.
 SYMATTR InstName C
-SYMATTR SpiceModel 861020785017_3.3mF
+SYMATTR SpiceModel 861021483001_33uF
 SYMATTR Prefix x
 SYMATTR ModelFile WCAP-AIG5.lib
 PIN -32 0 NONE 8
