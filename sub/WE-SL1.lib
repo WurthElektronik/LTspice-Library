@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Common Mode Line Filter 
 * Matchcode:              WE-SL1
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev25a
 * Created/modified by:    Ella      
-* Date and Time:          2022-05-26
+* Date and Time:          2025-09-15
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -18,48 +18,6 @@
 * Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
 * Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
-.SUBCKT  SL1    1  2  3  4  PARAMS:
-L3 N004 N003 {L3} 
-R50 N004 N003 {Rs3}
-C1 4 N500 {C1} 
-R500 N500 N002 {R2}
-L7 4 N005 {L1} 
-R51 4 N005 {Rs1}
-L5 N005 N004 {L2} 
-R52 N005 N004 {Rs2}
-L4 N011 N010 {L3} 
-R53 N011 N010 {Rs3}
-C2 3 N501 {C1} 
-R501 N501 N009 {R2}
-L8 3 N012 {L1} 
-R54 3 N012 {Rs1}
-L6 N012 N011 {L2} 
-R55 N012 N011 {Rs2}
-L2 N010 N009 {L4} 
-R56 N010 N009 {Rs4}
-L1 N003 N002 {L4} 
-R57 N003 N002 {Rs4}
-R17 N001 1 {Rdc}
-R18 N007 2 {Rdc}
-R14 N002 N001 {dR4}
-C3 N002 N502 {dC3} 
-R502 N502 N001 {dR3}
-L9 N006 N001 {dL3}
-L10 N007 N008 {dL3}
-C4 N006 N008 {ck}
-R1000 N006 N008 1000G
-C5 N009 N503 {dC3} 
-R503 N503 N007 {dR3}
-R15 N009 N007 {dR4}
-L11 N002 N006 {dL3}
-L12 N008 N009 {dL3}
-K2 L3 L4 1
-K3 L5 L6 1
-K4 L7 L8 1
-K1 L1 L2 1
-K5 L9 L10 L11 L12 1
-.ends SL1
-*********
 .SUBCKT  6536_744212100_10u    1  2  3  4  
 X1  1  2  3  4  SL1  PARAMS:
 + L1=7.65u
@@ -259,10 +217,63 @@ C58 N003 N002 {dC5}
 L14 N011 N010 {dL5} 
 R59 N011 N010 {dR5} 
 C59 N011 N010 {dC5}
+K1 L1 L2 1
 K2 L3 L4 1
 K3 L5 L6 1
 K4 L7 L8 1
-K1 L1 L2 1
-K5 L9 L10 L11 L12 1
 K5 L13 L14 1
-.ends 6536_744212331_330u
+K6a L9 L10 1
+K6b L9 L11 1
+K6c L9 L12 1
+K6d L10 L11 1
+K6e L10 L12 1
+K6f L11 L12 1
+.ends
+*********
+.SUBCKT  SL1    1  2  3  4  PARAMS:
+L3 N004 N003 {L3} 
+R50 N004 N003 {Rs3}
+C1 4 N500 {C1} 
+R500 N500 N002 {R2}
+L7 4 N005 {L1} 
+R51 4 N005 {Rs1}
+L5 N005 N004 {L2} 
+R52 N005 N004 {Rs2}
+L4 N011 N010 {L3} 
+R53 N011 N010 {Rs3}
+C2 3 N501 {C1} 
+R501 N501 N009 {R2}
+L8 3 N012 {L1} 
+R54 3 N012 {Rs1}
+L6 N012 N011 {L2} 
+R55 N012 N011 {Rs2}
+L2 N010 N009 {L4} 
+R56 N010 N009 {Rs4}
+L1 N003 N002 {L4} 
+R57 N003 N002 {Rs4}
+R17 N001 1 {Rdc}
+R18 N007 2 {Rdc}
+R14 N002 N001 {dR4}
+C3 N002 N502 {dC3} 
+R502 N502 N001 {dR3}
+L9 N006 N001 {dL3}
+L10 N007 N008 {dL3}
+C4 N006 N008 {ck}
+R1000 N006 N008 1000G
+C5 N009 N503 {dC3} 
+R503 N503 N007 {dR3}
+R15 N009 N007 {dR4}
+L11 N002 N006 {dL3}
+L12 N008 N009 {dL3}
+K1 L1 L2 1
+K2 L3 L4 1
+K3 L5 L6 1
+K4 L7 L8 1
+K6a L9 L10 1
+K6b L9 L11 1
+K6c L9 L12 1
+K6d L10 L11 1
+K6e L10 L12 1
+K6f L11 L12 1
+.ends SL1
+*********
