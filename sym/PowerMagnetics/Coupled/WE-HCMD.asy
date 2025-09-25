@@ -15,7 +15,7 @@ ARC Normal -8 -8 -24 -24 -24 -16 -8 -16
 WINDOW 38 1 35 Center 2
 WINDOW 0 0 -37 Center 2
 SYMATTR SpiceModel 0910_7443000910070_0.07u
-SYMATTR Description WE-HCMD High current inductor for TLVR applic \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-HCMD \n\nPlease note disclaimer in WE-HCMD.lib.
+SYMATTR Description WE-HCMD High current inductor for TLVR applic \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WE-HCMD \n\nPlease note disclaimer in WE-HCMD.lib.
 SYMATTR Prefix x
 SYMATTR InstName L
 SYMATTR ModelFile WE-HCMD.lib
