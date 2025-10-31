@@ -8,7 +8,7 @@ LINE Normal -41 22 -41 11
 ARC Normal -58 37 -6 78 -19 41 -42 44
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-ATUL Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WCAP-ATUL \n\nPlease note disclaimer in WCAP-ATUL.lib.
+SYMATTR Description WCAP-ATUL Aluminum Electrolytic Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WCAP-ATUL \n\nPlease note disclaimer in WCAP-ATUL.lib.
 SYMATTR InstName C
 SYMATTR SpiceModel 860040672001_22uF
 SYMATTR Prefix x

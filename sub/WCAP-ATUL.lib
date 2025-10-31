@@ -3,9 +3,9 @@
 * Kinds:                  Aluminum Electrolytic Capacitors
 * Matchcode:              WCAP-ATUL
 * Library Type:           LTspice
-* Version:                rev25a
+* Version:                rev25b
 * Created/modified by:    Ella
-* Date and Time:          5/20/2025
+* Date and Time:          10/29/2025
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
@@ -501,6 +501,13 @@ C1 3 4 0.0015
 Rpar 3 4 66666.6666666667
 .ends 860040275011_1.5mF
 *******
+.subckt S860040675011_470uF 1 2
+Rser 1 3 0.03825
+Lser 2 4 0.00000000471
+C1 3 4 0.00047
+Rpar 3 4 212765.957446809
+.ends S860040675011_470uF
+*******
 .subckt 860040675011_470uF 1 2
 Rser 1 3 0.045
 Lser 2 4 0.000000007
@@ -836,6 +843,13 @@ Lser 2 4 1.6482381522E-08
 C1 3 4 0.0012
 Rpar 3 4 83333.3333333333
 .ends 860040781020_1.2mF
+*******
+.subckt 860040881015_1mF 1 2
+Rser 1 3 0.0135
+Lser 2 4 0.0000000065
+C1 3 4 0.001
+Rpar 3 4 100000
+.ends 860040881015_1mF
 *******
 .subckt 860040381001_10mF 1 2
 Rser 1 3 0.0067

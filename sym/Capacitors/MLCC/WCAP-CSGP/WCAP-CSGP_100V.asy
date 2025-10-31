@@ -6,7 +6,7 @@ LINE Normal -16 27 -48 27
 LINE Normal -16 37 -48 37
 WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
-SYMATTR Description WCAP-CSGP MLCCs - 100VDC \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WCAP-CSGP-100VDC \n\nPlease note disclaimer in WCAP-CSGP_100V.lib.
+SYMATTR Description WCAP-CSGP MLCCs - 100VDC \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WCAP-CSGP-100VDC \n\nPlease note disclaimer in WCAP-CSGP_100V.lib.
 SYMATTR InstName C
 SYMATTR SpiceModel 0402_885012005074_10pF
 SYMATTR Prefix x
