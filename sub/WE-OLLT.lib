@@ -3,13 +3,13 @@
 * Kinds:                  Offline Flyback Transformers for Linear Technology
 * Matchcode:              WE-OLLT
 * Library Type:           LTspice
-* Version:                rev24a
-* Created/modified by:    Roberta     
-* Date and Time:          2024-05-22
+* Version:                rev25a
+* Created/modified by:    Roberta/Ella   
+* Date and Time:          2025-11-05
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************	
-* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG	
 * All Rights Reserved.	
 **************************************************	
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
@@ -203,11 +203,11 @@ Rg21	8	0	20meg
 .ends					
 
 .subckt	750811330		2  4  6  7  14  10  13  9  12  8		
-.param RxLkg=730.3ohm					
-.param Leakage=0.8uh					
+.param RxLkg=3195.05ohm					
+.param Leakage=3.5uh					
 Rlkg	2	2a	{RxLkg}		
 L_Lkg	2	2a	{Leakage}	Rser=0.01mohm	
-Lpri1	2a	4	299.2uH	Rser=150mohm	
+Lpri1	2a	4	296.5uH	Rser=150mohm	
 Laux1	6	7	8.333uH	Rser=33mohm	
 Lsec1	14	10	8.333uH	Rser=21mohm	
 Lsec2	13	9	8.333uH	Rser=21mohm	
@@ -227,7 +227,7 @@ Rg13	12	0	20meg
 Rg19	10	0	20meg		
 Rg20	9	0	20meg		
 Rg21	8	0	20meg		
-.ends					
+.ends						
 
 .subckt	750817251		1  3  2  4  5  6  11  9  10  8		
 .param RxLkg=5070.93ohm					
