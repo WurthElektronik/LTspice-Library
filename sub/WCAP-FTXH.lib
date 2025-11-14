@@ -5,7 +5,7 @@
 * Library Type:           LTspice
 * Version:                rev25a
 * Created/modified by:    Ella
-* Date and Time:          5/21/2025
+* Date and Time:          11/5/2025
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
@@ -18,6 +18,13 @@
 * Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
 * Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
+.subckt 890414023001CS_100nF 1 2
+Rser 1 3 0.042834
+Lser 2 4 0.00000000738
+C1 3 4 0.0000001
+Rpar 3 4 25000000000
+.ends 890414023001CS_100nF
+*******
 .subckt 890414025007CS_33nF 1 2
 Rser 1 3 0.02
 Lser 2 4 8.293975014E-09

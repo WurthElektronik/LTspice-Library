@@ -1,0 +1,410 @@
+**************************************************
+* Manufacturer:          Würth Elektronik
+* Kinds:                 Push-Pull Transformers
+* Matchcode:             WE-PPTI
+* Library Type:          LTspice
+* Version:               rev25c
+* Created/modified by:   Ella
+* Date and Time:         2025-11-14
+* Team:                  eiSos EDA Service  
+* Contact:               libraries@we-online.com
+**************************************************
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+
+.subckt	750320528		1  3  2  4  8  6  7  5		
+.param RxLkg=208.4ohm					
+.param Leakage=0.4uh					
+Rlkg	1	1a	{RxLkg/2}		
+L_Lkg	1	1a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	2	2a	{RxLkg/2}		
+L_Lkg2	2	2a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	1a	3	76.55uH	Rser=82mohm	
+Lpri2	2a	4	76.55uH	Rser=82mohm	
+Lsec1	8	6	145.105uH	Rser=170.1mohm	
+Lsec2	7	5	145.105uH	Rser=170.1mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=60pf					
+.param Cprm2=60pf					
+.param Rdmp1=39986.88ohm					
+.param Rdmp2=39986.88ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Cpri2	2	4	{Cprm2}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rdmp2	2	4	{Rdmp2}		
+Rg3	1	0	20meg		
+Rg4	2	0	20meg		
+Rg7	3	0	20meg		
+Rg8	4	0	20meg		
+Rg11	8	0	20meg		
+Rg12	7	0	20meg		
+Rg19	6	0	20meg		
+Rg20	5	0	20meg		
+.ends					
+
+.subckt	750320396		4  2  3  1  5  7  6  8		
+.param RxLkg=988.9ohm					
+.param Leakage=1uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	144.75uH	Rser=250mohm	
+Lpri2	3a	1	144.75uH	Rser=250mohm	
+Lsec1	5	7	25.217uH	Rser=47mohm	
+Lsec2	6	8	25.217uH	Rser=47mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=8.8pf					
+.param Cprm2=8.8pf					
+.param Rdmp1=143638.34ohm					
+.param Rdmp2=143638.34ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320397		4  2  3  1  5  7  6  8		
+.param RxLkg=858.47ohm					
+.param Leakage=1.04uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	136.183uH	Rser=127.5mohm	
+Lpri2	3a	1	136.183uH	Rser=127.5mohm	
+Lsec1	5	7	46.517uH	Rser=69mohm	
+Lsec2	6	8	46.517uH	Rser=69mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=13.42pf					
+.param Cprm2=13.42pf					
+.param Rdmp1=112840.69ohm					
+.param Rdmp2=112840.69ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320398		4  2  3  1  5  7  6  8		
+.param RxLkg=357.17ohm					
+.param Leakage=0.4796uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	75.595uH	Rser=135mohm	
+Lpri2	3a	1	75.595uH	Rser=135mohm	
+Lsec1	5	7	113.284uH	Rser=142mohm	
+Lsec2	6	8	113.284uH	Rser=142mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=29.72pf					
+.param Cprm2=29.72pf					
+.param Rdmp1=56476.38ohm					
+.param Rdmp2=56476.38ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320399		4  2  3  1  5  7  6  8		
+.param RxLkg=326.83ohm					
+.param Leakage=0.526uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	76.642uH	Rser=108.5mohm	
+Lpri2	3a	1	76.642uH	Rser=108.5mohm	
+Lsec1	5	7	160.456uH	Rser=171mohm	
+Lsec2	6	8	160.456uH	Rser=171mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=42.1pf					
+.param Cprm2=42.1pf					
+.param Rdmp1=47784.96ohm					
+.param Rdmp2=47784.96ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320375		4  2  3  1  5  7  6  8		
+.param RxLkg=757.61ohm					
+.param Leakage=1.433uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	211.034uH	Rser=254mohm	
+Lpri2	3a	1	211.034uH	Rser=254mohm	
+Lsec1	5	7	113.874uH	Rser=168mohm	
+Lsec2	6	8	113.874uH	Rser=168mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=21.12pf					
+.param Cprm2=21.12pf					
+.param Rdmp1=111949.27ohm					
+.param Rdmp2=111949.27ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320383		4  2  3  1  5  7  6  8		
+.param RxLkg=631.59ohm					
+.param Leakage=1.4uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	223.453uH	Rser=257mohm	
+Lpri2	3a	1	223.453uH	Rser=257mohm	
+Lsec1	5	7	439.339uH	Rser=553mohm	
+Lsec2	6	8	439.339uH	Rser=553mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=27.4pf					
+.param Cprm2=27.4pf					
+.param Rdmp1=101123.93ohm					
+.param Rdmp2=101123.93ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320400		4  2  3  1  5  7  6  8		
+.param RxLkg=159.2ohm					
+.param Leakage=0.49uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	80.2uH	Rser=134.85mohm	
+Lpri2	3a	1	80.2uH	Rser=134.85mohm	
+Lsec1	5	7	437.978uH	Rser=476.5mohm	
+Lsec2	6	8	437.978uH	Rser=476.5mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=147.2pf					
+.param Cprm2=147.2pf					
+.param Rdmp1=26136.86ohm					
+.param Rdmp2=26136.86ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320402		4  2  3  1  5  7  6  8		
+.param RxLkg=1819.19ohm					
+.param Leakage=3.4uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	268.158uH	Rser=208.5mohm	
+Lpri2	3a	1	268.158uH	Rser=208.5mohm	
+Lsec1	5	7	9.487uH	Rser=38.55mohm	
+Lsec2	6	8	9.487uH	Rser=38.55mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=16.18pf					
+.param Cprm2=16.18pf					
+.param Rdmp1=144389.2ohm					
+.param Rdmp2=144389.2ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320401		4  2  3  1  5  7  6  8		
+.param RxLkg=114.9ohm					
+.param Leakage=0.5369uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	101.499uH	Rser=174mohm	
+Lpri2	3a	1	101.499uH	Rser=174mohm	
+Lsec1	5	7	849.319uH	Rser=875.5mohm	
+Lsec2	6	8	849.319uH	Rser=875.5mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=268.2pf					
+.param Cprm2=268.2pf					
+.param Rdmp1=21778.78ohm					
+.param Rdmp2=21778.78ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320403		4  2  3  1  5  7  6  8		
+.param RxLkg=1081.68ohm					
+.param Leakage=2.38uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	306.31uH	Rser=382mohm	
+Lpri2	3a	1	306.31uH	Rser=382mohm	
+Lsec1	5	7	23.727uH	Rser=59mohm	
+Lsec2	6	8	23.727uH	Rser=59mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=19.68pf					
+.param Cprm2=19.68pf					
+.param Rdmp1=139755.04ohm					
+.param Rdmp2=139755.04ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320404		4  2  3  1  5  7  6  8		
+.param RxLkg=840.53ohm					
+.param Leakage=1.57uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	229.965uH	Rser=269mohm	
+Lpri2	3a	1	229.965uH	Rser=269mohm	
+Lsec1	5	7	73.011uH	Rser=138.55mohm	
+Lsec2	6	8	73.011uH	Rser=138.55mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=18.9pf					
+.param Cprm2=18.9pf					
+.param Rdmp1=123536.94ohm					
+.param Rdmp2=123536.94ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
+
+.subckt	750320405		4  2  3  1  5  7  6  8		
+.param RxLkg=777.43ohm					
+.param Leakage=1.29uh					
+Rlkg	4	4a	{RxLkg/2}		
+L_Lkg	4	4a	{Leakage/2}	Rser=0.01mohm	
+Rlkg2	3	3a	{RxLkg/2}		
+L_Lkg2	3	3a	{Leakage/2}	Rser=0.01mohm	
+Lpri1	4a	2	211.803uH	Rser=288.5mohm	
+Lpri2	3a	1	211.803uH	Rser=288.5mohm	
+Lsec1	5	7	272.877uH	Rser=360mohm	
+Lsec2	6	8	272.877uH	Rser=360mohm	
+K Lpri1 Lpri2   Lsec1 Lsec2       1					
+.param Cprm1=16.2pf					
+.param Cprm2=16.2pf					
+.param Rdmp1=128033.19ohm					
+.param Rdmp2=128033.19ohm					
+Cpri1	4	2	{Cprm1}	Rser=10mohm	
+Cpri2	3	1	{Cprm2}	Rser=10mohm	
+Rdmp1	4	2	{Rdmp1}		
+Rdmp2	3	1	{Rdmp2}		
+Rg3	4	0	20meg		
+Rg4	3	0	20meg		
+Rg7	2	0	20meg		
+Rg8	1	0	20meg		
+Rg11	5	0	20meg		
+Rg12	6	0	20meg		
+Rg19	7	0	20meg		
+Rg20	8	0	20meg		
+.ends					
