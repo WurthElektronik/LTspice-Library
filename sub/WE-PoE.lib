@@ -3,13 +3,13 @@
 * Kinds:                  Power over Ethernet Transformer
 * Matchcode:              WE-PoE
 * Library Type:           LTspice
-* Version:                rev24b
-* Created/modified by:    Roberta      
-* Date and Time:          2024-03-15
+* Version:                rev25a
+* Created/modified by:    Roberta /Ella     
+* Date and Time:          2025-11-25
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************	
-* Copyright(C) 2024 Würth Elektronik eiSos GmbH & Co. KG	
+* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG	
 * All Rights Reserved.	
 **************************************************	
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
@@ -2386,3 +2386,107 @@ Rg19	10	0	20meg
 Rg20	11	0	20meg		
 .ends					
 
+.subckt	750321159		1  3  5  6  10  7		
+.param RxLkg=111.02ohm					
+.param Leakage=0.09uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	3	15.41uH	Rser=21mohm	
+Laux1	5	6	3.875uH	Rser=93mohm	
+Lsec1	10	7	62uH	Rser=100mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=106pf					
+.param Rdmp1=19119.77ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg5	5	0	20meg		
+Rg7	3	0	20meg		
+Rg9	6	0	20meg		
+Rg11	10	0	20meg		
+Rg19	7	0	20meg		
+.ends					
+
+.subckt	750321158		1  3  5  6  10  7		
+.param RxLkg=99.46ohm					
+.param Leakage=0.086uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	3	17.714uH	Rser=19mohm	
+Laux1	5	6	4.45uH	Rser=93mohm	
+Lsec1	10	7	71.2uH	Rser=101mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=105pf					
+.param Rdmp1=20586.63ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg5	5	0	20meg		
+Rg7	3	0	20meg		
+Rg9	6	0	20meg		
+Rg11	10	0	20meg		
+Rg19	7	0	20meg		
+.ends					
+
+.subckt	750317723		1  3  5  6  11  9		
+.param RxLkg=645.15ohm					
+.param Leakage=0.22677uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	3	7.923uH	Rser=18mohm	
+Laux1	5	6	1.415uH	Rser=47mohm	
+Lsec1	11	9	8.15uH	Rser=23mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=37.9pf					
+.param Rdmp1=23186.2ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg5	5	0	20meg		
+Rg7	3	0	20meg		
+Rg9	6	0	20meg		
+Rg11	11	0	20meg		
+Rg19	9	0	20meg		
+.ends					
+
+.subckt	7491194924		1  3  5  6  10  9		
+.param RxLkg=440.57ohm					
+.param Leakage=0.3uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	3	41.7uH	Rser=400mohm	
+Laux1	5	6	4.667uH	Rser=70mohm	
+Lsec1	10	9	18.667uH	Rser=116mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=27.6pf					
+.param Rdmp1=61679.37ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg5	5	0	20meg		
+Rg7	3	0	20meg		
+Rg9	6	0	20meg		
+Rg11	10	0	20meg		
+Rg19	9	0	20meg		
+.ends					
+
+.subckt	750318587		1  3  5  6  11  9		
+.param RxLkg=313.79ohm					
+.param Leakage=0.4uh					
+Rlkg	1	1a	{RxLkg}		
+L_Lkg	1	1a	{Leakage}	Rser=0.01mohm	
+Lpri1	1a	3	79.6uH	Rser=125mohm	
+Laux1	5	6	17.041uH	Rser=165mohm	
+Lsec1	11	9	80uH	Rser=100mohm	
+K Lpri1  Laux1  Lsec1        1					
+.param Cprm1=50.78pf					
+.param Rdmp1=62757.96ohm					
+Cpri1	1	3	{Cprm1}	Rser=10mohm	
+Rdmp1	1	3	{Rdmp1}		
+Rg3	1	0	20meg		
+Rg5	5	0	20meg		
+Rg7	3	0	20meg		
+Rg9	6	0	20meg		
+Rg11	11	0	20meg		
+Rg19	9	0	20meg		
+.ends					
