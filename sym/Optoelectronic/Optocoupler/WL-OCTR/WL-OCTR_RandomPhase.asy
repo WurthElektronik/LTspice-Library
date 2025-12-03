@@ -34,15 +34,15 @@ SYMATTR Description WL-OCTR Optocoupler Triac - Random Phase \nAfter inserting, 
 SYMATTR Prefix x
 SYMATTR InstName Q
 SYMATTR ModelFile WL-OCTR_RandomPhase.lib
-PIN -64 -32 RIGHT 8
+PIN -64 -32 NONE 8
 PINATTR PinName A
 PINATTR SpiceOrder 1
-PIN -64 32 RIGHT 8
+PIN -64 32 NONE 8
 PINATTR PinName K
 PINATTR SpiceOrder 2
-PIN 80 32 LEFT 8
+PIN 80 32 NONE 8
 PINATTR PinName MT1
-PINATTR SpiceOrder 4
-PIN 80 -32 LEFT 8
-PINATTR PinName MT2
 PINATTR SpiceOrder 3
+PIN 80 -32 NONE 8
+PINATTR PinName MT2
+PINATTR SpiceOrder 4
