@@ -1,135 +1,23 @@
 **************************************************
-* Manufacturer:          WÃ¼rth Elektronik
-* Kinds:                 SMT Shielded Power Inductor
-* Matchcode:             WE-PDA
-* Library Type:          LTspice
-* Version:               rev23a
-* Created/modified by:   Ella
-* Date and Time:         8/7/2023
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Shielded Power Inductor
+* Matchcode:              WE-PDA
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          1/21/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2023 WÃ¼rth Elektronik eiSos GmbH & Co. KG	
-* All Rights Reserved.	
-**************************************************	
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy	
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on	
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.	
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.	
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.	
-**************************************************	
-.subckt 1210_7847709010_1u 1 2
-Rp 1 2 2294.915406849
-Cp 1 2 1.3882750261p
-Rs 1 N3 0.008
-L1 N3 2 0.9477912049945u
-.ends 1210_7847709010_1u
-*******
-.subckt 1210_7847709022_2.2u 1 2
-Rp 1 2 4769.985971776
-Cp 1 2 1.5093643078p
-Rs 1 N3 0.012
-L1 N3 2 2.265509355663u
-.ends 1210_7847709022_2.2u
-*******
-.subckt 1210_7847709033_3.3u 1 2
-Rp 1 2 6338.363617445
-Cp 1 2 1.6117205723p
-Rs 1 N3 0.014
-L1 N3 2 3.116581080998u
-.ends 1210_7847709033_3.3u
-*******
-.subckt 1210_7847709047_4.7u 1 2
-Rp 1 2 7853.568425335
-Cp 1 2 1.7532943876p
-Rs 1 N3 0.016
-L1 N3 2 4.11518615215u
-.ends 1210_7847709047_4.7u
-*******
-.subckt 1210_7847709068_6.8u 1 2
-Rp 1 2 11244.49787969
-Cp 1 2 2.7755980227p
-Rs 1 N3 0.02
-L1 N3 2 6.380294136413u
-.ends 1210_7847709068_6.8u
-*******
-.subckt 1210_7847709100_10u 1 2
-Rp 1 2 14651.33471798
-Cp 1 2 5.1433007426p
-Rs 1 N3 0.025
-L1 N3 2 9.454216640987u
-.ends 1210_7847709100_10u
-*******
-.subckt 1210_7847709150_15u 1 2
-Rp 1 2 19799
-Cp 1 2 3.95p
-Rs 1 N3 0.03
-L1 N3 2 14.93u
-.ends 1210_7847709150_15u
-*******
-.subckt 1210_7847709220_22u 1 2
-Rp 1 2 24529.7119385
-Cp 1 2 9.1256019813p
-Rs 1 N3 0.037
-L1 N3 2 19.49383174863u
-.ends 1210_7847709220_22u
-*******
-.subckt 1210_7847709330_33u 1 2
-Rp 1 2 26829
-Cp 1 2 10.3p
-Rs 1 N3 0.0443
-L1 N3 2 29.924u
-.ends 1210_7847709330_33u
-*******
-.subckt 1210_7847709470_47u 1 2
-Rp 1 2 46246.28473571
-Cp 1 2 15.428751801p
-Rs 1 N3 0.056
-L1 N3 2 41.90253832625u
-.ends 1210_7847709470_47u
-*******
-.subckt 1210_7847709680_68u 1 2
-Rp 1 2 59363
-Cp 1 2 11.8p
-Rs 1 N3 0.0655
-L1 N3 2 62.137u
-.ends 1210_7847709680_68u
-*******
-.subckt 1210_7847709101_100u 1 2
-Rp 1 2 101541.0668698
-Cp 1 2 12.7073566505p
-Rs 1 N3 0.1
-L1 N3 2 87.16698574827u
-.ends 1210_7847709101_100u
-*******
-.subckt 1210_7847709221_220u 1 2
-Rp 1 2 105097.46965648
-Cp 1 2 16.0315674238p
-Rs 1 N3 0.205
-L1 N3 2 196.7291808281u
-.ends 1210_7847709221_220u
-*******
-.subckt 1210_7847709331_330u 1 2
-Rp 1 2 89155
-Cp 1 2 17p
-Rs 1 N3 0.34
-L1 N3 2 319.916u
-.ends 1210_7847709331_330u
-*******
-.subckt 1210_7847709471_470u 1 2
-Rp 1 2 109394.88869077
-Cp 1 2 17.578119258p
-Rs 1 N3 0.41
-L1 N3 2 390.1587144886u
-.ends 1210_7847709471_470u
-*******
-.subckt 1210_7847709102_1000u 1 2
-Rp 1 2 216540.591668429
-Cp 1 2 15.7632287615714p
-Rs 1 N3 0.885
-L1 N3 2 774.510514956553u
-.ends 1210_7847709102_1000u
-*******
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
 .subckt 1260_784771010_1u 1 2
 Rp 1 2 2433.248526684
 Cp 1 2 1.3484119846p
@@ -241,111 +129,6 @@ Cp 1 2 8.9931636428p
 Rs 1 N3 1.42
 L1 N3 2 958.0309208405u
 .ends 1260_784771102_1000u
-*******
-.subckt 1280_78477010_1u 1 2
-Rp 1 2 2668.882619536
-Cp 1 2 1.2949025235p
-Rs 1 N3 0.0075
-L1 N3 2 0.851361u
-.ends 1280_78477010_1u
-*******
-.subckt 1280_78477022_2.2u 1 2
-Rp 1 2 5813.474815798
-Cp 1 2 1.5220075628p
-Rs 1 N3 0.012
-L1 N3 2 2.286935796312u
-.ends 1280_78477022_2.2u
-*******
-.subckt 1280_78477033_3.3u 1 2
-Rp 1 2 7614.617238701
-Cp 1 2 1.5416464406p
-Rs 1 N3 0.014
-L1 N3 2 3.212340743703u
-.ends 1280_78477033_3.3u
-*******
-.subckt 1280_78477047_4.7u 1 2
-Rp 1 2 9407.872771631
-Cp 1 2 1.7999782823p
-Rs 1 N3 0.0165
-L1 N3 2 4.206935362839u
-.ends 1280_78477047_4.7u
-*******
-.subckt 1280_78477068_6.8u 1 2
-Rp 1 2 14556.74736043
-Cp 1 2 2.1384636392p
-Rs 1 N3 0.021
-L1 N3 2 6.798057276949u
-.ends 1280_78477068_6.8u
-*******
-.subckt 1280_784770100_10u 1 2
-Rp 1 2 18808.39861138
-Cp 1 2 3.2660671847p
-Rs 1 N3 0.026
-L1 N3 2 9.940123740059u
-.ends 1280_784770100_10u
-*******
-.subckt 1280_784770220_22u 1 2
-Rp 1 2 31940.81996524
-Cp 1 2 5.2589619092p
-Rs 1 N3 0.037
-L1 N3 2 20.19197852179u
-.ends 1280_784770220_22u
-*******
-.subckt 1280_784770330_33u 1 2
-Rp 1 2 25921
-Cp 1 2 9.75p
-Rs 1 N3 0.0458
-L1 N3 2 29.022u
-.ends 1280_784770330_33u
-*******
-.subckt 1280_784770470_47u 1 2
-Rp 1 2 56578.20721198
-Cp 1 2 9.5024623536p
-Rs 1 N3 0.059
-L1 N3 2 42.7394983986u
-.ends 1280_784770470_47u
-*******
-.subckt 1280_784770680_68u 1 2
-Rp 1 2 72516
-Cp 1 2 9.849p
-Rs 1 N3 0.082
-L1 N3 2 64.774u
-.ends 1280_784770680_68u
-*******
-.subckt 1280_784770101_100u 1 2
-Rp 1 2 97590.86624169
-Cp 1 2 10.4463930828p
-Rs 1 N3 0.12
-L1 N3 2 92.07199101756u
-.ends 1280_784770101_100u
-*******
-.subckt 1280_784770221_220u 1 2
-Rp 1 2 133347.06902775
-Cp 1 2 11.2068371226p
-Rs 1 N3 0.25
-L1 N3 2 207.6478051298u
-.ends 1280_784770221_220u
-*******
-.subckt 1280_784770331_330u 1 2
-Rp 1 2 364620
-Cp 1 2 11.8p
-Rs 1 N3 0.39
-L1 N3 2 324.661u
-.ends 1280_784770331_330u
-*******
-.subckt 1280_784770471_470u 1 2
-Rp 1 2 145181.648050917
-Cp 1 2 14.2376988305p
-Rs 1 N3 0.475
-L1 N3 2 426.004640068417u
-.ends 1280_784770471_470u
-*******
-.subckt 1280_784770102_1000u 1 2
-Rp 1 2 83224.4700293857
-Cp 1 2 12.2029488045714p
-Rs 1 N3 1
-L1 N3 2 922.109905113286u
-.ends 1280_784770102_1000u
 *******
 .subckt 7332_784778010_1u 1 2
 Rp 1 2 2307.40930898667
