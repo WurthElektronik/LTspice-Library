@@ -1,0 +1,90 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Flat wire inductor
+* Matchcode:              WE-SFIA
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          02/25/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 2010_784364210033_0.33u 1 2
+Rp 1 2 238
+Cp 1 2 2p
+Rs 1 N3 0.001
+L1 N3 2 0.343u
+.ends 2010_784364210033_0.33u
+*******
+.subckt 2010_784364210047_0.47u 1 2
+Rp 1 2 227.674
+Cp 1 2 1.546p
+Rs 1 N3 0.001
+L1 N3 2 0.448525u
+.ends 2010_784364210047_0.47u
+*******
+.subckt 2010_784364210068_0.68u 1 2
+Rp 1 2 229
+Cp 1 2 5p
+Rs 1 N3 0.001
+L1 N3 2 0.708u
+.ends 2010_784364210068_0.68u
+*******
+.subckt 2013_784364210082_0.82u 1 2
+Rp 1 2 729
+Cp 1 2 2p
+Rs 1 N3 0.0019
+L1 N3 2 0.789u
+.ends 2013_784364210082_0.82u
+*******
+.subckt 2013_784364210100_1u 1 2
+Rp 1 2 732
+Cp 1 2 3p
+Rs 1 N3 0.0019
+L1 N3 2 1u
+.ends 2013_784364210100_1u
+*******
+.subckt 2013_784364210150_1.5u 1 2
+Rp 1 2 737
+Cp 1 2 3p
+Rs 1 N3 0.0019
+L1 N3 2 1u
+.ends 2013_784364210150_1.5u
+*******
+.subckt 2013_784364210220_2.2u 1 2
+Rp 1 2 768
+Cp 1 2 4p
+Rs 1 N3 0.0019
+L1 N3 2 2u
+.ends 2013_784364210220_2.2u
+*******
+.subckt 2016_784364210360_3.6u 1 2
+Rp 1 2 1000
+Cp 1 2 4p
+Rs 1 N3 0.0028
+L1 N3 2 3u
+.ends 2016_784364210360_3.6u
+*******
+.subckt 2016_784364210400_4u 1 2
+Rp 1 2 1000
+Cp 1 2 3p
+Rs 1 N3 0.0028
+L1 N3 2 3u
+.ends 2016_784364210400_4u
+*******
+.subckt 2016_784364210470_4.7u 1 2
+Rp 1 2 1000
+Cp 1 2 4p
+Rs 1 N3 0.0028
+L1 N3 2 4u
+.ends 2016_784364210470_4.7u
+*******
