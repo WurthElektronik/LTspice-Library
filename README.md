@@ -6,6 +6,8 @@ LTspice is a SPICE-based analog electronic circuit simulator computer software, 
 
 For how to use models in GitHub repository, you can refer to the help document in this folder.
 
+**Please contact libraries@we-online.com if there is any problem.**
+
 **Please read Disclaimer carefully before downloading and using Würth Elektronik Models.**
 
 **Note: LTspice Library in GitHub repository is always the latest.**
