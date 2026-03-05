@@ -1,70 +1,20 @@
-**LTspice Library for Würth Elektronik Products**
-=
-
+`LTspice Simulation Libraries for Würth Elektronik Products`
+=========
 ## Introduction
-LTspice is a SPICE-based analog electronic circuit simulator computer software, produced by semiconductor manufacturer Analog Devices. It is the most widely distributed and used SPICE software in the industry. Though it is freeware, LTspice is not artificially restricted to limit its capabilities.
+Welcome to Würth Elektronik LTspice Simulation Library repository. <br>
+The libraries are created and maintained by Würth Elektronik EDA Team, for any questions and suggestions please feel free to contact EDA team by email: <libraries@we-online.com>
 
-For how to use models in GitHub repository, you can refer to the help document in this folder.
+## Library Component Coverage
 
-**Please contact libraries@we-online.com if there is any problem.**
+* Optoelectronic Components <br>
+_Infrared & Ultraviolet, Laser, Lighting LEDs, Phototransistors, Optocoupler, Signal LEDs_
 
-**Please read Disclaimer carefully before downloading and using Würth Elektronik Models.**
+* Passive Components <br>
+_Capacitors, Crystals & Oscillators, EMC & RFI Components, Inductors, Resistors, Signal & Communications, Transformers_
 
-**Note: LTspice Library in GitHub repository is always the latest.**
-## examples Classification
-* WPME-VDLM - predefined circuits
-  
-## Component Classification
-* WE - Automotive
-  
-  * Common Mode Chokes
-  * Ferrites
-  * Filter Chokes
-  * Power Inductors
-  * RF Inductors
-* WE - Capacitors
+* Power Modules (MagI3C Series) <br>
+_ Step Down Converter_
 
-  * Electrolytic
-  * Film
-  * MLCC
-  * Polymer
-  * Super
-* WE - EMC Components
-
-  * Common Mode Chokes
-  * ESD Protection
-  * Ferrites
-  * Filter Chokes
-  * Line Filter
-  * Surge Protection
-* WE - Power Magnetics
-
-  * Coupled 
-  * Dual Coil
-  * EMC Components
-  * High Voltage
-  * PFC Choke
-  * Shielded
-  * UnShielded
-  * Transformers
-  * WirelessPower
-* WE - Optoelectronic Components
-
-  * Infrared & Ultraviolet LEDs
-  * Laser
-  * Lighting LEDs
-  * Optocoupler
-  * Photodiodes
-  * Phototransistors
-  * Signal LEDs
-* WE - Resistors
-
-  * Metal Plate Resistors
-  * Thick Film Resistors
-* WE - Signal & Communications
-
-  * AS Interface Inductors
-  * Filter
-  * RF Inductors
-  * Transformers
-* WE - Power Modules
+## More Library Repositories Provided By Würth Elektronik
+**PCB Library**: [Altium](https://github.com/WurthElektronik/Altium-Library), [Cadence](https://github.com/WurthElektronik/Cadence-Library), [Eagle](https://github.com/WurthElektronik/Eagle-Library), [KiCad](https://github.com/WurthElektronik/KiCad-Library)    <br>
+**Simulation Library**: [ADS](https://github.com/WurthElektronik/ADS-Library), [Ansys](https://github.com/WurthElektronik/Ansys-Library), [IBIS](https://github.com/WurthElektronik/IBIS-Library), [Pspice](https://github.com/WurthElektronik/Pspice-Library), [Qspice](https://github.com/WurthElektronik/Qspice-Library)
