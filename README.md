@@ -13,7 +13,7 @@ _Infrared & Ultraviolet, Laser, Lighting LEDs, Phototransistors, Optocoupler, Si
 _Capacitors, Crystals & Oscillators, EMC & RFI Components, Inductors, Resistors, Signal & Communications, Transformers_
 
 * Power Modules (MagI3C Series) <br>
-_ Step Down Converter_
+_Step Down Converter_
 
 ## More Library Repositories Provided By Würth Elektronik
 **PCB Library**: [Altium](https://github.com/WurthElektronik/Altium-Library), [Cadence](https://github.com/WurthElektronik/Cadence-Library), [Eagle](https://github.com/WurthElektronik/Eagle-Library), [KiCad](https://github.com/WurthElektronik/KiCad-Library)    <br>
