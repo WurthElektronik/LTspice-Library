@@ -1,0 +1,360 @@
+**************************************************
+* Manufacturer:           Würth Elektronik 
+* Kinds:                  Common Mode Choke Automotive High Voltage
+* Matchcode:              WE-CMAHV
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella      
+* Date and Time:          2026-04-03
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt XL_784830007215_0.7m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=3.8m
++  ck=119.2511f
++  DC4=3.9517p
++  DL4=289.5685n
++  DR5=10.5384
++  DR6=2.3410k
++  DC3=10.4842p
++  DL3=7.1730n
++  DR3=1.7055
++  DR4=150.0342
++  L1=601.6071u
++  L2=84.5416u
++  L3=73.5546u
++  L4=65.6782u
++  RS1=3.4367k
++  RS2=452.5338
++  RS3=437.4106
++  RS4=248.3536
++  C1=30.1209p
++  R2=506.7425m
++  C2=697.8113p
++  L5=9.7391u
++  RS5=390.0818
+.ends XL_784830007215_0.7m
+********
+.subckt XL_784830010185_1m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=5.5m
++  ck=128.7906f
++  DC4=5.2280p
++  DL4=437.7786n
++  DR5=10.5223
++  DR6=3.2465k
++  DC3=11.5046p
++  DL3=11.9818n
++  DR3=1.7055
++  DR4=150.0346
++  L1=801.2054u
++  L2=208.7920u
++  L3=66.2162u
++  L4=50.3349u
++  RS1=4.0935k
++  RS2=1.0800k
++  RS3=1.0316k
++  RS4=1.0429k
++  C1=29.7253p
++  R2=506.9798m
++  C2=83.5157p
++  L5=85.5405u
++  RS5=1.4157k
+.ends
+********
+.subckt XL_784830017132_1.7m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=10m
++  ck=154.9637f
++  DC4=6.9087p
++  DL4=631.6438n
++  DR5=10.5202
++  DR6=4.4469k
++  DC3=11.4592p
++  DL3=12.1246n
++  DR3=1.7055
++  DR4=150.0328
++  L1=715.3052u
++  L2=360.9474u
++  L3=260.9364u
++  L4=170.2017u
++  RS1=4.5016k
++  RS2=2.1382k
++  RS3=1.5839k
++  RS4=1.1118k
++  C1=22.6709p
++  R2=506.9307m
++  C2=80.5157p
++  L5=83.3255u
++  RS5=1.4353k
+.ends
+********
+.subckt XL_784830025103_2.5m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=18m
++  ck=155.2033f
++  DC4=8.9185p
++  DL4=1.2671u
++  DR5=10.5203
++  DR6=8.2469k
++  DC3=7.4592p
++  DL3=42.1242n
++  DR3=1.7055
++  DR4=1.0469k
++  L1=1.3992m
++  L2=566.4852u
++  L3=495.6175u
++  L4=391.5212u
++  RS1=7.5024k
++  RS2=4.5384k
++  RS3=3.5843k
++  RS4=2.1127k
++  C1=18.2031p
++  R2=506.9245m
++  C2=80.5486p
++  L5=83.4740u
++  RS5=1.4354k
+.ends
+********
+.subckt XL_784830039080_3.9m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=31m
++  ck=155.1902f
++  DC4=13.2174p
++  DL4=1.8102u
++  DR5=10.5196
++  DR6=10.5518k
++  DC3=7.4593p
++  DL3=82.1316n
++  DR3=1.7055
++  DR4=2.0469k
++  L1=2.0679m
++  L2=588.6619u
++  L3=517.9304u
++  L4=510.0418u
++  RS1=11.0706k
++  RS2=7.5388k
++  RS3=6.5847k
++  RS4=5.1135k
++  C1=23.3532p
++  R2=506.9112m
++  C2=294.0645p
++  L5=114.3342u
++  RS5=2.4349k
+.ends
+********
+.subckt XXL_784831010205_1m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=5.5m
++  ck=128.7906f
++  DC4=8.2280p
++  DL4=637.7786n
++  DR5=10.5223
++  DR6=3.8465k
++  DC3=12.5046p
++  DL3=15.9818n
++  DR3=1.7055
++  DR4=350.0346
++  L1=701.2054u
++  L2=108.7920u
++  L3=96.2162u
++  L4=50.3349u
++  RS1=6.0935k
++  RS2=2.0800k
++  RS3=2.0316k
++  RS4=2.0429k
++  C1=30.7253p
++  R2=506.9798m
++  C2=83.5157p
++  L5=85.5405u
++  RS5=1.4157k
+.ends
+********
+.subckt XXL_784831020133_2m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=13m
++  ck=128.5967f
++  DC4=14.3072p
++  DL4=1.3206u
++  DR5=10.5223
++  DR6=9.2465k
++  DC3=9.5077p
++  DL3=70.9818n
++  DR3=1.7055
++  DR4=1.0465k
++  L1=1.0054m
++  L2=413.7920u
++  L3=396.2162u
++  L4=150.3349u
++  RS1=13.2935k
++  RS2=7.0800k
++  RS3=5.0316k
++  RS4=4.0429k
++  C1=24.7253p
++  R2=506.9798m
++  C2=128.5157p
++  L5=105.5405u
++  RS5=1.6157k
+.ends
+********
+.subckt XXL_784831016164_1.6m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=8.5m
++  ck=128.5967f
++  DC4=14.3072p
++  DL4=936.3206n
++  DR5=10.5223
++  DR6=6.8465k
++  DC3=10.5077p
++  DL3=40.9818n
++  DR3=1.7055
++  DR4=840.0346
++  L1=1.1054m
++  L2=408.7920u
++  L3=196.2162u
++  L4=50.3349u
++  RS1=11.0935k
++  RS2=6.0800k
++  RS3=4.0316k
++  RS4=4.0429k
++  C1=29.7253p
++  R2=506.9798m
++  C2=128.5157p
++  L5=105.5405u
++  RS5=1.5157k
+.ends
+********
+.subckt XXL_784831034090_3.4m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=27m
++  ck=128.8055f
++  DC4=14.7981p
++  DL4=1.9211u
++  DR5=10.5199
++  DR6=12.8609k
++  DC3=7.5073p
++  DL3=111.5088n
++  DR3=1.7055
++  DR4=1.6465k
++  L1=2.1933m
++  L2=833.1188u
++  L3=230.4203u
++  L4=50.7382u
++  RS1=23.9545k
++  RS2=19.1156k
++  RS3=10.0395k
++  RS4=10.0433k
++  C1=20.4116p
++  R2=506.9724m
++  C2=137.2288p
++  L5=127.7160u
++  RS5=1.5155k
+.ends
+********
+.subckt XXL_784831047068_4.7m 1 2 3 4
+X1  1  2  3  4  CMAHV  PARAMS:
++  Rdc=44m
++  ck=129.5116f
++  DC4=14.1854p
++  DL4=2.8922u
++  DR5=10.5332
++  DR6=9.9991k
++  DC3=7.2321p
++  DL3=250.7690n
++  DR3=1.7056
++  DR4=2.3445k
++  L1=3.1933m
++  L2=803.1188u
++  L3=230.4203u
++  L4=150.7382u
++  RS1=40.4545k
++  RS2=29.1156k
++  RS3=20.0395k
++  RS4=20.0433k
++  C1=23.4116p
++  R2=506.9724m
++  C2=137.2288p
++  L5=127.7160u
++  RS5=1.5155k
+.ends
+********
+.subckt CMAHV  1  2  3  4  PARAMS:
+L5 N009 N008 {L3}
+C3 N007 N006 {C1}
+L1 4 N010 {L1}
+L3 N010 N009 {L2}
+L6 N015 N014 {L3}
+C4 N024 N013 {C1}
+L2 3 N016 {L1}
+L4 N016 N015 {L2}
+L8 N014 N013 {L4}
+L7 N008 N006 {L4}
+L9 N006 N005 {L5}
+L10 N013 N021 {L5}
+R1 N001 1 {Rdc}
+R2 N003 N001 {dR4}
+C1 N002 N001 {dC3}
+L17 N011 N001 {dL3}
+L18 N017 N018 {dL3}
+C2 N011 N018 {ck}
+R3 N003 N002 {dR3}
+R4 N019 N022 {dR3}
+C9 N022 N017 {dC3}
+R5 N019 N017 {dR4}
+L19 N003 N011 {dL3}
+L20 N018 N019 {dL3}
+R6 N017 2 {Rdc}
+R8 N005 N003 {dR6}
+C10 N004 N003 {dC4}
+L13 N012 N003 {dL4}
+L14 N019 N020 {dL4}
+C11 N012 N020 {ck}
+R9 N005 N004 {dR5}
+R10 N021 N023 {dR5}
+C12 N023 N019 {dC4}
+R11 N021 N019 {dR6}
+L15 N005 N012 {dL4}
+L16 N020 N021 {dL4}
+R7 N006 N005 {Rs5}
+C5 N006 N005 {C2}
+R12 N013 N021 {Rs5}
+C6 N013 N021 {C2}
+R13 N008 N006 {Rs4}
+R14 N009 N008 {Rs3}
+R15 N010 N009 {Rs2}
+R16 4 N010 {Rs1}
+R17 N014 N013 {Rs4}
+R18 N015 N014 {Rs3}
+R19 N016 N015 {Rs2}
+R20 3 N016 {Rs1}
+R21 4 N007 {R2}
+R22 3 N024 {R2}
+K3 L5 L6 1
+K2 L3 L4 1
+K1 L1 L2 1
+K4 L7 L8 1
+K5 L9  L10 1
+K7_1  L17  L18  0.9999
+K7_2  L17  L19  0.9999
+K7_3  L17  L20  0.9999
+K7_4  L18  L19  0.9999
+K7_5  L18  L20  0.9999
+K7_6  L19  L20  0.9999
+K6_1  L13  L14  0.9999
+K6_2  L13  L15  0.9999
+K6_3  L13  L16  0.9999
+K6_4  L14  L15  0.9999
+K6_5  L14  L16  0.9999
+K6_6  L15  L16  0.9999
+.ends  CMAHV
+********
