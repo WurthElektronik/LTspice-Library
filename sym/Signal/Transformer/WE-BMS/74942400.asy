@@ -41,20 +41,26 @@ ARC Normal -64 16 -80 32 -72 16 -72 32
 ARC Normal -112 16 -128 32 -120 32 -120 16
 WINDOW 0 -48 -64 Bottom 2
 WINDOW 123 -48 64 Top 2
-SYMATTR Value2 74941301
+SYMATTR Value2 74942400
 SYMATTR Prefix X
 SYMATTR InstName T
 SYMATTR SpiceModel WE-BMS.lib
-SYMATTR Description WE-BMS Transformer for Battery Management Systems \nSMT, 1Ports\nwww.we-online.com/redexpert/article/74941301?al\n\nPlease note disclaimer in WE-BMS.lib.
+SYMATTR Description WE-BMS Transformer for Battery Management Systems \nSMT, 1Ports\nwww.we-online.com/redexpert/article/74942400?al\n\nPlease note disclaimer in WE-BMS.lib.
 PIN -144 -48 NONE 8
 PINATTR PinName Port_1
 PINATTR SpiceOrder 1
+PIN -144 0 NONE 8
+PINATTR PinName NC
+PINATTR SpiceOrder 2
 PIN 64 -48 NONE 8
-PINATTR PinName Port_6
-PINATTR SpiceOrder 3
+PINATTR PinName Port_12
+PINATTR SpiceOrder 6
 PIN 64 48 NONE 8
-PINATTR PinName Port_4
+PINATTR PinName Port_10
 PINATTR SpiceOrder 4
+PIN 64 0 NONE 8
+PINATTR PinName NC
+PINATTR SpiceOrder 5
 PIN -144 48 NONE 8
 PINATTR PinName Port_3
-PINATTR SpiceOrder 2
+PINATTR SpiceOrder 3

@@ -3,13 +3,13 @@
 * Kinds:                  Aluminum Electrolytic Capacitors
 * Matchcode:              WCAP-AI3H
 * Library Type:           LTspice
-* Version:                rev25a
+* Version:                rev26a
 * Created/modified by:    Ella
-* Date and Time:          9/9/2025
+* Date and Time:          4/9/2026
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -94,6 +94,13 @@ Lser 2 4 1.4639549587E-08
 C1 3 4 0.00012
 Rpar 3 4 645494.448747741
 .ends 861141484010_120uF
+*******
+.subckt 861142084015_180uF 1 2
+Rser 1 3 0.21646
+Lser 2 4 0.000000008493
+C1 3 4 0.00018
+Rpar 3 4 555555.555555556
+.ends 861142084015_180uF
 *******
 .subckt 861141084008_470uF 1 2
 Rser 1 3 0.135221660912
