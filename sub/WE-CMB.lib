@@ -3,13 +3,13 @@
 * Kinds:                  Common Mode Power Line Choke
 * Matchcode:              WE-CMB 
 * Library Type:           LTspice
-* Version:                rev25a
+* Version:                rev26a
 * Created/modified by:    Ella      
-* Date and Time:          2025-04-09
+* Date and Time:          2026-05-11
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -1018,7 +1018,7 @@ X1  1  2  3  4  CMB1  PARAMS:
 .ends
 ********
 .SUBCKT  CMB    1  2  3  4  PARAMS: 
-R_R9  N12325  3  {R2}
+R_R9  N12325  4  {R2}
 R_R8  N13265  N13287  {Rs4}
 Kn_K6a  L_L11  L_L12  0.9999
 Kn_K6b  L_L11  L_L13  0.9999
@@ -1027,7 +1027,7 @@ Kn_K6d  L_L12  L_L13  0.9999
 Kn_K6e  L_L12  L_L14  0.9999
 Kn_K6f  L_L13  L_L14  0.9999
 R_R3  N12571  N12583  {Rs3}
-R_R10  N13777  4  {R2}
+R_R10  N13777  3  {R2}
 C_C10  N13029  N12821  {ck}
 R_R20  N13215  N13229  {dR4}
 L_L11  N12821  N12295  {dL4}
@@ -1054,12 +1054,12 @@ Kn_K3  L_L5  L_L6  1
 L_L16  N12257  N12799  {dL3}
 C_C8  N13215  N13741  {dC3}
 L_L18  N13023  N13215  {dL3}
-R_R1  N12599  3  {Rs1}
+R_R1  N12599  4  {Rs1}
 R_R13  N12289  N12295  {dR5}
 L_L4  N13305  N13319  {L2}
 L_L5  N12571  N12583  {L3}
 R_R15  N13755  N13249  {dR5}
-R_R5  N13319  4  {Rs1}
+R_R5  N13319  3  {Rs1}
 R_R18  N12257  N12273  {dR4}
 Kn_K2  L_L3  L_L4  1
 R_R19  N13741  N13229  {dR3}
@@ -1067,7 +1067,7 @@ L_L15  N12799  N12273  {dL3}
 L_L17  N13229  N13023  {dL3}
 L_L3  N12583  N12599  {L2}
 R_R11  N12295  N12307  {Rs5}
-L_L2  N13319  4  {L1}
+L_L2  N13319  3  {L1}
 C_C4  N13249  N13265  {C2}
 L_L10  N13249  N13265  {L5}
 Kn_K1  L_L1  L_L2  1
@@ -1075,7 +1075,7 @@ R_R14  N12273  N12295  {dR6}
 C_C6  N13229  N13755  {dC4}
 L_L12  N12273  N12821  {dL4}
 L_L14  N13029  N13229  {dL4}
-L_L1  N12599  3  {L1}
+L_L1  N12599  4  {L1}
 C_C1  N12307  N12325  {C1}
 R_R12  N13249  N13265  {Rs5}
 C_C2  N13265  N13777  {C1}
@@ -1113,11 +1113,11 @@ C_C7  N12257  N12267  {dC3}
 + dL4=0.245u
 L5 N009 N008 {L3}
 C3 N002 N001 {C1}
-L1 3 N010 {L1}
+L1 4 N010 {L1}
 L3 N010 N009 {L2}
 L6 N015 N014 {L3}
 C4 N024 N013 {C1}
-L2 4 N016 {L1}
+L2 3 N016 {L1}
 L4 N016 N015 {L2}
 L8 N014 N013 {L4}
 L7 N008 N001 {L4}
@@ -1154,11 +1154,11 @@ C6 N013 N021 {C2}
 R13 N008 N001 {Rs4}
 R14 N009 N008 {Rs3}
 R15 N010 N009 {Rs2}
-R16 3 N010 {Rs1}
+R16 4 N010 {Rs1}
 R17 N014 N013 {Rs4}
 R18 N015 N014 {Rs3}
 R19 N016 N015 {Rs2}
-R20 4 N016 {Rs1}
+R20 3 N016 {Rs1}
 R21 3 N002 {R2}
 R22 4 N024 {R2}
 K3 L5 L6 1
@@ -1172,11 +1172,11 @@ K7c L17 L20 0.9999
 K7d L18 L19 0.9999
 K7e L18 L20 0.9999
 K7f L19 L20 0.9999
-K6 L13 L14 0.9999
-K6 L13 L15 0.9999
-K6 L13 L16 0.9999
-K6 L14 L15 0.9999
-K6 L14 L16 0.9999
-K6 L15 L16 0.9999
+K6a L13 L14 0.9999
+K6b L13 L15 0.9999
+K6c L13 L16 0.9999
+K6d L14 L15 0.9999
+K6e L14 L16 0.9999
+K6f L15 L16 0.9999
 .ends
 ****
