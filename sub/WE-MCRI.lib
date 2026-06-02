@@ -3,9 +3,9 @@
 * Kinds:                  SMT Molded Coupled Inductor 
 * Matchcode:              WE-MCRI
 * Library Type:           LTspice
-* Version:                rev26a
+* Version:                rev26b
 * Created/modified by:    Ella      
-* Date and Time:          2026-05-20
+* Date and Time:          2026-05-28
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
@@ -18,6 +18,31 @@
 * Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
 * Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
+.subckt 1040_7448991150_15u 1  2  3  4  PARAMS:
++  Cww=293p
++  Rp1=12218
++  Cp1=23.797p
++  Lp1=14.109u
++  Rp2=12218
++  Cp2=23.797p
++  Lp2=14.109u
++  RDC1=0.083
++  RDC2=0.083
++  K=0.99
+C_C1 3 1 {Cww/2}
+R_R50 3 1 5000g
+C_C2 4 2 {Cww/2}
+C_C5 4 3 {Cp1}
+R_R1 4 N05454 {RDC1}
+R_R2 4 3 {Rp1}
+L_L1 N05454 3 {Lp1}
+L_L2 N05750 1 {Lp2}
+C_C6 2 1 {Cp2}
+R_R3 2 1 {Rp2}
+R_R4 2 N05750 {RDC2}
+Kn_K1  L_L1  L_L2  {K}
+.ends 
+*******
 .subckt  1090_7448990010_1u  1  2  3  4  PARAMS:
 +  Cww=76p
 +  Rp1=2131
@@ -618,4 +643,27 @@ R_R4 2 N05750 {RDC2}
 Kn_K1  L_L1  L_L2  {K}
 .ends 
 *******
-
++  Cww=293p
++  Rp1=12218
++  Cp1=23.797p
++  Lp1=14.109u
++  Rp2=12218
++  Cp2=23.797p
++  Lp2=14.109u
++  RDC1=0.083
++  RDC2=0.083
++  K=0.99
+C_C1 3 1 {Cww/2}
+R_R50 3 1 5000g
+C_C2 4 2 {Cww/2}
+C_C5 4 3 {Cp1}
+R_R1 4 N05454 {RDC1}
+R_R2 4 3 {Rp1}
+L_L1 N05454 3 {Lp1}
+L_L2 N05750 1 {Lp2}
+C_C6 2 1 {Cp2}
+R_R3 2 1 {Rp2}
+R_R4 2 N05750 {RDC2}
+Kn_K1  L_L1  L_L2  {K}
+.ends 
+*******

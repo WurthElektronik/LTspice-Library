@@ -17,7 +17,7 @@ ARC Normal -8 -8 -24 -24 -24 -16 -8 -16
 WINDOW 38 1 35 Center 2
 WINDOW 0 0 -37 Center 2
 SYMATTR Description WE-MCRI SMT Molded Coupled Inductor \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/en/components/products/WE-MCRI \n\nPlease note disclaimer in WE-MCRI.lib.
-SYMATTR SpiceModel 1090_7448990010_1u
+SYMATTR SpiceModel 1040_7448991150_15u
 SYMATTR Prefix x
 SYMATTR InstName L
 SYMATTR ModelFile WE-MCRI.lib
