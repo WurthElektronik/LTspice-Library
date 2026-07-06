@@ -3,13 +3,13 @@
 * Kinds:                  Common Mode Line Filter 
 * Matchcode:              WE-CNSA
 * Library Type:           LTspice
-* Version:                rev23a
+* Version:                rev26a
 * Created/modified by:    Ella      
-* Date and Time:          2023-07-24
+* Date and Time:          2026-07-06
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2023 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -137,6 +137,33 @@ X1  1  2  3  4  CNSA  PARAMS:
 +  Rdc=0.45
 +  ck=8.0772p
 .ends 0805_784231371_370ohm
+*****
+.subckt 1210_784234510_7850ohm 1 2 3 4
+X1  1  2  3  4  CNSA1  PARAMS:
++ dL3=2.3162n
++ dL4=168.5634p
++ dC3=8.7096p
++ dC4=7.9935p
++ dR3=2.9625
++ dR4=23.6032
++ dR5=2.3517
++ dR6=34.9666
++ ck=1.5952p
++ L1=9.7625u
++ L2=9.7625u
++ L3=1.7625u
++ L4=1.7625u
++ L5=22.7625u
++ C1=2.6877p
++ C2=59.6877f
++ RS1=199.9976
++ RS2=99.9976
++ RS3=99.9976
++ RS4=99.9968
++ Rs5=15.2592k
++ R2=99.9304
++ Rdc=0.6
+.ends
 *****
 .subckt 1210_784234101_9850ohm 1 2 3 4
 X1  1  2  3  4  CNSA1  PARAMS:
