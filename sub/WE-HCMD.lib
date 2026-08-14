@@ -1,22 +1,22 @@
 **************************************************
-* Manufacturer:          WÃ¼rth Elektronik
-* Kinds:                 High current inductor for TLVR applic
-* Matchcode:             WE-HCMD
-* Library Type:          LTspice
-* Version:               rev25a
-* Created/modified by:   Ella
-* Date and Time:         9/24/2025
-* Team:                  eiSos EDA Service  
-* Contact:               libraries@we-online.com
+* Manufacturer:           Würth Elektronik
+* Kinds:                  High current inductor for TLVR applic
+* Matchcode:              WE-HCMD
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          8/14/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2025 WÃ¼rth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
-* Disclaimer: While WÃ¼rth Elektronik eiSos has made every reasonable effort to ensure the accuracy
-* of the simulation models provided, WÃ¼rth Elektronik eiSos does not guarantee the exemption of error on
-* the simulation models, nor does WÃ¼rth Elektronik eiSos guarantee that the simulation model is current.
-* WÃ¼rth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
-* WÃ¼rth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
 **************************************************
 .subckt 0910_7443000910070_0.07u 1  2  3  4  PARAMS:
 +  Cww=12p
@@ -26,16 +26,16 @@
 +  Rp2=31.252
 +  Cp2=35.744p
 +  Lp2=0.070251u
-+  RDC1=0.125
-+  RDC2=0.33
++  RDC1=0.125m
++  RDC2=0.33m
 +  K=0.930198613779791
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -51,16 +51,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=35.596
 +  Cp2=49.65p
 +  Lp2=0.100707u
-+  RDC1=0.125
-+  RDC2=0.33
++  RDC1=0.125m
++  RDC2=0.33m
 +  K=0.954681334765334
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -76,16 +76,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=37.333
 +  Cp2=55.351p
 +  Lp2=0.124143u
-+  RDC1=0.125
-+  RDC2=0.33
++  RDC1=0.125m
++  RDC2=0.33m
 +  K=0.960985670387815
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -101,16 +101,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=39.347
 +  Cp2=62.482p
 +  Lp2=0.15113u
-+  RDC1=0.125
-+  RDC2=0.33
++  RDC1=0.125m
++  RDC2=0.33m
 +  K=0.969822866388133
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -126,16 +126,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=27.247
 +  Cp2=49.95p
 +  Lp2=0.065519u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.932106149899873
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -151,16 +151,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=29.66
 +  Cp2=63.584p
 +  Lp2=0.102491u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.95454254848063
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -176,16 +176,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=38.187
 +  Cp2=51.126p
 +  Lp2=0.114649u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.961757502309171
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -201,16 +201,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=42.155
 +  Cp2=52.481p
 +  Lp2=0.138054u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.96952647945046
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -226,16 +226,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=42.824
 +  Cp2=66.937p
 +  Lp2=0.165274u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.975128869438206
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
@@ -251,16 +251,16 @@ Kn_K1  L_L1  L_L2  {K}
 +  Rp2=44.181
 +  Cp2=66.096p
 +  Lp2=0.196333u
-+  RDC1=0.125
-+  RDC2=0.37
++  RDC1=0.125m
++  RDC2=0.37m
 +  K=0.976494584275413
-C_C1 3 1 {Cww/2}
-R_R50 3 1 5000g
-C_C2 2 4 {Cww/2}
-C_C5 2 3 {Cp1}
-R_R1 2 N05454 {RDC1}
-R_R2 2 3 {Rp1}
-L_L1 N05454 3 {Lp1}
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
 L_L2 N05750 1 {Lp2}
 C_C6 4 1 {Cp2}
 R_R3 4 1 {Rp2}
