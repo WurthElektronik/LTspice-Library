@@ -31,20 +31,20 @@ ARC Normal 0 16 16 32 16 24 0 24
 ARC Normal 16 16 32 32 32 24 16 24
 WINDOW 0 -17 -77 Left 2
 WINDOW 38 -102 84 Left 2
-SYMATTR Description WE-LF SMT Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WE-LF-SMD \n\nPlease note disclaimer in WE-LF_SMD.lib.
 SYMATTR SpiceModel SH_74466340007_0.7m
+SYMATTR Description WE-LF SMT Common Mode Power Line Choke \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/components/products/WE-LF-SMD \n\nPlease note disclaimer in WE-LF_SMD.lib.
 SYMATTR Prefix X
 SYMATTR InstName L
 SYMATTR ModelFile WE-LF_SMD.lib
 PIN -96 -48 BOTTOM 8
-PINATTR PinName 4
+PINATTR PinName 1
 PINATTR SpiceOrder 1
 PIN -96 48 BOTTOM 8
-PINATTR PinName 1
+PINATTR PinName 2
 PINATTR SpiceOrder 2
 PIN 96 -48 BOTTOM 8
+PINATTR PinName 4
+PINATTR SpiceOrder 4
+PIN 96 48 BOTTOM 8
 PINATTR PinName 3
 PINATTR SpiceOrder 3
-PIN 96 48 BOTTOM 8
-PINATTR PinName 2
-PINATTR SpiceOrder 4
