@@ -1,15 +1,15 @@
 **************************************************
-* Manufacturer:           Wurth Elektronik 
+* Manufacturer:           Würth Elektronik
 * Kinds:                  SMT Infrared Sideview LED Waterclear
 * Matchcode:              WL-SISW
 * Library Type:           LTspice
-* Version:                rev22a
+* Version:                rev26a
 * Created/modified by:    Ella      
-* Date and Time:          2022-03-02
+* Date and Time:          2026-09-24
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2022 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -159,14 +159,32 @@ D1 1 2 led
 + IBV=10.00E-6
 .ends
 ****************
-
-
-
-
-
-
-
-
-
-
-
+.subckt 1206_15412085A2070R 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=34.967E-12
++ N=2.7343
++ RS=1.6240
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+****************
+.subckt 1206_15412094A2070R 1 2 
+D1 1 2 led
+.MODEL led D
++ IS=10.514E-21
++ N=.88602
++ RS=1.7815
++ IKF=991.26E-9
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ BV=5
++ IBV=10.00E-6
++ TT=5.0000E-9
+.ends
+****************
