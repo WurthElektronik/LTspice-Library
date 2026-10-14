@@ -1,0 +1,303 @@
+**************************************************
+* Manufacturer:           Würth Elektronik 
+* Kinds:                  Common Mode Data Line
+* Matchcode:              WE-SLSP 
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella      
+* Date and Time:          2026-07-08
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 5050_744241101_0.23u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=15m
++  ck=1.6929f
++  DC4=5.3123p
++  DL4=804.2745p
++  DR5=2.9769
++  DR6=728.2890
++  DC3=5.4903p
++  DL3=676.3638p
++  DR3=10.9650
++  DR4=185.7095
++  L1=24.1309n
++  L2=17.3828n
++  L3=261.8284n
++  L4=20.3811n
++  RS1=1.0933k
++  RS2=1.0936k
++  RS3=1.4789k
++  RS4=1.4936k
++  C1=2.1343p
++  R2=37.9046
++  C2=834.9901f
++  L5=285.7261n
++  RS5=6.0890k
+.ends
+********
+.subckt 5050_744241102_2.3u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=45m
++  ck=1.7093f
++  DC4=11.5417p
++  DL4=898.4545p
++  DR5=1.9981
++  DR6=11.9740
++  DC3=933.6055f
++  DL3=434.0254p
++  DR3=9.8121
++  DR4=170.8585
++  L1=84.1871n
++  L2=83.4032n
++  L3=567.7593n
++  L4=86.3312n
++  RS1=378.9984
++  RS2=378.9864
++  RS3=378.0986
++  RS4=393.6860
++  C1=1.4828p
++  R2=37.8956
++  C2=1.1537p
++  L5=776.9841n
++  RS5=1.2349k
+.ends
+********
+.subckt 5050_744241142_2.6u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=55m
++  ck=1.7093f
++  DC4=11.6632p
++  DL4=900.4729p
++  DR5=1.9978
++  DR6=12.0950
++  DC3=1.2100p
++  DL3=422.1085p
++  DR3=9.8119
++  DR4=100.9383
++  L1=272.2453n
++  L2=271.2924n
++  L3=673.8427n
++  L4=273.2213n
++  RS1=578.8325
++  RS2=578.8214
++  RS3=577.5505
++  RS4=593.5259
++  C1=1.0207p
++  R2=37.8993
++  C2=1.3444p
++  L5=736.3307n
++  RS5=1.2140k
+.ends
+********
+.subckt 5050_744241202_3.6u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=73m
++  ck=1.7112f
++  DC4=3.8207p
++  DL4=1.6891n
++  DR5=1.9979
++  DR6=12.4783
++  DC3=2.2360p
++  DL3=377.0598p
++  DR3=9.8094
++  DR4=211.9592
++  L1=449.5994n
++  L2=448.4248n
++  L3=1.4409u
++  L4=448.6766n
++  RS1=878.4099
++  RS2=878.4002
++  RS3=875.8858
++  RS4=893.1147
++  C1=813.2322f
++  R2=37.9100
++  C2=2.4812p
++  L5=620.9324n
++  RS5=978.2971
+.ends
+********
+.subckt 5050_744241251_0.55u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=20m
++  ck=1.7099f
++  DC4=2.9246p
++  DL4=769.7976p
++  DR5=1.9962
++  DR6=16.1236
++  DC3=709.4356f
++  DL3=378.7935p
++  DR3=9.8089
++  DR4=113.0084
++  L1=53.4009n
++  L2=56.6492n
++  L3=230.3025n
++  L4=49.6547n
++  RS1=168.4232
++  RS2=168.4134
++  RS3=165.412
++  RS4=163.1288
++  C1=408.1178f
++  R2=37.9099
++  C2=513.1562f
++  L5=179.7518n
++  RS5=167.9610
+.ends
+********
+.subckt 5050_744241501_1.1u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=30m
++  ck=1.6947f
++  DC4=2.3741p
++  DL4=1.8065n
++  DR5=2.9768
++  DR6=928.2964
++  DC3=991.4573f
++  DL3=458.0987p
++  DR3=1.9656
++  DR4=785.6705
++  L1=64.1206n
++  L2=56.6785n
++  L3=467.6506n
++  L4=59.9791n
++  RS1=861.8213
++  RS2=861.8231
++  RS3=861.5850
++  RS4=861.8223
++  C1=761.5831f
++  R2=237.9082
++  C2=594.8897f
++  L5=391.3167n
++  RS5=8.4940k
+.ends
+********
+.subckt 5050_744241701_1.8u 1 2 3 4
+X1  1  2  3  4  SLSP  PARAMS:
++  Rdc=35m
++  ck=1.7010f
++  DC4=6.7331p
++  DL4=1.0329n
++  DR5=1.9900
++  DR6=16.0870
++  DC3=1.4469p
++  DL3=428.0705p
++  DR3=9.8231
++  DR4=90.1819
++  L1=82.0916n
++  L2=81.3010n
++  L3=589.5931n
++  L4=84.2664n
++  RS1=338.9114
++  RS2=338.9011
++  RS3=336.5037
++  RS4=333.5913
++  C1=1.4190p
++  R2=37.9004
++  C2=903.2415f
++  L5=682.9495n
++  RS5=1.1647k
+.ends
+********
+.subckt SLSP  1  2  3  4  PARAMS:
++  Rdc=35m
++  ck=1.7010f
++  DC4=6.7331p
++  DL4=1.0329n
++  DR5=1.9900
++  DR6=16.0870
++  DC3=1.4469p
++  DL3=428.0705p
++  DR3=9.8231
++  DR4=90.1819
++  L1=82.0916n
++  L2=81.3010n
++  L3=589.5931n
++  L4=84.2664n
++  RS1=338.9114
++  RS2=338.9011
++  RS3=336.5037
++  RS4=333.5913
++  C1=1.4190p
++  R2=37.9004
++  C2=903.2415f
++  L5=682.9495n
++  RS5=1.1647k
+
+L5 N009 N008 {L3}
+C3 N007 N006 {C1}
+L1 4 N010 {L1}
+L3 N010 N009 {L2}
+L6 N015 N014 {L3}
+C4 N024 N013 {C1}
+L2 3 N016 {L1}
+L4 N016 N015 {L2}
+L8 N014 N013 {L4}
+L7 N008 N006 {L4}
+L9 N006 N005 {L5}
+L10 N013 N021 {L5}
+R1 N001 1 {Rdc}
+R2 N003 N001 {dR4}
+C1 N002 N001 {dC3}
+L17 N011 N001 {dL3}
+L18 N017 N018 {dL3}
+C2 N011 N018 {ck}
+R3 N003 N002 {dR3}
+R4 N019 N022 {dR3}
+C9 N022 N017 {dC3}
+R5 N019 N017 {dR4}
+L19 N003 N011 {dL3}
+L20 N018 N019 {dL3}
+R6 N017 2 {Rdc}
+R8 N005 N003 {dR6}
+C10 N004 N003 {dC4}
+L13 N012 N003 {dL4}
+L14 N019 N020 {dL4}
+C11 N012 N020 {ck}
+R9 N005 N004 {dR5}
+R10 N021 N023 {dR5}
+C12 N023 N019 {dC4}
+R11 N021 N019 {dR6}
+L15 N005 N012 {dL4}
+L16 N020 N021 {dL4}
+R7 N006 N005 {Rs5}
+C5 N006 N005 {C2}
+R12 N013 N021 {Rs5}
+C6 N013 N021 {C2}
+R13 N008 N006 {Rs4}
+R14 N009 N008 {Rs3}
+R15 N010 N009 {Rs2}
+R16 4 N010 {Rs1}
+R17 N014 N013 {Rs4}
+R18 N015 N014 {Rs3}
+R19 N016 N015 {Rs2}
+R20 3 N016 {Rs1}
+R21 4 N007 {R2}
+R22 3 N024 {R2}
+K3 L5 L6 1
+K2 L3 L4 1
+K1 L1 L2 1
+K4 L7 L8 1
+K5 L9  L10 1
+K7_1  L17  L18  0.9999
+K7_2  L17  L19  0.9999
+K7_3  L17  L20  0.9999
+K7_4  L18  L19  0.9999
+K7_5  L18  L20  0.9999
+K7_6  L19  L20  0.9999
+K6_1  L13  L14  0.9999
+K6_2  L13  L15  0.9999
+K6_3  L13  L16  0.9999
+K6_4  L14  L15  0.9999
+K6_5  L14  L16  0.9999
+K6_6  L15  L16  0.9999
+.ends  SLSP
+********

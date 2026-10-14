@@ -1,0 +1,139 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Multi-phase Inductor
+* Matchcode:              WE-CSIM_Dual
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          7/10/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 1080_74434810801100_0.1u 1 2 3 4
+Rp1 1 4 116.923
+Cp1 1 4 3.529p
+Rs1 1 N1 0.0001
+L1 N1 4 0.06488u
+
+Rp2 2 3 116.923
+Cp2 2 3 3.529p
+Rs2 2 N2 0.0001
+L2 N2 3 64.88u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 1080_74434810801100_0.1u
+*******
+.subckt 5430_74434854301040_0.04u 1 2 3 4
+Rp1 1 4 52.522
+Cp1 1 4 5.557p
+Rs1 1 N1 0.00019
+L1 N1 4 0.019893u
+
+Rp2 2 3 52.522
+Cp2 2 3 5.557p
+Rs2 2 N2 0.00019
+L2 N2 3 19.893u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 5430_74434854301040_0.04u
+*******
+.subckt 5430_74434854301060_0.06u 1 2 3 4
+Rp1 1 4 47.151
+Cp1 1 4 6p
+Rs1 1 N1 0.00025
+L1 N1 4 0.035515u
+
+Rp2 2 3 47.151
+Cp2 2 3 6p
+Rs2 2 N2 0.00025
+L2 N2 3 35.515u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 5430_74434854301060_0.06u
+*******
+.subckt 6020_74434860201075_0.075u 1 2 3 4
+Rp1 1 4 77.537
+Cp1 1 4 2.262p
+Rs1 1 N1 0.00055
+L1 N1 4 0.039805u
+
+Rp2 2 3 77.537
+Cp2 2 3 2.262p
+Rs2 2 N2 0.00055
+L2 N2 3 0.039805u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 6020_74434860201075_0.075u
+*******
+.subckt 6020_74434860201100_0.1u 1 2 3 4
+Rp1 1 4 68.994
+Cp1 1 4 2.611p
+Rs1 1 N1 0.0006
+L1 N1 4 0.086235u
+
+Rp2 2 3 68.994
+Cp2 2 3 2.611p
+Rs2 2 N2 0.0006
+L2 N2 3 0.086235u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 6020_74434860201100_0.1u
+*******
+.subckt 6035_74434860351135_0.135u 1 2 3 4
+Rp1 1 4 74.631
+Cp1 1 4 4.579p
+Rs1 1 N1 0.0003
+L1 N1 4 0.0702u
+
+Rp2 2 3 74.631
+Cp2 2 3 4.579p
+Rs2 2 N2 0.0003
+L2 N2 3 0.0702u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 6035_74434860351135_0.135u
+*******
+.subckt 6035_74434860352135_0.135u 1 2 3 4
+Rp1 1 4 77.991
+Cp1 1 4 4.867p
+Rs1 1 N1 0.00027
+L1 N1 4 0.092751u
+
+Rp2 2 3 77.991
+Cp2 2 3 4.867p
+Rs2 2 N2 0.00027
+L2 N2 3 0.092751u
+
+Rq1 1 0 100meg
+Rq2 2 0 100meg
+Rq3 3 0 100meg
+Rq4 4 0 100meg
+.ends 6035_74434860352135_0.135u
+*******
