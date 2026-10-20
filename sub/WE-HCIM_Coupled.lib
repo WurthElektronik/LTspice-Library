@@ -1,0 +1,45 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Power Inductor
+* Matchcode:              WE-HCIM_Coupled
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          7/6/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 110407_74432110407085_0.085u 1  2  3  4  PARAMS:
++  Cww=28.69p
++  Rp1=171.538
++  Cp1=2.95p
++  Lp1=0.085u
++  Rp2=183.823
++  Cp2=2.748p
++  Lp2=0.085u
++  RDC1=0.057
++  RDC2=0.057
++  K=0.938710003455932
+C_C1 2 1 {Cww/2}
+R_R50 2 1 5000g
+C_C2 3 4 {Cww/2}
+C_C5 3 2 {Cp1}
+R_R1 3 N05454 {RDC1}
+R_R2 3 2 {Rp1}
+L_L1 N05454 2 {Lp1}
+L_L2 N05750 1 {Lp2}
+C_C6 4 1 {Cp2}
+R_R3 4 1 {Rp2}
+R_R4 4 N05750 {RDC2}
+Kn_K1  L_L1  L_L2  {K}
+.ends 
+*******

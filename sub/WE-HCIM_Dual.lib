@@ -1,0 +1,48 @@
+**************************************************
+* Manufacturer:           Würth Elektronik
+* Kinds:                  SMT Power Inductor
+* Matchcode:              WE-HCIM_Dual
+* Library Type:           LTspice
+* Version:                rev26a
+* Created/modified by:    Ella
+* Date and Time:          10/20/2026
+* Team:                   eiSos EDA Service  
+* Contact:                libraries@we-online.com
+**************************************************
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
+* All Rights Reserved.
+**************************************************
+* Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
+* of the simulation models provided, Würth Elektronik eiSos does not guarantee the exemption of error on
+* the simulation models, nor does Würth Elektronik eiSos guarantee that the simulation model is current.
+* Würth Elektronik eiSos reserves the right to make any adjustments at any time without notice.
+* Würth Elektronik eiSos expressly disclaims all implied warranties regarding this simulation model.
+**************************************************
+.subckt 080506_74432080506085_0.085u 1 2
+Rp 1 2 138.599
+Cp 1 2 3.637p
+Rs 1 N3 0.0047
+L1 N3 2 0.085u
+.ends 080506_74432080506085_0.085u
+*******
+.subckt 100605_74432100605080_0.08u 1 2
+Rp 1 2 110.268
+Cp 1 2 5.355p
+Rs 1 N3 0.0079
+L1 N3 2 0.08u
+.ends 100605_74432100605080_0.08u
+*******
+.subckt 100706_74432100706060_0.06u 1 2
+Rp 1 2 170.61
+Cp 1 2 3.543p
+Rs 1 N3 0.0095
+L1 N3 2 0.06u
+.ends 100706_74432100706060_0.06u
+*******
+.subckt 100706_74432100706085_0.085u 1 2
+Rp 1 2 175.414
+Cp 1 2 4.678p
+Rs 1 N3 0.023
+L1 N3 2 0.085u
+.ends 100706_74432100706085_0.085u
+*******
