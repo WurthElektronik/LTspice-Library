@@ -10,7 +10,7 @@ WINDOW 38 -17 52 Left 2
 WINDOW 0 -17 1 Left 2
 SYMATTR Description WCAP-PSLP Aluminum Polymer Capacitors \nAfter inserting, right-click on the symbol to select the part number. \nwww.we-online.com/catalog/WCAP-PSLP \n\nPlease note disclaimer in WCAP-PSLP.lib.
 SYMATTR InstName C
-SYMATTR SpiceModel 875105142001_47uF
+SYMATTR SpiceModel 875105240001_10uF
 SYMATTR Prefix x
 SYMATTR ModelFile WCAP-PSLP.lib
 PIN -32 0 NONE 8

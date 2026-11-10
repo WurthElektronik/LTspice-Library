@@ -3,13 +3,13 @@
 * Kinds:                  Aluminum Electrolytic Capacitors
 * Matchcode:              WCAP-AT1H
 * Library Type:           LTspice
-* Version:                rev25b
+* Version:                rev26a
 * Created/modified by:    Ella
-* Date and Time:          10/30/2025
+* Date and Time:          10/23/2026
 * Team:                   eiSos EDA Service  
 * Contact:                libraries@we-online.com
 **************************************************
-* Copyright(C) 2025 Würth Elektronik eiSos GmbH & Co. KG
+* Copyright(C) 2026 Würth Elektronik eiSos GmbH & Co. KG
 * All Rights Reserved.
 **************************************************
 * Disclaimer: While Würth Elektronik eiSos has made every reasonable effort to ensure the accuracy
@@ -689,4 +689,11 @@ Lser 2 4 1.0036580705E-08
 C1 3 4 0.00033
 Rpar 3 4 303030.303030303
 .ends 860241081001_330uF
+*******
+.subckt S8602414810301_180uF 1 2
+Rser 1 3 0.115
+Lser 2 4 0.00000000015
+C1 3 4 0.00018
+Rpar 3 4 134730.538922156
+.ends S8602414810301_180uF
 *******
