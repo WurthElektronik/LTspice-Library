@@ -9,9 +9,9 @@ WINDOW 38 24 52 Left 2
 WINDOW 0 24 8 Left 2
 
 SYMATTR Prefix X
-SYMATTR Description WCAP-CSMH Mid and High Voltage MLCC // DC-bias model: simulates the effects of applied DC-bias voltage. \nAfter inserting, right click on the symbol to select the part number. \nhttps://www.we-online.com/catalog/en/WCAP-CSMH \n\nPlease note disclaimer in WCAP-CSMH.lib
-SYMATTR ModelFile WCAP-CSMH_DCbias.lib
-SYMATTR SpiceModel 250V0603X7R_100pF_885342206001
+SYMATTR Description WCAP-CSMH MLCC 25V(DC) rated voltage // DC-bias model: simulates the effects of applied DC-bias voltage.\nAfter inserting, right click on the symbol to select the part number.\nhttps://www.we-online.com/catalog/en/WCAP-CSMH-25VDC\n\nPlease note disclaimer in WCAP-CSMH_25V_DCbias.lib
+SYMATTR ModelFile WCAP-CSMH_25V_DCbias.lib
+SYMATTR SpiceModel 0603NP0_10pF_885342006001
 SYMATTR InstName C
 
 PIN 16 0 NONE 0

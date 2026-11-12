@@ -9,9 +9,9 @@ WINDOW 38 24 52 Left 2
 WINDOW 0 24 8 Left 2
 
 SYMATTR Prefix X
-SYMATTR Description WCAP-CSGP General Purpose MLCC 50 V(DC) rated voltage // DC-bias model: simulates the effects of applied DC-bias voltage. \nAfter inserting, right click on the symbol to select the part number. \nhttps://www.we-online.com/catalog/en/WCAP-CSGP-50VDC \n\nPlease note disclaimer in Wurth/WCAP-CSGP_50V_DCbias.lib
+SYMATTR Description WCAP-CSGP MLCC 50V(DC) rated voltage // DC-bias model: simulates the effects of applied DC-bias voltage.\nAfter inserting, right click on the symbol to select the part number.\nhttps://www.we-online.com/catalog/en/WCAP-CSGP-50VDC\n\nPlease note disclaimer in WCAP-CSGP_50V_DCbias.lib
 SYMATTR ModelFile WCAP-CSGP_50V_DCbias.lib
-SYMATTR SpiceModel 0402X7R_1nF_885012205061
+SYMATTR SpiceModel 0201NP0_10pF_885012004011
 SYMATTR InstName C
 
 PIN 16 0 NONE 0

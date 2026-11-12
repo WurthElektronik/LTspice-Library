@@ -9,9 +9,9 @@ WINDOW 38 24 52 Left 2
 WINDOW 0 24 8 Left 2
 
 SYMATTR Prefix X
-SYMATTR Description WCAP-CSGP General Purpose MLCC 6.3 V(DC) rated voltage // DC-bias model: simulates the effects of applied DC-bias voltage.\nAfter inserting, right click on the symbol to select the part number. \nhttps://www.we-online.com/catalog/en/WCAP-CSGP-6_3VDC \n\nPlease note disclaimer in WCAP-CSGP_6-3V_DCbias.lib
-SYMATTR ModelFile WCAP-CSGP_6-3V_Dcbias.lib
-SYMATTR SpiceModel 0402X5R_330nF_885012105003
+SYMATTR Description WCAP-CSGP MLCC 6-3V(DC) rated voltage // DC-bias model: simulates the effects of applied DC-bias voltage.\nAfter inserting, right click on the symbol to select the part number.\nhttps://www.we-online.com/catalog/en/WCAP-CSGP-6_3VDC\n\nPlease note disclaimer in WCAP-CSGP_6-3V_DCbias.lib
+SYMATTR ModelFile WCAP-CSGP_6-3V_DCbias.lib
+SYMATTR SpiceModel 0201X5R_10nF_885012104004
 SYMATTR InstName C
 
 PIN 16 0 NONE 0
